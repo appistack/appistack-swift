@@ -13,31 +13,31 @@ class AuthManager {
         TOKEN_EXPIRY_KEY = "token_expiry",
         TOKEN_UID_KEY = "token_uid"
 
-    func token() -> String {
+    class func token() -> String {
         return getSecureValue(TOKEN_KEY)
     }
 
-    func tokenType() -> String {
+    class func tokenType() -> String {
         return getSecureValue(TOKEN_TYPE_KEY)
     }
 
-    func client() -> String {
+    class func client() -> String {
         return getSecureValue(TOKEN_CLIENT_KEY)
     }
 
-    func expiry() -> String {
+    class func expiry() -> String {
         return getSecureValue(TOKEN_EXPIRY_KEY)
     }
 
-    func uid() -> String {
+    class func uid() -> String {
         return getSecureValue(TOKEN_UID_KEY);
     }
 
-    func isLoggedIn() -> Bool {
+    class func isLoggedIn() -> Bool {
         return token() != nil
     }
 
-    func getAccessToken() -> AccessToken {
+    class func getAccessToken() -> AccessToken {
         var aToken = AccessTokenModel()
         aToken.token = token()
         aToken.tokenType = tokenType()
@@ -46,11 +46,11 @@ class AuthManager {
         aToken.setUid = uid()
     }
 
-    func getSecureValue(key:String) -> String {
+    class func getSecureValue(key:String) -> String {
         SSKeychain.passwordForService(SERVICE_NAME, account: key)
     }
 
-    func setSecureValue(key:String, value:String) -> String {
+    class func setSecureValue(key:String, value:String) -> String {
         if (value) {
             SSKeychain.setPassword(value, forService:SERVICE_NAME, forKey:key)
         } else {
@@ -58,7 +58,7 @@ class AuthManager {
         }
     }
 
-    func clearAccessToken() {
+    class func clearAccessToken() {
         setSecureValue(nil, forKey:TOKEN_KEY)
         setSecureValue(nil, forKey:TOKEN_TYPE_KEY)
         setSecureValue(nil, forKey:TOKEN_CLIENT_KEY)
