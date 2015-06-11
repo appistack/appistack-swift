@@ -1,0 +1,5 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
+pod 'AFNetworking', '~> 2.5'
+pod 'SSKeychain', '~> 1.2.3'
+pod 'QuickDialog', '~> 1.0'
