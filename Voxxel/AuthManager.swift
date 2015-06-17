@@ -4,57 +4,65 @@
 //
 
 import Foundation
+import SSKeychain
 
 class AuthManager {
-    let SERVICE_NAME = "VoxxelApp",
+    static let SERVICE_NAME = "VoxxelApp",
         TOKEN_KEY = "token",
         TOKEN_TYPE_KEY = "token_type",
         TOKEN_CLIENT_KEY = "token_client",
         TOKEN_EXPIRY_KEY = "token_expiry",
         TOKEN_UID_KEY = "token_uid"
 
-    class func token() -> String {
+    class func token() -> String? {
         return getSecureValue(TOKEN_KEY)
     }
 
-    class func tokenType() -> String {
+    class func tokenType() -> String? {
         return getSecureValue(TOKEN_TYPE_KEY)
     }
 
-    class func client() -> String {
+    class func client() -> String? {
         return getSecureValue(TOKEN_CLIENT_KEY)
     }
 
-    class func expiry() -> String {
+    class func expiry() -> String? {
         return getSecureValue(TOKEN_EXPIRY_KEY)
     }
 
-    class func uid() -> String {
+    class func uid() -> String? {
         return getSecureValue(TOKEN_UID_KEY);
     }
 
     class func isLoggedIn() -> Bool {
-        return token() != nil
+        //better way to do this? revert to instantiated class?
+        if token() != nil {
+            //TODO: check if token is expired
+            return true
+        } else {
+            return false
+        }
     }
 
-    class func getAccessToken() -> AccessToken {
-        var aToken = AccessTokenModel()
+    class func getAccessToken() -> AccessTokenModel {
+        let aToken = AccessTokenModel()
         aToken.token = token()
         aToken.tokenType = tokenType()
         aToken.client = client()
         aToken.expiry = expiry()
-        aToken.setUid = uid()
+        aToken.uid = uid()
+        return aToken
     }
 
-    class func getSecureValue(key:String) -> String {
-        SSKeychain.passwordForService(SERVICE_NAME, account: key)
+    class func getSecureValue(key:String) -> String? {
+        return SSKeychain.passwordForService(SERVICE_NAME, account:key)
     }
 
-    class func setSecureValue(key:String, value:String) -> String {
-        if (value) {
-            SSKeychain.setPassword(value, forService:SERVICE_NAME, forKey:key)
+    class func setSecureValue(value:String?, forKey:String) {
+        if let v = value {
+            SSKeychain.setPassword(v, forService:SERVICE_NAME, account:forKey)
         } else {
-            SSKeychain.deletePasswordForService(SERVICE_NAME, account:key)
+            SSKeychain.deletePasswordForService(SERVICE_NAME, account:forKey)
         }
     }
 

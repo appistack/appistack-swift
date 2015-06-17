@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13462F3870067C2EBEDAD19A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7D7919825542EB7363C537 /* libPods.a */; };
+		183E106C673B3145022B1C62 /* Pods_Voxxel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431AA00D1B2FA94700D52CC7 /* AuthService.swift */; };
 		43E97AEA1B294154004CC7ED /* DevelopmentConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AE91B294154004CC7ED /* DevelopmentConfig.plist */; };
 		43E97AEC1B294164004CC7ED /* StagingConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AEB1B294164004CC7ED /* StagingConfig.plist */; };
 		43E97AEE1B294175004CC7ED /* ProductionConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AED1B294175004CC7ED /* ProductionConfig.plist */; };
-		43E97AF01B294F96004CC7ED /* BridgingHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 43E97AEF1B294F96004CC7ED /* BridgingHeader.h */; };
+		43E97AF01B294F96004CC7ED /* Voxxel-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 43E97AEF1B294F96004CC7ED /* Voxxel-Bridging-Header.h */; };
+		43FBC02B1B2DED4500B0094C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FBC02A1B2DED4500B0094C /* SignupViewController.swift */; };
+		43FBF2281B312CD300E97C79 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FBF2271B312CD300E97C79 /* Config.swift */; };
 		C7F2D5F4A846B072F5C9029C /* AccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F04D48D8D484008B84E4EE /* AccessTokenModel.swift */; };
+		C7F2DE28E51370E1A52CA9A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FC8CD49C6A25C71D24A37E /* LoginViewController.swift */; };
 		C7F3B3D78915694EFCFD10BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FFB27ECFE21F8B6288AB2A /* Images.xcassets */; };
 		C7F3EBC4AAC54631177E07B5 /* VoxxelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9BC796228217F0A943F9F /* VoxxelTests.swift */; };
 		C7F9978C698368E77344B62F /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F4DC952B1CA01AC02CD56A /* AuthManager.swift */; };
 		C7FD11C12246F2214CC7387B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7FC5FED1C2FB0D9C0533A00 /* LaunchScreen.xib */; };
-		C7FD91434447DE1BFCFA14EA /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FB890B2380458861E303BF /* Config.m */; };
 		C7FE34A036ACE77126808871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FEC1F5F66422A22B6931CA /* Main.storyboard */; };
 		C7FEA8B48D140BB55E2FBF7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF6F5A425142898BDF04A0 /* ViewController.swift */; };
 		C7FEEB36656F4E3F09161E24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD591EA60B4AA9EED49104 /* AppDelegate.swift */; };
@@ -35,13 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		29650BCF4C964E756E52A85B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxxel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		431AA00D1B2FA94700D52CC7 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		43E97AE91B294154004CC7ED /* DevelopmentConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DevelopmentConfig.plist; sourceTree = "<group>"; };
 		43E97AEB1B294164004CC7ED /* StagingConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StagingConfig.plist; sourceTree = "<group>"; };
 		43E97AED1B294175004CC7ED /* ProductionConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductionConfig.plist; sourceTree = "<group>"; };
-		43E97AEF1B294F96004CC7ED /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		4D7D7919825542EB7363C537 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		67B43A1C7540AF18CCECF4D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		43E97AEF1B294F96004CC7ED /* Voxxel-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Voxxel-Bridging-Header.h"; sourceTree = "<group>"; };
+		43FBC02A1B2DED4500B0094C /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		43FBF2271B312CD300E97C79 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		9E0565A60ADBE83E04E51E5E /* Pods-Voxxel.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxxel.production.xcconfig"; path = "Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel.production.xcconfig"; sourceTree = "<group>"; };
+		C19112CED7D9D4FC93362B84 /* Pods-Voxxel.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxxel.development.xcconfig"; path = "Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel.development.xcconfig"; sourceTree = "<group>"; };
 		C7F02D2D1857C9757EC91F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C7F04D48D8D484008B84E4EE /* AccessTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenModel.swift; sourceTree = "<group>"; };
 		C7F0DDB0D7D0E892DDE70CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -51,12 +57,12 @@
 		C7F85A582BD37DE8FE9ED213 /* VoxxelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoxxelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F9BC796228217F0A943F9F /* VoxxelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxxelTests.swift; sourceTree = "<group>"; };
 		C7FA09A5D177650456FF4806 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
-		C7FB890B2380458861E303BF /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		C7FC8CD49C6A25C71D24A37E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C7FD591EA60B4AA9EED49104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7FE2C7984B78BFF1ACFB25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C7FE5AF345B2644D9345D902 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		C7FF6F5A425142898BDF04A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7FFB27ECFE21F8B6288AB2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB2F9A91B23FDB3F08C13C22 /* Pods-Voxxel.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxxel.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,26 +77,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13462F3870067C2EBEDAD19A /* libPods.a in Frameworks */,
+				183E106C673B3145022B1C62 /* Pods_Voxxel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2385FF96C5077A37B9D0D2B0 /* Frameworks */ = {
+		3908E1A4542664A51D19FFF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D7D7919825542EB7363C537 /* libPods.a */,
+				24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AC701A3B781E503556FA37B7 /* Pods */ = {
+		431AA00C1B2FA91400D52CC7 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				29650BCF4C964E756E52A85B /* Pods.debug.xcconfig */,
-				67B43A1C7540AF18CCECF4D0 /* Pods.release.xcconfig */,
+				C7F04D48D8D484008B84E4EE /* AccessTokenModel.swift */,
+				431AA00D1B2FA94700D52CC7 /* AuthService.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		6EC2968E207749E8E17C9425 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C19112CED7D9D4FC93362B84 /* Pods-Voxxel.development.xcconfig */,
+				FB2F9A91B23FDB3F08C13C22 /* Pods-Voxxel.staging.xcconfig */,
+				9E0565A60ADBE83E04E51E5E /* Pods-Voxxel.production.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -110,8 +126,8 @@
 				C7F9AEE74931C1435001F225 /* Voxxel */,
 				C7FD53732A082C059691E765 /* VoxxelTests */,
 				C7FA09A5D177650456FF4806 /* README.md */,
-				AC701A3B781E503556FA37B7 /* Pods */,
-				2385FF96C5077A37B9D0D2B0 /* Frameworks */,
+				6EC2968E207749E8E17C9425 /* Pods */,
+				3908E1A4542664A51D19FFF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,17 +145,18 @@
 		C7F9AEE74931C1435001F225 /* Voxxel */ = {
 			isa = PBXGroup;
 			children = (
+				431AA00C1B2FA91400D52CC7 /* Api */,
 				C7F8722D7237EBD0AFACD615 /* Supporting Files */,
 				C7FFB27ECFE21F8B6288AB2A /* Images.xcassets */,
 				C7FC5FED1C2FB0D9C0533A00 /* LaunchScreen.xib */,
 				C7FD591EA60B4AA9EED49104 /* AppDelegate.swift */,
 				C7FEC1F5F66422A22B6931CA /* Main.storyboard */,
 				C7FF6F5A425142898BDF04A0 /* ViewController.swift */,
-				C7FB890B2380458861E303BF /* Config.m */,
-				C7FE5AF345B2644D9345D902 /* Config.h */,
-				C7F04D48D8D484008B84E4EE /* AccessTokenModel.swift */,
 				C7F4DC952B1CA01AC02CD56A /* AuthManager.swift */,
-				43E97AEF1B294F96004CC7ED /* BridgingHeader.h */,
+				43E97AEF1B294F96004CC7ED /* Voxxel-Bridging-Header.h */,
+				C7FC8CD49C6A25C71D24A37E /* LoginViewController.swift */,
+				43FBC02A1B2DED4500B0094C /* SignupViewController.swift */,
+				43FBF2271B312CD300E97C79 /* Config.swift */,
 			);
 			path = Voxxel;
 			sourceTree = "<group>";
@@ -169,11 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7FC6D133A32DC9C365B1AB0 /* Build configuration list for PBXNativeTarget "Voxxel" */;
 			buildPhases = (
-				7C6C39E64833EC32A5A786ED /* Check Pods Manifest.lock */,
+				9AF3CAD4657033FA0A4B1666 /* Check Pods Manifest.lock */,
 				C7FDF7B18C236ABF01AF0F9D /* Sources */,
 				C7F9A526DD3E8B8D7CAE5749 /* Frameworks */,
 				C7FDF68C7EB95ABA3EF3824E /* Resources */,
-				919739CB37CBC07D74A98F70 /* Copy Pods Resources */,
+				2943E3735D8D3E9C8F4FD386 /* Embed Pods Frameworks */,
+				C527EA52524DBD9AF37CDD6F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +226,8 @@
 		C7F4A6B2809577352AF0C92B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Voxxel;
 			};
 			buildConfigurationList = C7F7C5795E69F526A89E04E5 /* Build configuration list for PBXProject "Voxxel" */;
@@ -253,7 +273,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7C6C39E64833EC32A5A786ED /* Check Pods Manifest.lock */ = {
+		2943E3735D8D3E9C8F4FD386 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF3CAD4657033FA0A4B1666 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,7 +303,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		919739CB37CBC07D74A98F70 /* Copy Pods Resources */ = {
+		C527EA52524DBD9AF37CDD6F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,7 +315,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -292,10 +327,13 @@
 			files = (
 				C7FEEB36656F4E3F09161E24 /* AppDelegate.swift in Sources */,
 				C7FEA8B48D140BB55E2FBF7F /* ViewController.swift in Sources */,
-				43E97AF01B294F96004CC7ED /* BridgingHeader.h in Sources */,
-				C7FD91434447DE1BFCFA14EA /* Config.m in Sources */,
+				43FBC02B1B2DED4500B0094C /* SignupViewController.swift in Sources */,
+				431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */,
+				43E97AF01B294F96004CC7ED /* Voxxel-Bridging-Header.h in Sources */,
 				C7F2D5F4A846B072F5C9029C /* AccessTokenModel.swift in Sources */,
+				43FBF2281B312CD300E97C79 /* Config.swift in Sources */,
 				C7F9978C698368E77344B62F /* AuthManager.swift in Sources */,
+				C7F2DE28E51370E1A52CA9A5 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +408,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voxxel-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -377,14 +417,14 @@
 		};
 		43E97AE71B29410C004CC7ED /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67B43A1C7540AF18CCECF4D0 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 9E0565A60ADBE83E04E51E5E /* Pods-Voxxel.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CONFIG_PLIST = ProductionConfig;
 				INFOPLIST_FILE = Voxxel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "Voxxel-Bridging-Header.h";
 			};
 			name = Production;
 		};
@@ -405,27 +445,27 @@
 		};
 		C7F06E730FB425DB24BD92B1 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67B43A1C7540AF18CCECF4D0 /* Pods.release.xcconfig */;
+			baseConfigurationReference = FB2F9A91B23FDB3F08C13C22 /* Pods-Voxxel.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CONFIG_PLIST = StagingConfig;
 				INFOPLIST_FILE = Voxxel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "Voxxel-Bridging-Header.h";
 			};
 			name = Staging;
 		};
 		C7F141540638A821B0868A8C /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29650BCF4C964E756E52A85B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C19112CED7D9D4FC93362B84 /* Pods-Voxxel.development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CONFIG_PLIST = DevelopmentConfig;
 				INFOPLIST_FILE = Voxxel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "Voxxel-Bridging-Header.h";
 			};
 			name = Development;
 		};
@@ -484,6 +524,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voxxel-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -537,6 +579,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voxxel-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

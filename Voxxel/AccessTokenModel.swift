@@ -6,9 +6,13 @@
 import Foundation
 
 class AccessTokenModel : NSObject {
-    var token:String
-    var tokenType:String
-    var client:String
-    var expiry:String
-    var uid:String
+    var token:String?
+    var tokenType:String?
+    var client:String?
+    var expiry:String?
+    var uid:String?
+
+//    override init() {
+//
+//    }
 }
