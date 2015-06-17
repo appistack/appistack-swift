@@ -1,0 +1,6 @@
+framework module SSKeychain {
+  umbrella header "Pods-Voxxel-SSKeychain-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,1136 +7,949 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030A8542B915925A56EB28C7 /* QDynamicDataSection.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C4B6C968046F30AD0A6279 /* QDynamicDataSection.h */; };
-		03BEB5A3BB39B39F08D2E85A /* QSelectSection.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C5347E4BB481D4B61CC09A /* QSelectSection.h */; };
-		09E1BA7D65ACA29CA514BA2A /* QRootBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 759F0825F8FCA3E8012B9A66 /* QRootBuilder.h */; };
-		0DAB3FB0D22311D9DE766F7E /* QClassicAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 755F1A3CB83D8562B93019BB /* QClassicAppearance.h */; };
-		0ED3E141E95EE4F9EAC44D7C /* QCountdownElement.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C8560ED73DDA94E493240C /* QCountdownElement.h */; };
-		10EA1D632703CA47F8B6AAE1 /* QDateTimeElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 559F95D93AC8CD5BD14A3313 /* QDateTimeElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		11B061EB03B73323137740FC /* QAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63C84AE082D26F8F2C0308 /* QAppearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		127AEC1D612C944E75AE3751 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A8DBF040926C0C6980FEAE /* UIProgressView+AFNetworking.m */; };
-		132599E3C1F25EB4EC48CDA8 /* Pods-SSKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82690D3580FC7202AEBB6DBA /* Pods-SSKeychain-dummy.m */; };
-		155F225BF8BD976A0AB567B3 /* QDecimalTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B0D4E9CC81CF596B1BC143 /* QDecimalTableViewCell.h */; };
-		19483CA5134780D5E31282CC /* QSegmentedElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 601A5EE4268507384E59EAE2 /* QSegmentedElement.h */; };
-		1BBFC2027A34D1E5D8803187 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9A10388ACD430D5C090420 /* AFNetworkActivityIndicatorManager.h */; };
-		1C737494D85597932409650F /* QRadioSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B997CBAF310A3D8B671C11FC /* QRadioSection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1C8BA82784F3D64BE15B7304 /* QuickDialogController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 750DF0CEE6CB991D76F77A6B /* QuickDialogController+Navigation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1CFEA905B18CF74AFAB48EF9 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DED9BAB48A07A118B1AD9EF8 /* AFHTTPSessionManager.h */; };
-		2044380809E9EBCCEF28151D /* QFloatElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 31280724409FEEE44DC29049 /* QFloatElement.h */; };
-		20AF62059F055A7883CCE0CA /* QTextElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 47DC23E3E909211FF2209426 /* QTextElement.h */; };
-		225EFB261741C7059E211978 /* QCountdownElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 070DF2CB2CE06FBD9FD2D90D /* QCountdownElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2481BFCC145CEA58EC51E2AF /* QBadgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACAC73C49990DD9CB3915EB /* QBadgeLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		25BBB34CD45934F9D8573272 /* QDecimalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3DDF125C6BF65711249C6 /* QDecimalTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		26B8EBC504F5FF73E958B357 /* QRadioElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 86624024B508177BCC0F183B /* QRadioElement.h */; };
-		28C77D0BB0F8E80F106B46B7 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 048F5F9AE390469682A9BED1 /* AFNetworking.h */; };
-		29E9D2FCD07388775167A9D1 /* NSMutableArray+MoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2AA413C9EFA089F393861B /* NSMutableArray+MoveObject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2A36320CBFE7D902FA276D7C /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D9D5516A18093D8364273D40 /* AFHTTPRequestOperationManager.h */; };
-		2BA6A9EC6471F92F6BD03E27 /* QAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = F8FD8D2B31AEA25B6D43E4D0 /* QAppearance.h */; };
-		2C88DD63A9893660F112F64D /* QRootElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1D2D1F4119F8673FAB99D6 /* QRootElement.h */; };
-		2D7928CFC0139745681257AF /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FBE69653E3F003F26AC5A3 /* UIProgressView+AFNetworking.h */; };
-		2D7CB5ED18E4F90BCDAE304B /* QImageTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A08575880EE3AC6A01D069C1 /* QImageTableViewCell.h */; };
-		2DA6BD354FB250FF09206FD3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B689C2A030EBC9BD30DCD9 /* AFURLRequestSerialization.m */; };
-		2EA6A1BE7D8ECC21131BA873 /* QClassicAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C6D43CB04D557C59063F9 /* QClassicAppearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2FEB90E665FBEDE96D616B14 /* QEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A5A1A1194DB55DFFA2D85B /* QEntryTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3007DFC28B34AAB86146FE05 /* Pods-QuickDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 552379FEB859B76E0DB1DEAF /* Pods-QuickDialog-dummy.m */; };
-		30BADFAAEB6BF889171A4416 /* QLoadingElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBD35F8C4BA744BBE2E9CE3 /* QLoadingElement.h */; };
-		31F92AD6AD444AB65D388FE6 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80857166791040EE9D72629B /* AFNetworkReachabilityManager.m */; };
-		33C9C7E93EF4A94B164612AD /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F9E8BFA0E65E9B8EB50CEB /* UIImageView+AFNetworking.m */; };
-		39F4E2636BD72D3A5F66F333 /* QSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EA7F7A7DCE84AF3993D2C /* QSection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3B9CE3C2E0B39E9EB8D95A34 /* QFlatAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE4FF12E3EC3720920DB124 /* QFlatAppearance.h */; };
-		3D7ACC40B793609A0C835A29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75E8BC2E574F5119080F16F /* Foundation.framework */; };
-		3E7877EC74B1669DB115BA1F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAA0E5B16C046F816D46516 /* Security.framework */; };
-		40D9AC54CE32F639B771C6E9 /* QTextElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9B3DF7D0AC851FA8667DF /* QTextElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		422652229B7589816E897DF8 /* QBadgeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DF3C9E4589FB64EDB6EA75 /* QBadgeTableCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		46FB0F08DD983976A6728820 /* QTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9EAA4AECAAA17E5C5143E4 /* QTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		48AF5102D234A40FEFD2FFA1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1B8017C5079F9EAC878925 /* MobileCoreServices.framework */; };
-		497617583B1EBD5CB132885F /* QuickDialogDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E08E0069A74044E421C3B36 /* QuickDialogDataSource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		49A37E41A27C93FE02200DC4 /* QBindingEvaluator.h in Headers */ = {isa = PBXBuildFile; fileRef = 081986883609211156BF2D0C /* QBindingEvaluator.h */; };
-		4A5923C36F7BBCD63BB5FD49 /* QElement+Appearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E89E6646E6FF0003A53DF1 /* QElement+Appearance.h */; };
-		4C6A6BE06D7311BFD8172E22 /* QImageElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 922CBD77A8511B38BE5E3F4A /* QImageElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4E502FBC28908FA721A5E991 /* QDecimalElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C226504B6447C2F5FFD84BC /* QDecimalElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4E5CA908420D48709E17E07D /* QFlatAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA4F03492B56C1168DA723 /* QFlatAppearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4FC8C1F70C5B0CF89249DFE7 /* QLabelElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D38B0BAF63379301FBA70395 /* QLabelElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		50C860559FB0A6271A5131C6 /* QEntryElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 63130D9364D197F5E70002A8 /* QEntryElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		53E06E2F5768EAED509D381A /* QEntryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D48AABB9BB80C0D2724E1659 /* QEntryTableViewCell.h */; };
-		5447CD6A616510B38082CF8B /* QAutoEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E519781F02E5BFB7EBD0B965 /* QAutoEntryTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		57058E1020551770FF50C0D1 /* QProgressElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F13DA644B886AEAA9B3F175 /* QProgressElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		587701B398E62A3AC6DA5FE8 /* QMultilineElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 26500D68D24CA841D570226A /* QMultilineElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		58DCE4B98DB7FD659D55C68C /* QDateEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C814237A943362F4838B3EB5 /* QDateEntryTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5B941C46B8B93A51B33504FA /* QSegmentedElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 934ADF973BCE20CE0072DE43 /* QSegmentedElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5BEFE0664936EBF15A98C9E0 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE094ACE09BDE527413D8D /* AFURLSessionManager.m */; };
-		5CD87C1EAEF6E2A63EECDE40 /* QDateInlineTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 37AAE5F480523DB200CEC92A /* QDateInlineTableViewCell.h */; };
-		5CF3567FFE85A116663FEDF9 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 300AD7E71BE1E4B9C29E3186 /* Pods-dummy.m */; };
-		5D2051D9B074A8B32887B10B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6771587EB50E5952583BB /* SystemConfiguration.framework */; };
-		5D519F7F36C9C49BF1A6CCF1 /* QBooleanElement.h in Headers */ = {isa = PBXBuildFile; fileRef = B231831AE87A286BE36547C6 /* QBooleanElement.h */; };
-		5DEAC93B372BB45C01D52A26 /* QuickDialogController+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 892D2E69F8BCDBDDA21A7DB3 /* QuickDialogController+Helpers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5E02CC376D45745BAAFE36C2 /* QuickDialogTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1454F1A7AD348CDC088878 /* QuickDialogTableDelegate.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		617175FAF8EBC6B28601C107 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B3DBC8249E31B53714C558 /* AFURLResponseSerialization.m */; };
-		61D4F68FA82DBA944D7F001D /* NSMutableArray+IMSExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = CE22199004C63B52369BD9BB /* NSMutableArray+IMSExtensions.h */; };
-		62C94FCCAC448CFAD4EF7CA8 /* QImageElement.h in Headers */ = {isa = PBXBuildFile; fileRef = CF5100C72099E38C32A255AD /* QImageElement.h */; };
-		62F149C2310C59820215974B /* QRadioSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F9514C6398283FC4781266 /* QRadioSection.h */; };
-		62F3B7FE53BB0364153E0F1F /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 424579DBA797CA0E389A6331 /* AFURLResponseSerialization.h */; };
-		67E983B2F4A1EDBBDD2272A4 /* QLoadingElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B250CE002789F7DD9966380D /* QLoadingElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6CADA443AA8A08028399E3E8 /* QuickDialogDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DE226968C3854E157E654396 /* QuickDialogDelegate.h */; };
-		6D24CB29EBA5C3016EABA9AC /* QDecimalElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 39CA1CB8D34FE6E16D42A021 /* QDecimalElement.h */; };
-		6E4FBF36EAC3C3065E1A2ABD /* QEntryElement.h in Headers */ = {isa = PBXBuildFile; fileRef = FB067602A821EB5AA2F82B2E /* QEntryElement.h */; };
-		707D91CEBA5207A664D94910 /* QBooleanElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DB5BFC3D8BD0EBB97F5044 /* QBooleanElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		716FF1F0390DEE97C73B26C2 /* QDateEntryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 085FFED8E676B9064A256A54 /* QDateEntryTableViewCell.h */; };
-		71FE87242BE8A6430E5085BB /* QFloatElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FDE6A163743F5D3955E00F /* QFloatElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		72D7AD90CCD2CE7A512834A6 /* QuickDialogTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F99ABD44A4C591F51105BE2 /* QuickDialogTableView.h */; };
-		77CF03ADEF713DE8C14BF9D4 /* NSMutableArray+MoveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C7675BC3DDD031801833532B /* NSMutableArray+MoveObject.h */; };
-		78204AE19D1121F1EC5501A2 /* NSMutableArray+IMSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DE66582A6FE1341AE8EE76 /* NSMutableArray+IMSExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7E573F0FB7D7AF5AE89C6378 /* QuickDialogController+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DDC7AB1999517951A71225D /* QuickDialogController+Helpers.h */; };
-		7E95205A903C9FABC460D238 /* QRadioElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A325CE5A38DA114B864F8285 /* QRadioElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7F6741CFEE7586C44C9A42D3 /* QAutoEntryElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D38BB269260839E66F5FB078 /* QAutoEntryElement.h */; };
-		7F6A067ED898D70018093DA5 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 70478E074392BE0DF5D97142 /* UIButton+AFNetworking.h */; };
-		83752633CA9DB43925FC2026 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5617AAEE81E270343F1A78 /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		83E2FAB2751078C0C7658B2D /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 965B3D368229CC4644905F19 /* AFURLRequestSerialization.h */; };
-		8589DFB43D6490ED9D70F6BE /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FD810210FDBC7DB543A30C7F /* UIRefreshControl+AFNetworking.m */; };
-		868573B899AAD48E84F9B40D /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F860683A27CECECB7AEF22 /* AFSecurityPolicy.h */; };
-		86C865C6EA1B6D427FE7937E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF01C2AC555EAFB07012C7F /* AFHTTPSessionManager.m */; };
-		871329AC7B4FE10DE81EDB60 /* QuickDialogTableDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 13AAA00E85227A2DCE0D37BF /* QuickDialogTableDelegate.h */; };
-		8726F70CE31BFDB8B05662BE /* QDynamicDataSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 853765EF3878F4292A2D0D56 /* QDynamicDataSection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		898DDF09DD648365483658A4 /* QDateTimeInlineElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2E45C58782227AEC4D1C54 /* QDateTimeInlineElement.h */; };
-		8AD49D042604C7A478BE4DED /* QBadgeElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 940BBE8523A75E3A240E7982 /* QBadgeElement.h */; };
-		8AE42B655258B1EC9C4123F1 /* QuickDialogWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838005CA2B6D66B88F8CE1D7 /* QuickDialogWebController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8B365AA2232BECF823E40B41 /* QDateTimeInlineElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7807FD5FA63D93C5C4C553 /* QDateTimeInlineElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8BF370FC3A08E83C1051F723 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 10492268523A610C86786B23 /* UIWebView+AFNetworking.h */; };
-		900263F17D0A6CBF64777DD1 /* QElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C875775213ED9FD51C3AB7F2 /* QElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		91BD1B273C608744973D1BE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75E8BC2E574F5119080F16F /* Foundation.framework */; };
-		960CB2FF226BC0B1D50D5CE3 /* QBadgeLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F85F61EE7F7FF2FAF366A7E /* QBadgeLabel.h */; };
-		98430C9AF3B91CB712784AE6 /* QBadgeElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C5230205F5AC259A797E1 /* QBadgeElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		991CBB0AA72516B92288C4D7 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC28441ACCB91EA51D72C0 /* AFHTTPRequestOperationManager.m */; };
-		99B0ABC24B4A068CB3DDDFF1 /* QRadioItemElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F2ED6E84A8191D7F624F10 /* QRadioItemElement.h */; };
-		99DB310FFF1C71D59EFB2A45 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A27A607D71E71F1C9AC60223 /* AFNetworkReachabilityManager.h */; };
-		9A7B860BC6F82A625D5B8EF8 /* DOAutocompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C736DE4C402B2267031C12C /* DOAutocompleteTextField.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9C6C6E5823FB077CB3AE0B53 /* QRootElement+JsonBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 15BA08D74E28D18A8627C56F /* QRootElement+JsonBuilder.h */; };
-		9D618CD198D8C5A7991030F4 /* QBadgeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = EECF1D8720C692428EBDC420 /* QBadgeTableCell.h */; };
-		9DB72AEDC09684BFA3A9C4A4 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 77069B4CD7BFB4FEB3271342 /* AFURLConnectionOperation.h */; };
-		9DE02170D96088E37FED1789 /* QuickDialogController+Animations.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2F838FD1D1EDD9FF533C56 /* QuickDialogController+Animations.h */; };
-		9DEC50535D18D5AB1FFAB58E /* QMultilineTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A2ECA20B95E7C66B3B61C4 /* QMultilineTextViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9FC84B7DC2CFD68C71DA9684 /* QFloatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75126312B34A02F1EFE6FA1E /* QFloatTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A12D672D45F57C81758D186B /* QElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 63EAEE408686743EAE8AFB8D /* QElement.h */; };
-		A1D48E0616BE273E4BD3A2CF /* QRootElement.m in Sources */ = {isa = PBXBuildFile; fileRef = E6207B0A0692C835ADE3DA75 /* QRootElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A266340D3803065CF17986CA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAA0E5B16C046F816D46516 /* Security.framework */; };
-		A41A5A2E02AE13D69D56BE4F /* SSKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BB35010AEE473CFAD28ED3 /* SSKeychainQuery.h */; };
-		A41B01172F280747FA78DEDA /* QuickDialogEntryElementDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 77E6C9E9BC9C81EEFAA89033 /* QuickDialogEntryElementDelegate.h */; };
-		AF5A05A906F47826C8EB9255 /* QuickDialogController+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A60F1CD825CEE570985E01 /* QuickDialogController+Loading.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		AFE6D6A6EA17E5AAF2C4494A /* QuickDialogDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD83175EEC48BAAF2511127 /* QuickDialogDataSource.h */; };
-		B046FF39E15E6C02C821BFE6 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 669E2E0798C5F9D34C900CE5 /* SSKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B0CF6E62F83597568730D64B /* QuickDialogController+Navigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D6E393CA115F7A1F2F21D5E /* QuickDialogController+Navigation.h */; };
-		B18F9B20F43D63EA47615C92 /* QuickDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FF82920E17F32478215C3A /* QuickDialogController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B2056A6F6FF23389F1421777 /* QSortingSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E145981E35304A15FCCF34DC /* QSortingSection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B4AB15221F19AD776C4831B1 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2034E22DE52EC740527D7215 /* AFSecurityPolicy.m */; };
-		B4D8C80C12B3FC364547DC87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D65ACD2DD10E92E81E88A1 /* CoreGraphics.framework */; };
-		B67450CF70A565E16977DDDB /* QuickDialogController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3440EC434ACF2F74F31232D2 /* QuickDialogController.h */; };
-		B6B6691805EEDE5CC3A859A7 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C7CEB5B1521BBDEF639A8D /* UIImageView+AFNetworking.h */; };
-		B816652D280889E3F255E011 /* QRadioItemElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F61B3E426BB3B2AE684122 /* QRadioItemElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B891E101127422CD35F2EEC4 /* QFloatTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FFFC53C2382641C95B4C73 /* QFloatTableViewCell.h */; };
-		B8A7AA690A91B152C355E449 /* DOAutocompleteTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AFEB91B30340F1477196D05 /* DOAutocompleteTextField.h */; };
-		B93783579CB766F499810991 /* QButtonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CD4D31084996E2BB359644 /* QButtonElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BBA34BA84D4915BB4DEFA7BB /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C403E200482EF8BF7EC6BC9B /* UIKit+AFNetworking.h */; };
-		BFA0A4D8FDFBEDB8A8791500 /* QMultilineTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C58C380A2CA6F704CE8E6D1F /* QMultilineTextViewController.h */; };
-		BFB8D86683D878EBC5E91F4D /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EB8DE02F09F60E97A4D17F /* UIWebView+AFNetworking.m */; };
-		C22F3458B2FCC2B66552DE50 /* QTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2EC4561CFF1C80A20AF877E /* QTableViewCell.h */; };
-		C4747397CD7FEF29EB8CE693 /* Pods-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAF0516CF5A7AD7A8E6533B /* Pods-AFNetworking-dummy.m */; };
-		C47ABABB827FD0128CDF33C2 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DBAE885ACFB30089EF340B /* UIRefreshControl+AFNetworking.h */; };
-		C51C202CC3524462342BC5CC /* QDateInlineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 466DE17CCEC1E7CCDEB8F974 /* QDateInlineTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C5C37BD087838916295D7EC4 /* QEmptyListElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC817EBCD6E9BEBC319F7D5 /* QEmptyListElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C8C0DD6226EB30D7A99D1CF3 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A7892F5E8B4F18A33A14A4 /* AFHTTPRequestOperation.h */; };
-		C9A2C403F8BC3D761927A562 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CB46BD2D9F5CE56F0276F9DA /* UIAlertView+AFNetworking.m */; };
-		CB41E4E5074279804AD4E429 /* QSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 03EA055A1A9935FE9F5676DA /* QSection.h */; };
-		CBEEA21941F1F2CF268B9FC5 /* QuickDialogController+Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B19760ADB9726781D9632F8 /* QuickDialogController+Loading.h */; };
-		CC1F6A5BDABA511427CC571B /* QMultilineElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EA4B50C7B7ABA5E87BEF2C /* QMultilineElement.h */; };
-		CE35E1E20FE0C616993BC879 /* QSelectSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A9744E834FF38367534BE7 /* QSelectSection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CE41CB081C244F3605D05B53 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C7444AD5D8400C5DE9AF88B6 /* UIActivityIndicatorView+AFNetworking.m */; };
-		CEAAA99D788825F4D21755CF /* QTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 971EB5384448A1DE85C73FA3 /* QTextField.h */; };
-		CF107B67942E58C0571D21A3 /* QSortingSection.h in Headers */ = {isa = PBXBuildFile; fileRef = B8140F3F2E0D21A8BDCECB68 /* QSortingSection.h */; };
-		D0769B61A0A316E980E3A1C7 /* QAutoEntryElement.m in Sources */ = {isa = PBXBuildFile; fileRef = AC05204DFA961E50E33DE7C2 /* QAutoEntryElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D129787F02383B2488A374D0 /* QRootBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 456E34004C06070DA448C1FD /* QRootBuilder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D4442F4ED6ED1A24D4223D51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75E8BC2E574F5119080F16F /* Foundation.framework */; };
-		D4A2DCC8A38BCD30519DD3D2 /* QuickDialogWebController.h in Headers */ = {isa = PBXBuildFile; fileRef = 468BF3AC9F0B5B79BD32E213 /* QuickDialogWebController.h */; };
-		D944031DFF8D8D7FF1B1CB28 /* QEmptyListElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 0107797B572E5631898AFCF0 /* QEmptyListElement.h */; };
-		DE87FBF75CD5AC0CF93490C5 /* QSelectItemElement.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4D7C5D3E54D0BFE21CE81C /* QSelectItemElement.h */; };
-		E1AC173F7CC7C35473A62132 /* QLabelElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D728D2F65EE2E8FE125DC201 /* QLabelElement.h */; };
-		E250F1103113D8B940E6C5D5 /* QAutoEntryTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 067790757E18FEEA04C8C247 /* QAutoEntryTableViewCell.h */; };
-		E41817A4703E8F18DE916499 /* QuickDialogTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB506B680686853E1E93F41 /* QuickDialogTableView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E4663D2A1A5451384465E577 /* QuickDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = D2425C4B6625C16A42B6F3C2 /* QuickDialog.h */; };
-		E5BE1A8C3031E8501E7F1ECE /* QButtonElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 79FCED1134A61D6FC3E1608A /* QButtonElement.h */; };
-		E62E8492BF91B34AC804B717 /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 912B5AC33E254F4BE197AB91 /* SSKeychain.h */; };
-		E7447514D1E82AE0A43C29F4 /* QProgressElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 11576175B002BEA9FCE929BA /* QProgressElement.h */; };
-		E7BD9881A28B1E1988B0C6A5 /* QDateTimeElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DCB75984E11A60F0B8CE0CC /* QDateTimeElement.h */; };
-		E7D12089E6BBBD485862946E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB84F433D9E76CF1BD65627 /* AFHTTPRequestOperation.m */; };
-		EB621AC396C8176FD142A0EA /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 489F881B4954827771E993CE /* AFURLConnectionOperation.m */; };
-		ECAAAD87F81CA85367453823 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C36A553042055EF5DD937 /* AFNetworkActivityIndicatorManager.m */; };
-		EE89BCE00A7451CEB03BBE0B /* QSelectItemElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B070D41129EBF6211A8E2B /* QSelectItemElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F1A7A0EC653B70951116F351 /* QuickDialogController+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 535BD63EC326FAF19EEE3767 /* QuickDialogController+Animations.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F2737898D533B7FFC969856C /* QElement+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4923A58BCA3990251822C2 /* QElement+Appearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F35B15D1A9A8F6F948F41B4C /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0B55F5F948DDF9495B5C6 /* UIButton+AFNetworking.m */; };
-		F6251BB659D389638F6B82A8 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D474D6A931D62C32B2E015 /* AFURLSessionManager.h */; };
-		F6EB53CDBA8F3C145DEB6B86 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 257ACFB2FC90A6D6128A27E0 /* UIActivityIndicatorView+AFNetworking.h */; };
-		F728493D6164572C5B7AB4A8 /* QRootElement+JsonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2360B30230DC323F23E9889A /* QRootElement+JsonBuilder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F8CCD4605531213358F300DC /* QTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DC83B465BB6E4E3B92ABB3BC /* QTextField.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FB1AC5172D0AD2E51DB16992 /* QImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBACF624F02271FC766EFEE /* QImageTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FCD7B033805930F5675C9008 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F93A45A6CF1C479348E09B8 /* UIAlertView+AFNetworking.h */; };
-		FE61269B5C612D27FA3B9782 /* QBindingEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 023B9B39B6CBC4FD7F04BF21 /* QBindingEvaluator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FF6D8FCD16C3F8C223B93677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75E8BC2E574F5119080F16F /* Foundation.framework */; };
+		0A130DAD6E83CE7563D6BD66 /* Pods-Voxxel-SSKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A5534185A4B5FDDEE6373A /* Pods-Voxxel-SSKeychain-dummy.m */; };
+		1A0FCBCB21102E930C40F3D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF12210229AAB2DE21A7FCC /* Foundation.framework */; };
+		31024E1DB7F89F9D786F3022 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C2C127A495D8F5DFC0EE58 /* SSKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3E988CED920D72667186C330 /* Pods-Voxxel-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 068A5B65E38A0A159E698647 /* Pods-Voxxel-Alamofire-dummy.m */; };
+		55FDA76D631589CEED512445 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D784968A8F5DC92DBC8DE86A /* Manager.swift */; };
+		5AD3AD586601D499D6584285 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69A0D411967F21F284DF93A /* Download.swift */; };
+		5EEEB059A137D39739999C16 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C12C3438BC215D7FD33B10 /* Alamofire.swift */; };
+		6220F47A30CD80CA61DD1E60 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5813A07F2ECA7F4C15BD885F /* Validation.swift */; };
+		70AD0FB07B143BB0FF9964EC /* Pods-Voxxel-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F2421A23F94AFF563CDECA /* Pods-Voxxel-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73F73D08A8166725E3996A2B /* Pods-Voxxel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91F68744CA037AFB75067B41 /* Pods-Voxxel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74E455BAA8DB1E675C4A8064 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE31BAF0E63D8CDFB585BD69 /* Security.framework */; };
+		7835D9DE176F8E354B700B10 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2B75BE195A51813465E16 /* Request.swift */; };
+		7E140AF77DDDFC25A1FD6DD5 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A915A07D4AE3BD7D66B1D1 /* ResponseSerialization.swift */; };
+		883032EA8CA0BED4E9EBCAC0 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20046BF3CB628312E9BCCC13 /* ParameterEncoding.swift */; };
+		908B09227DEE4D064E1406C8 /* Pods-Voxxel-SSKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 907DCA598E61BB686D9D01B1 /* Pods-Voxxel-SSKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2ADA553879A9E214A440BC1 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = F782806F77B5E560C13932F2 /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AD39A372A0D3C5C19F1EAB14 /* SSKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = D189D27B115FE5F0DE5ECED7 /* SSKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5FB71A8AF7A78834E9E69B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF12210229AAB2DE21A7FCC /* Foundation.framework */; };
+		DA9F8901A14689D17E33A690 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE35A32277BC9849B03930 /* Upload.swift */; };
+		E6955FDBCD3962664B59EA31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF12210229AAB2DE21A7FCC /* Foundation.framework */; };
+		EB542F5E6E3C8BFF95C93963 /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FC40479CB63D7DFD543895 /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8C57613D61A178140677B1F /* Pods-Voxxel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F57E61D7FECA3F138C74AA6B /* Pods-Voxxel-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		23B9D3F7FB68E348CEBF00FB /* PBXContainerItemProxy */ = {
+		035B3C33099A48A76EF969C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 60F74F759F750144080AB8BD /* Project object */;
+			containerPortal = E205A277098B9E5E81892A23 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ED3A2D3172BE6A402B4F0569;
-			remoteInfo = "Pods-SSKeychain";
+			remoteGlobalIDString = 02033468F83C1E9B1542A7CD;
+			remoteInfo = "Pods-Voxxel-SSKeychain";
 		};
-		30E9ADD385892CDA5612124C /* PBXContainerItemProxy */ = {
+		2248FD963A4EDBC592015D5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 60F74F759F750144080AB8BD /* Project object */;
+			containerPortal = E205A277098B9E5E81892A23 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 66C5AC307DA3FD239066CAF3;
-			remoteInfo = "Pods-AFNetworking";
-		};
-		39DC3DCDB3B699C78AAE8F5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60F74F759F750144080AB8BD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5FB55E74713C66A4D7A66E43;
-			remoteInfo = "Pods-QuickDialog";
+			remoteGlobalIDString = BF44D0D8F3BBB7F9B057F2F4;
+			remoteInfo = "Pods-Voxxel-Alamofire";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0077981F456216D9287BB31D /* Pods-SSKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSKeychain.xcconfig"; sourceTree = "<group>"; };
-		0107797B572E5631898AFCF0 /* QEmptyListElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QEmptyListElement.h; path = quickdialog/QEmptyListElement.h; sourceTree = "<group>"; };
-		023B9B39B6CBC4FD7F04BF21 /* QBindingEvaluator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBindingEvaluator.m; path = quickdialog/QBindingEvaluator.m; sourceTree = "<group>"; };
-		03EA055A1A9935FE9F5676DA /* QSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QSection.h; path = quickdialog/QSection.h; sourceTree = "<group>"; };
-		048F5F9AE390469682A9BED1 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		067790757E18FEEA04C8C247 /* QAutoEntryTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QAutoEntryTableViewCell.h; path = quickdialog/QAutoEntryTableViewCell.h; sourceTree = "<group>"; };
-		070DF2CB2CE06FBD9FD2D90D /* QCountdownElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCountdownElement.m; path = quickdialog/QCountdownElement.m; sourceTree = "<group>"; };
-		081986883609211156BF2D0C /* QBindingEvaluator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBindingEvaluator.h; path = quickdialog/QBindingEvaluator.h; sourceTree = "<group>"; };
-		085FFED8E676B9064A256A54 /* QDateEntryTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QDateEntryTableViewCell.h; path = quickdialog/QDateEntryTableViewCell.h; sourceTree = "<group>"; };
-		09B070D41129EBF6211A8E2B /* QSelectItemElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QSelectItemElement.m; path = quickdialog/QSelectItemElement.m; sourceTree = "<group>"; };
-		09F61B3E426BB3B2AE684122 /* QRadioItemElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRadioItemElement.m; path = quickdialog/QRadioItemElement.m; sourceTree = "<group>"; };
-		0ACAC73C49990DD9CB3915EB /* QBadgeLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBadgeLabel.m; path = quickdialog/QBadgeLabel.m; sourceTree = "<group>"; };
-		0B19760ADB9726781D9632F8 /* QuickDialogController+Loading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QuickDialogController+Loading.h"; path = "quickdialog/QuickDialogController+Loading.h"; sourceTree = "<group>"; };
-		0CBD35F8C4BA744BBE2E9CE3 /* QLoadingElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QLoadingElement.h; path = quickdialog/QLoadingElement.h; sourceTree = "<group>"; };
-		0E08E0069A74044E421C3B36 /* QuickDialogDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickDialogDataSource.m; path = quickdialog/QuickDialogDataSource.m; sourceTree = "<group>"; };
-		0E7C36A553042055EF5DD937 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
-		0F1D2D1F4119F8673FAB99D6 /* QRootElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRootElement.h; path = quickdialog/QRootElement.h; sourceTree = "<group>"; };
-		0F85F61EE7F7FF2FAF366A7E /* QBadgeLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBadgeLabel.h; path = quickdialog/QBadgeLabel.h; sourceTree = "<group>"; };
-		10492268523A610C86786B23 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		11576175B002BEA9FCE929BA /* QProgressElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QProgressElement.h; path = quickdialog/QProgressElement.h; sourceTree = "<group>"; };
-		11C7CEB5B1521BBDEF639A8D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		13AAA00E85227A2DCE0D37BF /* QuickDialogTableDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickDialogTableDelegate.h; path = quickdialog/QuickDialogTableDelegate.h; sourceTree = "<group>"; };
-		14A5A1A1194DB55DFFA2D85B /* QEntryTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QEntryTableViewCell.m; path = quickdialog/QEntryTableViewCell.m; sourceTree = "<group>"; };
-		14F9E8BFA0E65E9B8EB50CEB /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		15BA08D74E28D18A8627C56F /* QRootElement+JsonBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QRootElement+JsonBuilder.h"; path = "quickdialog/QRootElement+JsonBuilder.h"; sourceTree = "<group>"; };
-		1A2E45C58782227AEC4D1C54 /* QDateTimeInlineElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QDateTimeInlineElement.h; path = quickdialog/QDateTimeInlineElement.h; sourceTree = "<group>"; };
-		1BE4FF12E3EC3720920DB124 /* QFlatAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QFlatAppearance.h; path = quickdialog/QFlatAppearance.h; sourceTree = "<group>"; };
-		1F2AA413C9EFA089F393861B /* NSMutableArray+MoveObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+MoveObject.m"; path = "quickdialog/NSMutableArray+MoveObject.m"; sourceTree = "<group>"; };
-		1F7EA7F7A7DCE84AF3993D2C /* QSection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QSection.m; path = quickdialog/QSection.m; sourceTree = "<group>"; };
-		1F93A45A6CF1C479348E09B8 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
-		2034E22DE52EC740527D7215 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		20DE66582A6FE1341AE8EE76 /* NSMutableArray+IMSExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+IMSExtensions.m"; path = "quickdialog/NSMutableArray+IMSExtensions.m"; sourceTree = "<group>"; };
-		2360B30230DC323F23E9889A /* QRootElement+JsonBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QRootElement+JsonBuilder.m"; path = "quickdialog/QRootElement+JsonBuilder.m"; sourceTree = "<group>"; };
-		23FDE6A163743F5D3955E00F /* QFloatElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QFloatElement.m; path = quickdialog/QFloatElement.m; sourceTree = "<group>"; };
-		24B0B55F5F948DDF9495B5C6 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		257ACFB2FC90A6D6128A27E0 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		26500D68D24CA841D570226A /* QMultilineElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QMultilineElement.m; path = quickdialog/QMultilineElement.m; sourceTree = "<group>"; };
-		28CC28441ACCB91EA51D72C0 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
-		2CC817EBCD6E9BEBC319F7D5 /* QEmptyListElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QEmptyListElement.m; path = quickdialog/QEmptyListElement.m; sourceTree = "<group>"; };
-		2DCB75984E11A60F0B8CE0CC /* QDateTimeElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QDateTimeElement.h; path = quickdialog/QDateTimeElement.h; sourceTree = "<group>"; };
-		2F99ABD44A4C591F51105BE2 /* QuickDialogTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickDialogTableView.h; path = quickdialog/QuickDialogTableView.h; sourceTree = "<group>"; };
-		300AD7E71BE1E4B9C29E3186 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		31280724409FEEE44DC29049 /* QFloatElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QFloatElement.h; path = quickdialog/QFloatElement.h; sourceTree = "<group>"; };
-		31F9514C6398283FC4781266 /* QRadioSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRadioSection.h; path = quickdialog/QRadioSection.h; sourceTree = "<group>"; };
-		32EA4B50C7B7ABA5E87BEF2C /* QMultilineElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QMultilineElement.h; path = quickdialog/QMultilineElement.h; sourceTree = "<group>"; };
-		3440EC434ACF2F74F31232D2 /* QuickDialogController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickDialogController.h; path = quickdialog/QuickDialogController.h; sourceTree = "<group>"; };
-		37AAE5F480523DB200CEC92A /* QDateInlineTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QDateInlineTableViewCell.h; sourceTree = "<group>"; };
-		37E89E6646E6FF0003A53DF1 /* QElement+Appearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QElement+Appearance.h"; path = "quickdialog/QElement+Appearance.h"; sourceTree = "<group>"; };
-		39CA1CB8D34FE6E16D42A021 /* QDecimalElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QDecimalElement.h; path = quickdialog/QDecimalElement.h; sourceTree = "<group>"; };
-		3F13DA644B886AEAA9B3F175 /* QProgressElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QProgressElement.m; path = quickdialog/QProgressElement.m; sourceTree = "<group>"; };
-		41A2ECA20B95E7C66B3B61C4 /* QMultilineTextViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QMultilineTextViewController.m; path = quickdialog/QMultilineTextViewController.m; sourceTree = "<group>"; };
-		424579DBA797CA0E389A6331 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		45615160934916DFC1B5BCBB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		456E34004C06070DA448C1FD /* QRootBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRootBuilder.m; path = quickdialog/QRootBuilder.m; sourceTree = "<group>"; };
-		466DE17CCEC1E7CCDEB8F974 /* QDateInlineTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QDateInlineTableViewCell.m; sourceTree = "<group>"; };
-		468BF3AC9F0B5B79BD32E213 /* QuickDialogWebController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickDialogWebController.h; path = quickdialog/QuickDialogWebController.h; sourceTree = "<group>"; };
-		47DC23E3E909211FF2209426 /* QTextElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QTextElement.h; path = quickdialog/QTextElement.h; sourceTree = "<group>"; };
-		489F881B4954827771E993CE /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		4AFEB91B30340F1477196D05 /* DOAutocompleteTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOAutocompleteTextField.h; path = quickdialog/DOAutocompleteTextField.h; sourceTree = "<group>"; };
-		4C736DE4C402B2267031C12C /* DOAutocompleteTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOAutocompleteTextField.m; path = quickdialog/DOAutocompleteTextField.m; sourceTree = "<group>"; };
-		50F860683A27CECECB7AEF22 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		51F2ED6E84A8191D7F624F10 /* QRadioItemElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRadioItemElement.h; path = quickdialog/QRadioItemElement.h; sourceTree = "<group>"; };
-		535BD63EC326FAF19EEE3767 /* QuickDialogController+Animations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QuickDialogController+Animations.m"; path = "quickdialog/QuickDialogController+Animations.m"; sourceTree = "<group>"; };
-		53A8DBF040926C0C6980FEAE /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		53B0D4E9CC81CF596B1BC143 /* QDecimalTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QDecimalTableViewCell.h; path = quickdialog/QDecimalTableViewCell.h; sourceTree = "<group>"; };
-		552379FEB859B76E0DB1DEAF /* Pods-QuickDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuickDialog-dummy.m"; sourceTree = "<group>"; };
-		55400C20EF09B769259AE08C /* Pods-SSKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSKeychain-prefix.pch"; sourceTree = "<group>"; };
-		559F95D93AC8CD5BD14A3313 /* QDateTimeElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QDateTimeElement.m; path = quickdialog/QDateTimeElement.m; sourceTree = "<group>"; };
-		56D65ACD2DD10E92E81E88A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		5A2C5230205F5AC259A797E1 /* QBadgeElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBadgeElement.m; path = quickdialog/QBadgeElement.m; sourceTree = "<group>"; };
-		5DDC7AB1999517951A71225D /* QuickDialogController+Helpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QuickDialogController+Helpers.h"; path = "quickdialog/QuickDialogController+Helpers.h"; sourceTree = "<group>"; };
-		601A5EE4268507384E59EAE2 /* QSegmentedElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QSegmentedElement.h; path = quickdialog/QSegmentedElement.h; sourceTree = "<group>"; };
-		63130D9364D197F5E70002A8 /* QEntryElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QEntryElement.m; path = quickdialog/QEntryElement.m; sourceTree = "<group>"; };
-		63EAEE408686743EAE8AFB8D /* QElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QElement.h; path = quickdialog/QElement.h; sourceTree = "<group>"; };
-		65A7892F5E8B4F18A33A14A4 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		669E2E0798C5F9D34C900CE5 /* SSKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
-		6C1454F1A7AD348CDC088878 /* QuickDialogTableDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickDialogTableDelegate.m; path = quickdialog/QuickDialogTableDelegate.m; sourceTree = "<group>"; };
-		6C7807FD5FA63D93C5C4C553 /* QDateTimeInlineElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QDateTimeInlineElement.m; path = quickdialog/QDateTimeInlineElement.m; sourceTree = "<group>"; };
-		6D6E393CA115F7A1F2F21D5E /* QuickDialogController+Navigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QuickDialogController+Navigation.h"; path = "quickdialog/QuickDialogController+Navigation.h"; sourceTree = "<group>"; };
-		6ED648F1DAC6B43010F2839F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		70478E074392BE0DF5D97142 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		708D7D458E63302AF96A76A1 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		70A9744E834FF38367534BE7 /* QSelectSection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QSelectSection.m; path = quickdialog/QSelectSection.m; sourceTree = "<group>"; };
-		734517871BD7A51AEEB40B7B /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		750DF0CEE6CB991D76F77A6B /* QuickDialogController+Navigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QuickDialogController+Navigation.m"; path = "quickdialog/QuickDialogController+Navigation.m"; sourceTree = "<group>"; };
-		75126312B34A02F1EFE6FA1E /* QFloatTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QFloatTableViewCell.m; path = quickdialog/QFloatTableViewCell.m; sourceTree = "<group>"; };
-		755F1A3CB83D8562B93019BB /* QClassicAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QClassicAppearance.h; path = quickdialog/QClassicAppearance.h; sourceTree = "<group>"; };
-		759F0825F8FCA3E8012B9A66 /* QRootBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRootBuilder.h; path = quickdialog/QRootBuilder.h; sourceTree = "<group>"; };
-		76DA4F03492B56C1168DA723 /* QFlatAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QFlatAppearance.m; path = quickdialog/QFlatAppearance.m; sourceTree = "<group>"; };
-		77069B4CD7BFB4FEB3271342 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		77E6C9E9BC9C81EEFAA89033 /* QuickDialogEntryElementDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickDialogEntryElementDelegate.h; path = quickdialog/QuickDialogEntryElementDelegate.h; sourceTree = "<group>"; };
-		79D474D6A931D62C32B2E015 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		79F3DDF125C6BF65711249C6 /* QDecimalTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QDecimalTableViewCell.m; path = quickdialog/QDecimalTableViewCell.m; sourceTree = "<group>"; };
-		79FCED1134A61D6FC3E1608A /* QButtonElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QButtonElement.h; path = quickdialog/QButtonElement.h; sourceTree = "<group>"; };
-		7C63C84AE082D26F8F2C0308 /* QAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QAppearance.m; path = quickdialog/QAppearance.m; sourceTree = "<group>"; };
-		7CB506B680686853E1E93F41 /* QuickDialogTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickDialogTableView.m; path = quickdialog/QuickDialogTableView.m; sourceTree = "<group>"; };
-		7DB84F433D9E76CF1BD65627 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		7F69389B3DB5548183C74727 /* Pods-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		80857166791040EE9D72629B /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		82690D3580FC7202AEBB6DBA /* Pods-SSKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSKeychain-dummy.m"; sourceTree = "<group>"; };
-		838005CA2B6D66B88F8CE1D7 /* QuickDialogWebController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickDialogWebController.m; path = quickdialog/QuickDialogWebController.m; sourceTree = "<group>"; };
-		84B689C2A030EBC9BD30DCD9 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		853765EF3878F4292A2D0D56 /* QDynamicDataSection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QDynamicDataSection.m; path = quickdialog/QDynamicDataSection.m; sourceTree = "<group>"; };
-		86624024B508177BCC0F183B /* QRadioElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRadioElement.h; path = quickdialog/QRadioElement.h; sourceTree = "<group>"; };
-		87A60F1CD825CEE570985E01 /* QuickDialogController+Loading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QuickDialogController+Loading.m"; path = "quickdialog/QuickDialogController+Loading.m"; sourceTree = "<group>"; };
-		87DF3C9E4589FB64EDB6EA75 /* QBadgeTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBadgeTableCell.m; path = quickdialog/QBadgeTableCell.m; sourceTree = "<group>"; };
-		892D2E69F8BCDBDDA21A7DB3 /* QuickDialogController+Helpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QuickDialogController+Helpers.m"; path = "quickdialog/QuickDialogController+Helpers.m"; sourceTree = "<group>"; };
-		8A9A10388ACD430D5C090420 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		8BD9B3DF7D0AC851FA8667DF /* QTextElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QTextElement.m; path = quickdialog/QTextElement.m; sourceTree = "<group>"; };
-		8C226504B6447C2F5FFD84BC /* QDecimalElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QDecimalElement.m; path = quickdialog/QDecimalElement.m; sourceTree = "<group>"; };
-		8FAA0E5B16C046F816D46516 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		912B5AC33E254F4BE197AB91 /* SSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
-		922CBD77A8511B38BE5E3F4A /* QImageElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QImageElement.m; path = quickdialog/QImageElement.m; sourceTree = "<group>"; };
-		934ADF973BCE20CE0072DE43 /* QSegmentedElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QSegmentedElement.m; path = quickdialog/QSegmentedElement.m; sourceTree = "<group>"; };
-		940BBE8523A75E3A240E7982 /* QBadgeElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBadgeElement.h; path = quickdialog/QBadgeElement.h; sourceTree = "<group>"; };
-		965B3D368229CC4644905F19 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		96EB8DE02F09F60E97A4D17F /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		96F36C13E568603D5B3AE980 /* libPods-QuickDialog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuickDialog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		971EB5384448A1DE85C73FA3 /* QTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QTextField.h; path = quickdialog/QTextField.h; sourceTree = "<group>"; };
-		98B1B86DC631A5441480FE84 /* libPods-SSKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSKeychain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B4923A58BCA3990251822C2 /* QElement+Appearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QElement+Appearance.m"; path = "quickdialog/QElement+Appearance.m"; sourceTree = "<group>"; };
-		9D5617AAEE81E270343F1A78 /* SSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
-		A08575880EE3AC6A01D069C1 /* QImageTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QImageTableViewCell.h; path = quickdialog/QImageTableViewCell.h; sourceTree = "<group>"; };
-		A0C5347E4BB481D4B61CC09A /* QSelectSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QSelectSection.h; path = quickdialog/QSelectSection.h; sourceTree = "<group>"; };
-		A1FDE1F73FCB8D14284308BC /* Pods-QuickDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuickDialog-prefix.pch"; sourceTree = "<group>"; };
-		A27A607D71E71F1C9AC60223 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		A325CE5A38DA114B864F8285 /* QRadioElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRadioElement.m; path = quickdialog/QRadioElement.m; sourceTree = "<group>"; };
-		A6B3DBC8249E31B53714C558 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		A6DBAE885ACFB30089EF340B /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		AB2F838FD1D1EDD9FF533C56 /* QuickDialogController+Animations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QuickDialogController+Animations.h"; path = "quickdialog/QuickDialogController+Animations.h"; sourceTree = "<group>"; };
-		AC05204DFA961E50E33DE7C2 /* QAutoEntryElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QAutoEntryElement.m; path = quickdialog/QAutoEntryElement.m; sourceTree = "<group>"; };
-		ADA6771587EB50E5952583BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		B231831AE87A286BE36547C6 /* QBooleanElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBooleanElement.h; path = quickdialog/QBooleanElement.h; sourceTree = "<group>"; };
-		B250CE002789F7DD9966380D /* QLoadingElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QLoadingElement.m; path = quickdialog/QLoadingElement.m; sourceTree = "<group>"; };
-		B7F91D0CC555D22421A29A9A /* Pods-SSKeychain-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSKeychain-Private.xcconfig"; sourceTree = "<group>"; };
-		B8140F3F2E0D21A8BDCECB68 /* QSortingSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QSortingSection.h; path = quickdialog/QSortingSection.h; sourceTree = "<group>"; };
-		B8883DC3E8202A84BF31EF2F /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		B8DB5BFC3D8BD0EBB97F5044 /* QBooleanElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBooleanElement.m; path = quickdialog/QBooleanElement.m; sourceTree = "<group>"; };
-		B997CBAF310A3D8B671C11FC /* QRadioSection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRadioSection.m; path = quickdialog/QRadioSection.m; sourceTree = "<group>"; };
-		BB7B20930600AFCDF6C23406 /* Pods-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
-		BCBACF624F02271FC766EFEE /* QImageTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QImageTableViewCell.m; path = quickdialog/QImageTableViewCell.m; sourceTree = "<group>"; };
-		BECE094ACE09BDE527413D8D /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
-		BEF01C2AC555EAFB07012C7F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		C2EC4561CFF1C80A20AF877E /* QTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QTableViewCell.h; path = quickdialog/QTableViewCell.h; sourceTree = "<group>"; };
-		C403E200482EF8BF7EC6BC9B /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		C58C380A2CA6F704CE8E6D1F /* QMultilineTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QMultilineTextViewController.h; path = quickdialog/QMultilineTextViewController.h; sourceTree = "<group>"; };
-		C7444AD5D8400C5DE9AF88B6 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		C7675BC3DDD031801833532B /* NSMutableArray+MoveObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+MoveObject.h"; path = "quickdialog/NSMutableArray+MoveObject.h"; sourceTree = "<group>"; };
-		C814237A943362F4838B3EB5 /* QDateEntryTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QDateEntryTableViewCell.m; path = quickdialog/QDateEntryTableViewCell.m; sourceTree = "<group>"; };
-		C875775213ED9FD51C3AB7F2 /* QElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QElement.m; path = quickdialog/QElement.m; sourceTree = "<group>"; };
-		C8C678D5FC47A1A329057FAC /* Pods-QuickDialog-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuickDialog-Private.xcconfig"; sourceTree = "<group>"; };
-		CB46BD2D9F5CE56F0276F9DA /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
-		CE22199004C63B52369BD9BB /* NSMutableArray+IMSExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+IMSExtensions.h"; path = "quickdialog/NSMutableArray+IMSExtensions.h"; sourceTree = "<group>"; };
-		CF5100C72099E38C32A255AD /* QImageElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QImageElement.h; path = quickdialog/QImageElement.h; sourceTree = "<group>"; };
-		CFAF0516CF5A7AD7A8E6533B /* Pods-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AFNetworking-dummy.m"; sourceTree = "<group>"; };
-		D0FBE69653E3F003F26AC5A3 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		D0FFFC53C2382641C95B4C73 /* QFloatTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QFloatTableViewCell.h; path = quickdialog/QFloatTableViewCell.h; sourceTree = "<group>"; };
-		D1CD4D31084996E2BB359644 /* QButtonElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QButtonElement.m; path = quickdialog/QButtonElement.m; sourceTree = "<group>"; };
-		D2425C4B6625C16A42B6F3C2 /* QuickDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickDialog.h; path = quickdialog/QuickDialog.h; sourceTree = "<group>"; };
-		D38B0BAF63379301FBA70395 /* QLabelElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QLabelElement.m; path = quickdialog/QLabelElement.m; sourceTree = "<group>"; };
-		D38BB269260839E66F5FB078 /* QAutoEntryElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QAutoEntryElement.h; path = quickdialog/QAutoEntryElement.h; sourceTree = "<group>"; };
-		D48AABB9BB80C0D2724E1659 /* QEntryTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QEntryTableViewCell.h; path = quickdialog/QEntryTableViewCell.h; sourceTree = "<group>"; };
-		D4BB35010AEE473CFAD28ED3 /* SSKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
-		D728D2F65EE2E8FE125DC201 /* QLabelElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QLabelElement.h; path = quickdialog/QLabelElement.h; sourceTree = "<group>"; };
-		D9D5516A18093D8364273D40 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		DAD83175EEC48BAAF2511127 /* QuickDialogDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickDialogDataSource.h; path = quickdialog/QuickDialogDataSource.h; sourceTree = "<group>"; };
-		DC83B465BB6E4E3B92ABB3BC /* QTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QTextField.m; path = quickdialog/QTextField.m; sourceTree = "<group>"; };
-		DC9EAA4AECAAA17E5C5143E4 /* QTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QTableViewCell.m; path = quickdialog/QTableViewCell.m; sourceTree = "<group>"; };
-		DE226968C3854E157E654396 /* QuickDialogDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QuickDialogDelegate.h; sourceTree = "<group>"; };
-		DED9BAB48A07A118B1AD9EF8 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		DFC7E060031722D86110048F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E145981E35304A15FCCF34DC /* QSortingSection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QSortingSection.m; path = quickdialog/QSortingSection.m; sourceTree = "<group>"; };
-		E305CD416885299EBF68932F /* Pods-QuickDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuickDialog.xcconfig"; sourceTree = "<group>"; };
-		E519781F02E5BFB7EBD0B965 /* QAutoEntryTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QAutoEntryTableViewCell.m; path = quickdialog/QAutoEntryTableViewCell.m; sourceTree = "<group>"; };
-		E6207B0A0692C835ADE3DA75 /* QRootElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRootElement.m; path = quickdialog/QRootElement.m; sourceTree = "<group>"; };
-		E8FF82920E17F32478215C3A /* QuickDialogController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickDialogController.m; path = quickdialog/QuickDialogController.m; sourceTree = "<group>"; };
-		E9C4B6C968046F30AD0A6279 /* QDynamicDataSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QDynamicDataSection.h; path = quickdialog/QDynamicDataSection.h; sourceTree = "<group>"; };
-		EECF1D8720C692428EBDC420 /* QBadgeTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBadgeTableCell.h; path = quickdialog/QBadgeTableCell.h; sourceTree = "<group>"; };
-		EF4D7C5D3E54D0BFE21CE81C /* QSelectItemElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QSelectItemElement.h; path = quickdialog/QSelectItemElement.h; sourceTree = "<group>"; };
-		F75E8BC2E574F5119080F16F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F8C8560ED73DDA94E493240C /* QCountdownElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCountdownElement.h; path = quickdialog/QCountdownElement.h; sourceTree = "<group>"; };
-		F8FD8D2B31AEA25B6D43E4D0 /* QAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QAppearance.h; path = quickdialog/QAppearance.h; sourceTree = "<group>"; };
-		FB067602A821EB5AA2F82B2E /* QEntryElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QEntryElement.h; path = quickdialog/QEntryElement.h; sourceTree = "<group>"; };
-		FB8C6D43CB04D557C59063F9 /* QClassicAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QClassicAppearance.m; path = quickdialog/QClassicAppearance.m; sourceTree = "<group>"; };
-		FC076811E2FC4340FE46B450 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		FC1B8017C5079F9EAC878925 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		FD810210FDBC7DB543A30C7F /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		FE271F6B3CBE33E1337FF9FB /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		FEA06BC083F8758AD894A35A /* Pods-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking.xcconfig"; sourceTree = "<group>"; };
-		FF1F4FE8F4845B857F9BC4D9 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		068A5B65E38A0A159E698647 /* Pods-Voxxel-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		0B6D91CD196045E8356DB93F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		107C5C2EED9321712E75DBDA /* Pods-Voxxel-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		20046BF3CB628312E9BCCC13 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		24F2421A23F94AFF563CDECA /* Pods-Voxxel-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		259A247CA8E416567F34908C /* Pods-Voxxel.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.staging.xcconfig"; sourceTree = "<group>"; };
+		2A108DCD9B586102C2467159 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2E0540DD46A2900DBB66599D /* Pods-Voxxel-SSKeychain-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SSKeychain-Private.xcconfig"; sourceTree = "<group>"; };
+		30A390C6D591158BEA955EEA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E82ED5125A115FB1C69A26E /* Pods-Voxxel-SSKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SSKeychain-prefix.pch"; sourceTree = "<group>"; };
+		4CA951A493420A0E69A69516 /* Pods-Voxxel-SSKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SSKeychain.xcconfig"; sourceTree = "<group>"; };
+		547FD18C716EF377BDF12C55 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57A6925A498BB293461FA2D3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5813A07F2ECA7F4C15BD885F /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		58A6BBB65DE2B527D7EC2386 /* Pods-Voxxel-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-environment.h"; sourceTree = "<group>"; };
+		5BDDE006248765C6C1D8F270 /* Pods-Voxxel-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voxxel-resources.sh"; sourceTree = "<group>"; };
+		5D7D643CCA2876543C53D2B9 /* Pods-Voxxel-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-Alamofire.modulemap"; sourceTree = "<group>"; };
+		65E40F82360A4ADFC7D4E68E /* Pods-Voxxel-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		7C4862179B56B50DC1DF85C1 /* Pods-Voxxel-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Voxxel-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D16E6181A7D5B94BDD3C8A3 /* Pods-Voxxel.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.development.xcconfig"; sourceTree = "<group>"; };
+		907DCA598E61BB686D9D01B1 /* Pods-Voxxel-SSKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SSKeychain-umbrella.h"; sourceTree = "<group>"; };
+		90FC40479CB63D7DFD543895 /* SSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
+		91F68744CA037AFB75067B41 /* Pods-Voxxel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-umbrella.h"; sourceTree = "<group>"; };
+		94CE39A8C5F995CE55C6FEBC /* Pods-Voxxel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.debug.xcconfig"; sourceTree = "<group>"; };
+		A6A5534185A4B5FDDEE6373A /* Pods-Voxxel-SSKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-SSKeychain-dummy.m"; sourceTree = "<group>"; };
+		A9A915A07D4AE3BD7D66B1D1 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		AEF12210229AAB2DE21A7FCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C84B66FFE9F4D82E43EB2ED1 /* Pods-Voxxel-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		C9C2C127A495D8F5DFC0EE58 /* SSKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
+		D189D27B115FE5F0DE5ECED7 /* SSKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
+		D1FE35A32277BC9849B03930 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		D4C12C3438BC215D7FD33B10 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		D69A0D411967F21F284DF93A /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		D784968A8F5DC92DBC8DE86A /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		DAA8D9D33BDF40147E2BBC52 /* Pods-Voxxel-SSKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-SSKeychain.modulemap"; sourceTree = "<group>"; };
+		DCB2B75BE195A51813465E16 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		DDCEF8727BED2A0688931275 /* Pods-Voxxel-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voxxel-frameworks.sh"; sourceTree = "<group>"; };
+		DE31BAF0E63D8CDFB585BD69 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		DFDE5EF978190BA6742392CF /* SSKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E284FC0AEF3B9F27C5DA3A32 /* Pods-Voxxel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.release.xcconfig"; sourceTree = "<group>"; };
+		E76FA664B67CA42A825D7AA6 /* Pods-Voxxel.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.production.xcconfig"; sourceTree = "<group>"; };
+		F0B21922B87174BDA8F5E822 /* Pods-Voxxel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel.modulemap"; sourceTree = "<group>"; };
+		F57E61D7FECA3F138C74AA6B /* Pods-Voxxel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-dummy.m"; sourceTree = "<group>"; };
+		F619BD78ECFE86EF991C80BA /* Pods_Voxxel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxxel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F782806F77B5E560C13932F2 /* SSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
+		FADEFF50E39E92246BBA0093 /* Pods-Voxxel-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Voxxel-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A8ECBAE3D7D6913357479E6 /* Frameworks */ = {
+		069A300441CA63D312094EAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91BD1B273C608744973D1BE7 /* Foundation.framework in Frameworks */,
+				E6955FDBCD3962664B59EA31 /* Foundation.framework in Frameworks */,
+				74E455BAA8DB1E675C4A8064 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46950F5DDCBFFDF7B75489C3 /* Frameworks */ = {
+		48592CE43F4D1D442992C086 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF6D8FCD16C3F8C223B93677 /* Foundation.framework in Frameworks */,
-				A266340D3803065CF17986CA /* Security.framework in Frameworks */,
+				1A0FCBCB21102E930C40F3D7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		908FB4CA5F47A1E98FC96DEC /* Frameworks */ = {
+		F193B9260025099AD9930443 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4442F4ED6ED1A24D4223D51 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8FFBBCA78CF60566533AF9C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B4D8C80C12B3FC364547DC87 /* CoreGraphics.framework in Frameworks */,
-				3D7ACC40B793609A0C835A29 /* Foundation.framework in Frameworks */,
-				48AF5102D234A40FEFD2FFA1 /* MobileCoreServices.framework in Frameworks */,
-				3E7877EC74B1669DB115BA1F /* Security.framework in Frameworks */,
-				5D2051D9B074A8B32887B10B /* SystemConfiguration.framework in Frameworks */,
+				B5FB71A8AF7A78834E9E69B5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02DAF9861340A7B3943C6ACE = {
+		0D995E123E802FF7ADFA4695 /* SSKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				6ED648F1DAC6B43010F2839F /* Podfile */,
-				7BA0A2384D924F16CFFF0EC4 /* Frameworks */,
-				CBA174ADEB9BB5AAD566BF25 /* Pods */,
-				5AB9BE4B9D7DBC05BD959630 /* Products */,
-				C9C113201816A36D36B4ED17 /* Targets Support Files */,
+				90FC40479CB63D7DFD543895 /* SSKeychain.h */,
+				F782806F77B5E560C13932F2 /* SSKeychain.m */,
+				D189D27B115FE5F0DE5ECED7 /* SSKeychainQuery.h */,
+				C9C2C127A495D8F5DFC0EE58 /* SSKeychainQuery.m */,
+				FBE2B3277AA4570480235B25 /* Support Files */,
 			);
+			path = SSKeychain;
 			sourceTree = "<group>";
 		};
-		25D98FC41E6226FADD725092 /* Core */ = {
+		36BD80896B33C93C4811E904 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4AFEB91B30340F1477196D05 /* DOAutocompleteTextField.h */,
-				4C736DE4C402B2267031C12C /* DOAutocompleteTextField.m */,
-				CE22199004C63B52369BD9BB /* NSMutableArray+IMSExtensions.h */,
-				20DE66582A6FE1341AE8EE76 /* NSMutableArray+IMSExtensions.m */,
-				C7675BC3DDD031801833532B /* NSMutableArray+MoveObject.h */,
-				1F2AA413C9EFA089F393861B /* NSMutableArray+MoveObject.m */,
-				F8FD8D2B31AEA25B6D43E4D0 /* QAppearance.h */,
-				7C63C84AE082D26F8F2C0308 /* QAppearance.m */,
-				D38BB269260839E66F5FB078 /* QAutoEntryElement.h */,
-				AC05204DFA961E50E33DE7C2 /* QAutoEntryElement.m */,
-				067790757E18FEEA04C8C247 /* QAutoEntryTableViewCell.h */,
-				E519781F02E5BFB7EBD0B965 /* QAutoEntryTableViewCell.m */,
-				940BBE8523A75E3A240E7982 /* QBadgeElement.h */,
-				5A2C5230205F5AC259A797E1 /* QBadgeElement.m */,
-				0F85F61EE7F7FF2FAF366A7E /* QBadgeLabel.h */,
-				0ACAC73C49990DD9CB3915EB /* QBadgeLabel.m */,
-				EECF1D8720C692428EBDC420 /* QBadgeTableCell.h */,
-				87DF3C9E4589FB64EDB6EA75 /* QBadgeTableCell.m */,
-				081986883609211156BF2D0C /* QBindingEvaluator.h */,
-				023B9B39B6CBC4FD7F04BF21 /* QBindingEvaluator.m */,
-				B231831AE87A286BE36547C6 /* QBooleanElement.h */,
-				B8DB5BFC3D8BD0EBB97F5044 /* QBooleanElement.m */,
-				79FCED1134A61D6FC3E1608A /* QButtonElement.h */,
-				D1CD4D31084996E2BB359644 /* QButtonElement.m */,
-				755F1A3CB83D8562B93019BB /* QClassicAppearance.h */,
-				FB8C6D43CB04D557C59063F9 /* QClassicAppearance.m */,
-				F8C8560ED73DDA94E493240C /* QCountdownElement.h */,
-				070DF2CB2CE06FBD9FD2D90D /* QCountdownElement.m */,
-				085FFED8E676B9064A256A54 /* QDateEntryTableViewCell.h */,
-				C814237A943362F4838B3EB5 /* QDateEntryTableViewCell.m */,
-				37AAE5F480523DB200CEC92A /* QDateInlineTableViewCell.h */,
-				466DE17CCEC1E7CCDEB8F974 /* QDateInlineTableViewCell.m */,
-				2DCB75984E11A60F0B8CE0CC /* QDateTimeElement.h */,
-				559F95D93AC8CD5BD14A3313 /* QDateTimeElement.m */,
-				1A2E45C58782227AEC4D1C54 /* QDateTimeInlineElement.h */,
-				6C7807FD5FA63D93C5C4C553 /* QDateTimeInlineElement.m */,
-				39CA1CB8D34FE6E16D42A021 /* QDecimalElement.h */,
-				8C226504B6447C2F5FFD84BC /* QDecimalElement.m */,
-				53B0D4E9CC81CF596B1BC143 /* QDecimalTableViewCell.h */,
-				79F3DDF125C6BF65711249C6 /* QDecimalTableViewCell.m */,
-				E9C4B6C968046F30AD0A6279 /* QDynamicDataSection.h */,
-				853765EF3878F4292A2D0D56 /* QDynamicDataSection.m */,
-				63EAEE408686743EAE8AFB8D /* QElement.h */,
-				C875775213ED9FD51C3AB7F2 /* QElement.m */,
-				37E89E6646E6FF0003A53DF1 /* QElement+Appearance.h */,
-				9B4923A58BCA3990251822C2 /* QElement+Appearance.m */,
-				0107797B572E5631898AFCF0 /* QEmptyListElement.h */,
-				2CC817EBCD6E9BEBC319F7D5 /* QEmptyListElement.m */,
-				FB067602A821EB5AA2F82B2E /* QEntryElement.h */,
-				63130D9364D197F5E70002A8 /* QEntryElement.m */,
-				D48AABB9BB80C0D2724E1659 /* QEntryTableViewCell.h */,
-				14A5A1A1194DB55DFFA2D85B /* QEntryTableViewCell.m */,
-				1BE4FF12E3EC3720920DB124 /* QFlatAppearance.h */,
-				76DA4F03492B56C1168DA723 /* QFlatAppearance.m */,
-				31280724409FEEE44DC29049 /* QFloatElement.h */,
-				23FDE6A163743F5D3955E00F /* QFloatElement.m */,
-				D0FFFC53C2382641C95B4C73 /* QFloatTableViewCell.h */,
-				75126312B34A02F1EFE6FA1E /* QFloatTableViewCell.m */,
-				CF5100C72099E38C32A255AD /* QImageElement.h */,
-				922CBD77A8511B38BE5E3F4A /* QImageElement.m */,
-				A08575880EE3AC6A01D069C1 /* QImageTableViewCell.h */,
-				BCBACF624F02271FC766EFEE /* QImageTableViewCell.m */,
-				D728D2F65EE2E8FE125DC201 /* QLabelElement.h */,
-				D38B0BAF63379301FBA70395 /* QLabelElement.m */,
-				0CBD35F8C4BA744BBE2E9CE3 /* QLoadingElement.h */,
-				B250CE002789F7DD9966380D /* QLoadingElement.m */,
-				32EA4B50C7B7ABA5E87BEF2C /* QMultilineElement.h */,
-				26500D68D24CA841D570226A /* QMultilineElement.m */,
-				C58C380A2CA6F704CE8E6D1F /* QMultilineTextViewController.h */,
-				41A2ECA20B95E7C66B3B61C4 /* QMultilineTextViewController.m */,
-				11576175B002BEA9FCE929BA /* QProgressElement.h */,
-				3F13DA644B886AEAA9B3F175 /* QProgressElement.m */,
-				86624024B508177BCC0F183B /* QRadioElement.h */,
-				A325CE5A38DA114B864F8285 /* QRadioElement.m */,
-				51F2ED6E84A8191D7F624F10 /* QRadioItemElement.h */,
-				09F61B3E426BB3B2AE684122 /* QRadioItemElement.m */,
-				31F9514C6398283FC4781266 /* QRadioSection.h */,
-				B997CBAF310A3D8B671C11FC /* QRadioSection.m */,
-				759F0825F8FCA3E8012B9A66 /* QRootBuilder.h */,
-				456E34004C06070DA448C1FD /* QRootBuilder.m */,
-				0F1D2D1F4119F8673FAB99D6 /* QRootElement.h */,
-				E6207B0A0692C835ADE3DA75 /* QRootElement.m */,
-				15BA08D74E28D18A8627C56F /* QRootElement+JsonBuilder.h */,
-				2360B30230DC323F23E9889A /* QRootElement+JsonBuilder.m */,
-				03EA055A1A9935FE9F5676DA /* QSection.h */,
-				1F7EA7F7A7DCE84AF3993D2C /* QSection.m */,
-				601A5EE4268507384E59EAE2 /* QSegmentedElement.h */,
-				934ADF973BCE20CE0072DE43 /* QSegmentedElement.m */,
-				EF4D7C5D3E54D0BFE21CE81C /* QSelectItemElement.h */,
-				09B070D41129EBF6211A8E2B /* QSelectItemElement.m */,
-				A0C5347E4BB481D4B61CC09A /* QSelectSection.h */,
-				70A9744E834FF38367534BE7 /* QSelectSection.m */,
-				B8140F3F2E0D21A8BDCECB68 /* QSortingSection.h */,
-				E145981E35304A15FCCF34DC /* QSortingSection.m */,
-				C2EC4561CFF1C80A20AF877E /* QTableViewCell.h */,
-				DC9EAA4AECAAA17E5C5143E4 /* QTableViewCell.m */,
-				47DC23E3E909211FF2209426 /* QTextElement.h */,
-				8BD9B3DF7D0AC851FA8667DF /* QTextElement.m */,
-				971EB5384448A1DE85C73FA3 /* QTextField.h */,
-				DC83B465BB6E4E3B92ABB3BC /* QTextField.m */,
-				D2425C4B6625C16A42B6F3C2 /* QuickDialog.h */,
-				3440EC434ACF2F74F31232D2 /* QuickDialogController.h */,
-				E8FF82920E17F32478215C3A /* QuickDialogController.m */,
-				AB2F838FD1D1EDD9FF533C56 /* QuickDialogController+Animations.h */,
-				535BD63EC326FAF19EEE3767 /* QuickDialogController+Animations.m */,
-				5DDC7AB1999517951A71225D /* QuickDialogController+Helpers.h */,
-				892D2E69F8BCDBDDA21A7DB3 /* QuickDialogController+Helpers.m */,
-				0B19760ADB9726781D9632F8 /* QuickDialogController+Loading.h */,
-				87A60F1CD825CEE570985E01 /* QuickDialogController+Loading.m */,
-				6D6E393CA115F7A1F2F21D5E /* QuickDialogController+Navigation.h */,
-				750DF0CEE6CB991D76F77A6B /* QuickDialogController+Navigation.m */,
-				DAD83175EEC48BAAF2511127 /* QuickDialogDataSource.h */,
-				0E08E0069A74044E421C3B36 /* QuickDialogDataSource.m */,
-				DE226968C3854E157E654396 /* QuickDialogDelegate.h */,
-				77E6C9E9BC9C81EEFAA89033 /* QuickDialogEntryElementDelegate.h */,
-				13AAA00E85227A2DCE0D37BF /* QuickDialogTableDelegate.h */,
-				6C1454F1A7AD348CDC088878 /* QuickDialogTableDelegate.m */,
-				2F99ABD44A4C591F51105BE2 /* QuickDialogTableView.h */,
-				7CB506B680686853E1E93F41 /* QuickDialogTableView.m */,
-				468BF3AC9F0B5B79BD32E213 /* QuickDialogWebController.h */,
-				838005CA2B6D66B88F8CE1D7 /* QuickDialogWebController.m */,
+				586428BA8D10AD57D9F8154A /* Alamofire */,
+				0D995E123E802FF7ADFA4695 /* SSKeychain */,
 			);
-			name = Core;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		35A10D9B21CBDFC541155AD4 /* NSURLConnection */ = {
+		45694E6BC7A3A5FD13787FD8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65A7892F5E8B4F18A33A14A4 /* AFHTTPRequestOperation.h */,
-				7DB84F433D9E76CF1BD65627 /* AFHTTPRequestOperation.m */,
-				D9D5516A18093D8364273D40 /* AFHTTPRequestOperationManager.h */,
-				28CC28441ACCB91EA51D72C0 /* AFHTTPRequestOperationManager.m */,
-				77069B4CD7BFB4FEB3271342 /* AFURLConnectionOperation.h */,
-				489F881B4954827771E993CE /* AFURLConnectionOperation.m */,
-			);
-			name = NSURLConnection;
-			sourceTree = "<group>";
-		};
-		369E633283E5E7924A66D1F7 /* Serialization */ = {
-			isa = PBXGroup;
-			children = (
-				965B3D368229CC4644905F19 /* AFURLRequestSerialization.h */,
-				84B689C2A030EBC9BD30DCD9 /* AFURLRequestSerialization.m */,
-				424579DBA797CA0E389A6331 /* AFURLResponseSerialization.h */,
-				A6B3DBC8249E31B53714C558 /* AFURLResponseSerialization.m */,
-			);
-			name = Serialization;
-			sourceTree = "<group>";
-		};
-		5AB9BE4B9D7DBC05BD959630 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DFC7E060031722D86110048F /* libPods.a */,
-				FF1F4FE8F4845B857F9BC4D9 /* libPods-AFNetworking.a */,
-				96F36C13E568603D5B3AE980 /* libPods-QuickDialog.a */,
-				98B1B86DC631A5441480FE84 /* libPods-SSKeychain.a */,
+				57A6925A498BB293461FA2D3 /* Alamofire.framework */,
+				F619BD78ECFE86EF991C80BA /* Pods_Voxxel.framework */,
+				DFDE5EF978190BA6742392CF /* SSKeychain.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6039C6D52AFF926ABB7D6524 /* Reachability */ = {
+		586428BA8D10AD57D9F8154A /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				A27A607D71E71F1C9AC60223 /* AFNetworkReachabilityManager.h */,
-				80857166791040EE9D72629B /* AFNetworkReachabilityManager.m */,
+				D4C12C3438BC215D7FD33B10 /* Alamofire.swift */,
+				D69A0D411967F21F284DF93A /* Download.swift */,
+				D784968A8F5DC92DBC8DE86A /* Manager.swift */,
+				20046BF3CB628312E9BCCC13 /* ParameterEncoding.swift */,
+				DCB2B75BE195A51813465E16 /* Request.swift */,
+				A9A915A07D4AE3BD7D66B1D1 /* ResponseSerialization.swift */,
+				D1FE35A32277BC9849B03930 /* Upload.swift */,
+				5813A07F2ECA7F4C15BD885F /* Validation.swift */,
+				F53002050C77705E1854A071 /* Support Files */,
 			);
-			name = Reachability;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		76F07060362910E0E1B15CC2 /* AFNetworking */ = {
+		6131514E5795D15EEA961035 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				048F5F9AE390469682A9BED1 /* AFNetworking.h */,
-				35A10D9B21CBDFC541155AD4 /* NSURLConnection */,
-				DBB76846C512A294C906EDE0 /* NSURLSession */,
-				6039C6D52AFF926ABB7D6524 /* Reachability */,
-				A8124844B37D6D21FE736CB5 /* Security */,
-				369E633283E5E7924A66D1F7 /* Serialization */,
-				C0EA2A8DE3EFB8525E6532D7 /* Support Files */,
-				976397EBACECBAE713B18F6E /* UIKit */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		7BA0A2384D924F16CFFF0EC4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B9D4B311966F9A46BDE297D9 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		976397EBACECBAE713B18F6E /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				8A9A10388ACD430D5C090420 /* AFNetworkActivityIndicatorManager.h */,
-				0E7C36A553042055EF5DD937 /* AFNetworkActivityIndicatorManager.m */,
-				257ACFB2FC90A6D6128A27E0 /* UIActivityIndicatorView+AFNetworking.h */,
-				C7444AD5D8400C5DE9AF88B6 /* UIActivityIndicatorView+AFNetworking.m */,
-				1F93A45A6CF1C479348E09B8 /* UIAlertView+AFNetworking.h */,
-				CB46BD2D9F5CE56F0276F9DA /* UIAlertView+AFNetworking.m */,
-				70478E074392BE0DF5D97142 /* UIButton+AFNetworking.h */,
-				24B0B55F5F948DDF9495B5C6 /* UIButton+AFNetworking.m */,
-				11C7CEB5B1521BBDEF639A8D /* UIImageView+AFNetworking.h */,
-				14F9E8BFA0E65E9B8EB50CEB /* UIImageView+AFNetworking.m */,
-				C403E200482EF8BF7EC6BC9B /* UIKit+AFNetworking.h */,
-				D0FBE69653E3F003F26AC5A3 /* UIProgressView+AFNetworking.h */,
-				53A8DBF040926C0C6980FEAE /* UIProgressView+AFNetworking.m */,
-				A6DBAE885ACFB30089EF340B /* UIRefreshControl+AFNetworking.h */,
-				FD810210FDBC7DB543A30C7F /* UIRefreshControl+AFNetworking.m */,
-				10492268523A610C86786B23 /* UIWebView+AFNetworking.h */,
-				96EB8DE02F09F60E97A4D17F /* UIWebView+AFNetworking.m */,
-			);
-			name = UIKit;
-			sourceTree = "<group>";
-		};
-		A8124844B37D6D21FE736CB5 /* Security */ = {
-			isa = PBXGroup;
-			children = (
-				50F860683A27CECECB7AEF22 /* AFSecurityPolicy.h */,
-				2034E22DE52EC740527D7215 /* AFSecurityPolicy.m */,
-			);
-			name = Security;
-			sourceTree = "<group>";
-		};
-		AE6CB7476DCBBBE67BC8DB11 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E305CD416885299EBF68932F /* Pods-QuickDialog.xcconfig */,
-				C8C678D5FC47A1A329057FAC /* Pods-QuickDialog-Private.xcconfig */,
-				552379FEB859B76E0DB1DEAF /* Pods-QuickDialog-dummy.m */,
-				A1FDE1F73FCB8D14284308BC /* Pods-QuickDialog-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-QuickDialog";
-			sourceTree = "<group>";
-		};
-		B9D4B311966F9A46BDE297D9 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				56D65ACD2DD10E92E81E88A1 /* CoreGraphics.framework */,
-				F75E8BC2E574F5119080F16F /* Foundation.framework */,
-				FC1B8017C5079F9EAC878925 /* MobileCoreServices.framework */,
-				8FAA0E5B16C046F816D46516 /* Security.framework */,
-				ADA6771587EB50E5952583BB /* SystemConfiguration.framework */,
+				AEF12210229AAB2DE21A7FCC /* Foundation.framework */,
+				DE31BAF0E63D8CDFB585BD69 /* Security.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C0EA2A8DE3EFB8525E6532D7 /* Support Files */ = {
+		68F376288CBD07843A1AA126 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FEA06BC083F8758AD894A35A /* Pods-AFNetworking.xcconfig */,
-				BB7B20930600AFCDF6C23406 /* Pods-AFNetworking-Private.xcconfig */,
-				CFAF0516CF5A7AD7A8E6533B /* Pods-AFNetworking-dummy.m */,
-				7F69389B3DB5548183C74727 /* Pods-AFNetworking-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-AFNetworking";
-			sourceTree = "<group>";
-		};
-		C9C113201816A36D36B4ED17 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EE1234B19731F10DE043EF02 /* Pods */,
+				CE9A05B0F207151C82113580 /* Pods-Voxxel */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CBA174ADEB9BB5AAD566BF25 /* Pods */ = {
+		AEAFCCD82A302DDC05FB5243 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76F07060362910E0E1B15CC2 /* AFNetworking */,
-				DD21799A50509BAB4DE74345 /* QuickDialog */,
-				F5FC9EA4BE66A7F21A860E4B /* SSKeychain */,
+				6131514E5795D15EEA961035 /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D86ECF8336D774B1012D0059 /* Support Files */ = {
+		CE9A05B0F207151C82113580 /* Pods-Voxxel */ = {
 			isa = PBXGroup;
 			children = (
-				0077981F456216D9287BB31D /* Pods-SSKeychain.xcconfig */,
-				B7F91D0CC555D22421A29A9A /* Pods-SSKeychain-Private.xcconfig */,
-				82690D3580FC7202AEBB6DBA /* Pods-SSKeychain-dummy.m */,
-				55400C20EF09B769259AE08C /* Pods-SSKeychain-prefix.pch */,
+				30A390C6D591158BEA955EEA /* Info.plist */,
+				F0B21922B87174BDA8F5E822 /* Pods-Voxxel.modulemap */,
+				FADEFF50E39E92246BBA0093 /* Pods-Voxxel-acknowledgements.markdown */,
+				7C4862179B56B50DC1DF85C1 /* Pods-Voxxel-acknowledgements.plist */,
+				F57E61D7FECA3F138C74AA6B /* Pods-Voxxel-dummy.m */,
+				58A6BBB65DE2B527D7EC2386 /* Pods-Voxxel-environment.h */,
+				DDCEF8727BED2A0688931275 /* Pods-Voxxel-frameworks.sh */,
+				5BDDE006248765C6C1D8F270 /* Pods-Voxxel-resources.sh */,
+				91F68744CA037AFB75067B41 /* Pods-Voxxel-umbrella.h */,
+				94CE39A8C5F995CE55C6FEBC /* Pods-Voxxel.debug.xcconfig */,
+				7D16E6181A7D5B94BDD3C8A3 /* Pods-Voxxel.development.xcconfig */,
+				E76FA664B67CA42A825D7AA6 /* Pods-Voxxel.production.xcconfig */,
+				E284FC0AEF3B9F27C5DA3A32 /* Pods-Voxxel.release.xcconfig */,
+				259A247CA8E416567F34908C /* Pods-Voxxel.staging.xcconfig */,
+			);
+			name = "Pods-Voxxel";
+			path = "Target Support Files/Pods-Voxxel";
+			sourceTree = "<group>";
+		};
+		D0C2470B55654B197A7D5708 = {
+			isa = PBXGroup;
+			children = (
+				2A108DCD9B586102C2467159 /* Podfile */,
+				AEAFCCD82A302DDC05FB5243 /* Frameworks */,
+				36BD80896B33C93C4811E904 /* Pods */,
+				45694E6BC7A3A5FD13787FD8 /* Products */,
+				68F376288CBD07843A1AA126 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F53002050C77705E1854A071 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				547FD18C716EF377BDF12C55 /* Info.plist */,
+				5D7D643CCA2876543C53D2B9 /* Pods-Voxxel-Alamofire.modulemap */,
+				65E40F82360A4ADFC7D4E68E /* Pods-Voxxel-Alamofire.xcconfig */,
+				107C5C2EED9321712E75DBDA /* Pods-Voxxel-Alamofire-Private.xcconfig */,
+				068A5B65E38A0A159E698647 /* Pods-Voxxel-Alamofire-dummy.m */,
+				C84B66FFE9F4D82E43EB2ED1 /* Pods-Voxxel-Alamofire-prefix.pch */,
+				24F2421A23F94AFF563CDECA /* Pods-Voxxel-Alamofire-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pods-SSKeychain";
+			path = "../Target Support Files/Pods-Voxxel-Alamofire";
 			sourceTree = "<group>";
 		};
-		DBB76846C512A294C906EDE0 /* NSURLSession */ = {
+		FBE2B3277AA4570480235B25 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DED9BAB48A07A118B1AD9EF8 /* AFHTTPSessionManager.h */,
-				BEF01C2AC555EAFB07012C7F /* AFHTTPSessionManager.m */,
-				79D474D6A931D62C32B2E015 /* AFURLSessionManager.h */,
-				BECE094ACE09BDE527413D8D /* AFURLSessionManager.m */,
+				0B6D91CD196045E8356DB93F /* Info.plist */,
+				DAA8D9D33BDF40147E2BBC52 /* Pods-Voxxel-SSKeychain.modulemap */,
+				4CA951A493420A0E69A69516 /* Pods-Voxxel-SSKeychain.xcconfig */,
+				2E0540DD46A2900DBB66599D /* Pods-Voxxel-SSKeychain-Private.xcconfig */,
+				A6A5534185A4B5FDDEE6373A /* Pods-Voxxel-SSKeychain-dummy.m */,
+				3E82ED5125A115FB1C69A26E /* Pods-Voxxel-SSKeychain-prefix.pch */,
+				907DCA598E61BB686D9D01B1 /* Pods-Voxxel-SSKeychain-umbrella.h */,
 			);
-			name = NSURLSession;
-			sourceTree = "<group>";
-		};
-		DD21799A50509BAB4DE74345 /* QuickDialog */ = {
-			isa = PBXGroup;
-			children = (
-				25D98FC41E6226FADD725092 /* Core */,
-				AE6CB7476DCBBBE67BC8DB11 /* Support Files */,
-			);
-			path = QuickDialog;
-			sourceTree = "<group>";
-		};
-		EE1234B19731F10DE043EF02 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				734517871BD7A51AEEB40B7B /* Pods-acknowledgements.markdown */,
-				708D7D458E63302AF96A76A1 /* Pods-acknowledgements.plist */,
-				300AD7E71BE1E4B9C29E3186 /* Pods-dummy.m */,
-				FE271F6B3CBE33E1337FF9FB /* Pods-environment.h */,
-				B8883DC3E8202A84BF31EF2F /* Pods-resources.sh */,
-				45615160934916DFC1B5BCBB /* Pods.debug.xcconfig */,
-				FC076811E2FC4340FE46B450 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		F5FC9EA4BE66A7F21A860E4B /* SSKeychain */ = {
-			isa = PBXGroup;
-			children = (
-				912B5AC33E254F4BE197AB91 /* SSKeychain.h */,
-				9D5617AAEE81E270343F1A78 /* SSKeychain.m */,
-				D4BB35010AEE473CFAD28ED3 /* SSKeychainQuery.h */,
-				669E2E0798C5F9D34C900CE5 /* SSKeychainQuery.m */,
-				D86ECF8336D774B1012D0059 /* Support Files */,
-			);
-			path = SSKeychain;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Voxxel-SSKeychain";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0F0EB2C1A2A639C8DED01023 /* Headers */ = {
+		4F1C25036E122AB2EA1E1922 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E62E8492BF91B34AC804B717 /* SSKeychain.h in Headers */,
-				A41A5A2E02AE13D69D56BE4F /* SSKeychainQuery.h in Headers */,
+				73F73D08A8166725E3996A2B /* Pods-Voxxel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24E2445EEF8A83A0B78027E2 /* Headers */ = {
+		54F906228F111AF82D53EF74 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8C0DD6226EB30D7A99D1CF3 /* AFHTTPRequestOperation.h in Headers */,
-				2A36320CBFE7D902FA276D7C /* AFHTTPRequestOperationManager.h in Headers */,
-				1CFEA905B18CF74AFAB48EF9 /* AFHTTPSessionManager.h in Headers */,
-				1BBFC2027A34D1E5D8803187 /* AFNetworkActivityIndicatorManager.h in Headers */,
-				99DB310FFF1C71D59EFB2A45 /* AFNetworkReachabilityManager.h in Headers */,
-				28C77D0BB0F8E80F106B46B7 /* AFNetworking.h in Headers */,
-				868573B899AAD48E84F9B40D /* AFSecurityPolicy.h in Headers */,
-				9DB72AEDC09684BFA3A9C4A4 /* AFURLConnectionOperation.h in Headers */,
-				83E2FAB2751078C0C7658B2D /* AFURLRequestSerialization.h in Headers */,
-				62F3B7FE53BB0364153E0F1F /* AFURLResponseSerialization.h in Headers */,
-				F6251BB659D389638F6B82A8 /* AFURLSessionManager.h in Headers */,
-				F6EB53CDBA8F3C145DEB6B86 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
-				FCD7B033805930F5675C9008 /* UIAlertView+AFNetworking.h in Headers */,
-				7F6A067ED898D70018093DA5 /* UIButton+AFNetworking.h in Headers */,
-				B6B6691805EEDE5CC3A859A7 /* UIImageView+AFNetworking.h in Headers */,
-				BBA34BA84D4915BB4DEFA7BB /* UIKit+AFNetworking.h in Headers */,
-				2D7928CFC0139745681257AF /* UIProgressView+AFNetworking.h in Headers */,
-				C47ABABB827FD0128CDF33C2 /* UIRefreshControl+AFNetworking.h in Headers */,
-				8BF370FC3A08E83C1051F723 /* UIWebView+AFNetworking.h in Headers */,
+				908B09227DEE4D064E1406C8 /* Pods-Voxxel-SSKeychain-umbrella.h in Headers */,
+				EB542F5E6E3C8BFF95C93963 /* SSKeychain.h in Headers */,
+				AD39A372A0D3C5C19F1EAB14 /* SSKeychainQuery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4231DBFA781405AF68711F73 /* Headers */ = {
+		56F6F9D73A77176DFA123B67 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8A7AA690A91B152C355E449 /* DOAutocompleteTextField.h in Headers */,
-				61D4F68FA82DBA944D7F001D /* NSMutableArray+IMSExtensions.h in Headers */,
-				77CF03ADEF713DE8C14BF9D4 /* NSMutableArray+MoveObject.h in Headers */,
-				2BA6A9EC6471F92F6BD03E27 /* QAppearance.h in Headers */,
-				7F6741CFEE7586C44C9A42D3 /* QAutoEntryElement.h in Headers */,
-				E250F1103113D8B940E6C5D5 /* QAutoEntryTableViewCell.h in Headers */,
-				8AD49D042604C7A478BE4DED /* QBadgeElement.h in Headers */,
-				960CB2FF226BC0B1D50D5CE3 /* QBadgeLabel.h in Headers */,
-				9D618CD198D8C5A7991030F4 /* QBadgeTableCell.h in Headers */,
-				49A37E41A27C93FE02200DC4 /* QBindingEvaluator.h in Headers */,
-				5D519F7F36C9C49BF1A6CCF1 /* QBooleanElement.h in Headers */,
-				E5BE1A8C3031E8501E7F1ECE /* QButtonElement.h in Headers */,
-				0DAB3FB0D22311D9DE766F7E /* QClassicAppearance.h in Headers */,
-				0ED3E141E95EE4F9EAC44D7C /* QCountdownElement.h in Headers */,
-				716FF1F0390DEE97C73B26C2 /* QDateEntryTableViewCell.h in Headers */,
-				5CD87C1EAEF6E2A63EECDE40 /* QDateInlineTableViewCell.h in Headers */,
-				E7BD9881A28B1E1988B0C6A5 /* QDateTimeElement.h in Headers */,
-				898DDF09DD648365483658A4 /* QDateTimeInlineElement.h in Headers */,
-				6D24CB29EBA5C3016EABA9AC /* QDecimalElement.h in Headers */,
-				155F225BF8BD976A0AB567B3 /* QDecimalTableViewCell.h in Headers */,
-				030A8542B915925A56EB28C7 /* QDynamicDataSection.h in Headers */,
-				4A5923C36F7BBCD63BB5FD49 /* QElement+Appearance.h in Headers */,
-				A12D672D45F57C81758D186B /* QElement.h in Headers */,
-				D944031DFF8D8D7FF1B1CB28 /* QEmptyListElement.h in Headers */,
-				6E4FBF36EAC3C3065E1A2ABD /* QEntryElement.h in Headers */,
-				53E06E2F5768EAED509D381A /* QEntryTableViewCell.h in Headers */,
-				3B9CE3C2E0B39E9EB8D95A34 /* QFlatAppearance.h in Headers */,
-				2044380809E9EBCCEF28151D /* QFloatElement.h in Headers */,
-				B891E101127422CD35F2EEC4 /* QFloatTableViewCell.h in Headers */,
-				62C94FCCAC448CFAD4EF7CA8 /* QImageElement.h in Headers */,
-				2D7CB5ED18E4F90BCDAE304B /* QImageTableViewCell.h in Headers */,
-				E1AC173F7CC7C35473A62132 /* QLabelElement.h in Headers */,
-				30BADFAAEB6BF889171A4416 /* QLoadingElement.h in Headers */,
-				CC1F6A5BDABA511427CC571B /* QMultilineElement.h in Headers */,
-				BFA0A4D8FDFBEDB8A8791500 /* QMultilineTextViewController.h in Headers */,
-				E7447514D1E82AE0A43C29F4 /* QProgressElement.h in Headers */,
-				26B8EBC504F5FF73E958B357 /* QRadioElement.h in Headers */,
-				99B0ABC24B4A068CB3DDDFF1 /* QRadioItemElement.h in Headers */,
-				62F149C2310C59820215974B /* QRadioSection.h in Headers */,
-				09E1BA7D65ACA29CA514BA2A /* QRootBuilder.h in Headers */,
-				9C6C6E5823FB077CB3AE0B53 /* QRootElement+JsonBuilder.h in Headers */,
-				2C88DD63A9893660F112F64D /* QRootElement.h in Headers */,
-				CB41E4E5074279804AD4E429 /* QSection.h in Headers */,
-				19483CA5134780D5E31282CC /* QSegmentedElement.h in Headers */,
-				DE87FBF75CD5AC0CF93490C5 /* QSelectItemElement.h in Headers */,
-				03BEB5A3BB39B39F08D2E85A /* QSelectSection.h in Headers */,
-				CF107B67942E58C0571D21A3 /* QSortingSection.h in Headers */,
-				C22F3458B2FCC2B66552DE50 /* QTableViewCell.h in Headers */,
-				20AF62059F055A7883CCE0CA /* QTextElement.h in Headers */,
-				CEAAA99D788825F4D21755CF /* QTextField.h in Headers */,
-				E4663D2A1A5451384465E577 /* QuickDialog.h in Headers */,
-				9DE02170D96088E37FED1789 /* QuickDialogController+Animations.h in Headers */,
-				7E573F0FB7D7AF5AE89C6378 /* QuickDialogController+Helpers.h in Headers */,
-				CBEEA21941F1F2CF268B9FC5 /* QuickDialogController+Loading.h in Headers */,
-				B0CF6E62F83597568730D64B /* QuickDialogController+Navigation.h in Headers */,
-				B67450CF70A565E16977DDDB /* QuickDialogController.h in Headers */,
-				AFE6D6A6EA17E5AAF2C4494A /* QuickDialogDataSource.h in Headers */,
-				6CADA443AA8A08028399E3E8 /* QuickDialogDelegate.h in Headers */,
-				A41B01172F280747FA78DEDA /* QuickDialogEntryElementDelegate.h in Headers */,
-				871329AC7B4FE10DE81EDB60 /* QuickDialogTableDelegate.h in Headers */,
-				72D7AD90CCD2CE7A512834A6 /* QuickDialogTableView.h in Headers */,
-				D4A2DCC8A38BCD30519DD3D2 /* QuickDialogWebController.h in Headers */,
+				70AD0FB07B143BB0FF9964EC /* Pods-Voxxel-Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5FB55E74713C66A4D7A66E43 /* Pods-QuickDialog */ = {
+		02033468F83C1E9B1542A7CD /* Pods-Voxxel-SSKeychain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65094AD2F8CE0FAEB0AF193E /* Build configuration list for PBXNativeTarget "Pods-QuickDialog" */;
+			buildConfigurationList = 6FC6C1DB8643913436AA0B13 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SSKeychain" */;
 			buildPhases = (
-				D2601DAE8CD9AD50CD633EE2 /* Sources */,
-				1A8ECBAE3D7D6913357479E6 /* Frameworks */,
-				4231DBFA781405AF68711F73 /* Headers */,
+				A7CC744774FD82A2ADEECF33 /* Sources */,
+				069A300441CA63D312094EAD /* Frameworks */,
+				54F906228F111AF82D53EF74 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-QuickDialog";
-			productName = "Pods-QuickDialog";
-			productReference = 96F36C13E568603D5B3AE980 /* libPods-QuickDialog.a */;
-			productType = "com.apple.product-type.library.static";
+			name = "Pods-Voxxel-SSKeychain";
+			productName = "Pods-Voxxel-SSKeychain";
+			productReference = DFDE5EF978190BA6742392CF /* SSKeychain.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		66C5AC307DA3FD239066CAF3 /* Pods-AFNetworking */ = {
+		338B37D33A56FC343A1A8CBF /* Pods-Voxxel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52E2E1ACDF0E265A6B9C86C8 /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */;
+			buildConfigurationList = 2C6F03ADDCB4B918DEA20953 /* Build configuration list for PBXNativeTarget "Pods-Voxxel" */;
 			buildPhases = (
-				EF56AE60DE58ED9498A6E031 /* Sources */,
-				D8FFBBCA78CF60566533AF9C /* Frameworks */,
-				24E2445EEF8A83A0B78027E2 /* Headers */,
+				5ABE4554C7D0EC097ED61B90 /* Sources */,
+				48592CE43F4D1D442992C086 /* Frameworks */,
+				4F1C25036E122AB2EA1E1922 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A86893FB5627ED77C663685A /* PBXTargetDependency */,
+				5EBC2B711CFDAA1E17A9F4AC /* PBXTargetDependency */,
 			);
-			name = "Pods-AFNetworking";
-			productName = "Pods-AFNetworking";
-			productReference = FF1F4FE8F4845B857F9BC4D9 /* libPods-AFNetworking.a */;
-			productType = "com.apple.product-type.library.static";
+			name = "Pods-Voxxel";
+			productName = "Pods-Voxxel";
+			productReference = F619BD78ECFE86EF991C80BA /* Pods_Voxxel.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		790A33B833BEE44B03F58910 /* Pods */ = {
+		BF44D0D8F3BBB7F9B057F2F4 /* Pods-Voxxel-Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B19DC3CBC963BBC57F0E7473 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = C58CFF8E158C18CA8119AB2D /* Build configuration list for PBXNativeTarget "Pods-Voxxel-Alamofire" */;
 			buildPhases = (
-				23E17999B1B9CCD618EFFCCF /* Sources */,
-				908FB4CA5F47A1E98FC96DEC /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E68FF6D1B15971AABF7352CE /* PBXTargetDependency */,
-				C10FD875345332CF07CD8D6B /* PBXTargetDependency */,
-				AD0F2B24E01D5834F218B85C /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = DFC7E060031722D86110048F /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		ED3A2D3172BE6A402B4F0569 /* Pods-SSKeychain */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9E260452B33000C244DB4FB2 /* Build configuration list for PBXNativeTarget "Pods-SSKeychain" */;
-			buildPhases = (
-				8FD2DB1E99BA71F64F6ABCDD /* Sources */,
-				46950F5DDCBFFDF7B75489C3 /* Frameworks */,
-				0F0EB2C1A2A639C8DED01023 /* Headers */,
+				6ABFAC97F7FE96201180882A /* Sources */,
+				F193B9260025099AD9930443 /* Frameworks */,
+				56F6F9D73A77176DFA123B67 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-SSKeychain";
-			productName = "Pods-SSKeychain";
-			productReference = 98B1B86DC631A5441480FE84 /* libPods-SSKeychain.a */;
-			productType = "com.apple.product-type.library.static";
+			name = "Pods-Voxxel-Alamofire";
+			productName = "Pods-Voxxel-Alamofire";
+			productReference = 57A6925A498BB293461FA2D3 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		60F74F759F750144080AB8BD /* Project object */ = {
+		E205A277098B9E5E81892A23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 6765144AA225DA7A6592929D /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 62F568AC9B0AD1A6B5EE421E /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 02DAF9861340A7B3943C6ACE;
-			productRefGroup = 5AB9BE4B9D7DBC05BD959630 /* Products */;
+			mainGroup = D0C2470B55654B197A7D5708;
+			productRefGroup = 45694E6BC7A3A5FD13787FD8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				790A33B833BEE44B03F58910 /* Pods */,
-				66C5AC307DA3FD239066CAF3 /* Pods-AFNetworking */,
-				5FB55E74713C66A4D7A66E43 /* Pods-QuickDialog */,
-				ED3A2D3172BE6A402B4F0569 /* Pods-SSKeychain */,
+				338B37D33A56FC343A1A8CBF /* Pods-Voxxel */,
+				BF44D0D8F3BBB7F9B057F2F4 /* Pods-Voxxel-Alamofire */,
+				02033468F83C1E9B1542A7CD /* Pods-Voxxel-SSKeychain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		23E17999B1B9CCD618EFFCCF /* Sources */ = {
+		5ABE4554C7D0EC097ED61B90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CF3567FFE85A116663FEDF9 /* Pods-dummy.m in Sources */,
+				F8C57613D61A178140677B1F /* Pods-Voxxel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8FD2DB1E99BA71F64F6ABCDD /* Sources */ = {
+		6ABFAC97F7FE96201180882A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132599E3C1F25EB4EC48CDA8 /* Pods-SSKeychain-dummy.m in Sources */,
-				83752633CA9DB43925FC2026 /* SSKeychain.m in Sources */,
-				B046FF39E15E6C02C821BFE6 /* SSKeychainQuery.m in Sources */,
+				5EEEB059A137D39739999C16 /* Alamofire.swift in Sources */,
+				5AD3AD586601D499D6584285 /* Download.swift in Sources */,
+				55FDA76D631589CEED512445 /* Manager.swift in Sources */,
+				883032EA8CA0BED4E9EBCAC0 /* ParameterEncoding.swift in Sources */,
+				3E988CED920D72667186C330 /* Pods-Voxxel-Alamofire-dummy.m in Sources */,
+				7835D9DE176F8E354B700B10 /* Request.swift in Sources */,
+				7E140AF77DDDFC25A1FD6DD5 /* ResponseSerialization.swift in Sources */,
+				DA9F8901A14689D17E33A690 /* Upload.swift in Sources */,
+				6220F47A30CD80CA61DD1E60 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2601DAE8CD9AD50CD633EE2 /* Sources */ = {
+		A7CC744774FD82A2ADEECF33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A7B860BC6F82A625D5B8EF8 /* DOAutocompleteTextField.m in Sources */,
-				78204AE19D1121F1EC5501A2 /* NSMutableArray+IMSExtensions.m in Sources */,
-				29E9D2FCD07388775167A9D1 /* NSMutableArray+MoveObject.m in Sources */,
-				3007DFC28B34AAB86146FE05 /* Pods-QuickDialog-dummy.m in Sources */,
-				11B061EB03B73323137740FC /* QAppearance.m in Sources */,
-				D0769B61A0A316E980E3A1C7 /* QAutoEntryElement.m in Sources */,
-				5447CD6A616510B38082CF8B /* QAutoEntryTableViewCell.m in Sources */,
-				98430C9AF3B91CB712784AE6 /* QBadgeElement.m in Sources */,
-				2481BFCC145CEA58EC51E2AF /* QBadgeLabel.m in Sources */,
-				422652229B7589816E897DF8 /* QBadgeTableCell.m in Sources */,
-				FE61269B5C612D27FA3B9782 /* QBindingEvaluator.m in Sources */,
-				707D91CEBA5207A664D94910 /* QBooleanElement.m in Sources */,
-				B93783579CB766F499810991 /* QButtonElement.m in Sources */,
-				2EA6A1BE7D8ECC21131BA873 /* QClassicAppearance.m in Sources */,
-				225EFB261741C7059E211978 /* QCountdownElement.m in Sources */,
-				58DCE4B98DB7FD659D55C68C /* QDateEntryTableViewCell.m in Sources */,
-				C51C202CC3524462342BC5CC /* QDateInlineTableViewCell.m in Sources */,
-				10EA1D632703CA47F8B6AAE1 /* QDateTimeElement.m in Sources */,
-				8B365AA2232BECF823E40B41 /* QDateTimeInlineElement.m in Sources */,
-				4E502FBC28908FA721A5E991 /* QDecimalElement.m in Sources */,
-				25BBB34CD45934F9D8573272 /* QDecimalTableViewCell.m in Sources */,
-				8726F70CE31BFDB8B05662BE /* QDynamicDataSection.m in Sources */,
-				F2737898D533B7FFC969856C /* QElement+Appearance.m in Sources */,
-				900263F17D0A6CBF64777DD1 /* QElement.m in Sources */,
-				C5C37BD087838916295D7EC4 /* QEmptyListElement.m in Sources */,
-				50C860559FB0A6271A5131C6 /* QEntryElement.m in Sources */,
-				2FEB90E665FBEDE96D616B14 /* QEntryTableViewCell.m in Sources */,
-				4E5CA908420D48709E17E07D /* QFlatAppearance.m in Sources */,
-				71FE87242BE8A6430E5085BB /* QFloatElement.m in Sources */,
-				9FC84B7DC2CFD68C71DA9684 /* QFloatTableViewCell.m in Sources */,
-				4C6A6BE06D7311BFD8172E22 /* QImageElement.m in Sources */,
-				FB1AC5172D0AD2E51DB16992 /* QImageTableViewCell.m in Sources */,
-				4FC8C1F70C5B0CF89249DFE7 /* QLabelElement.m in Sources */,
-				67E983B2F4A1EDBBDD2272A4 /* QLoadingElement.m in Sources */,
-				587701B398E62A3AC6DA5FE8 /* QMultilineElement.m in Sources */,
-				9DEC50535D18D5AB1FFAB58E /* QMultilineTextViewController.m in Sources */,
-				57058E1020551770FF50C0D1 /* QProgressElement.m in Sources */,
-				7E95205A903C9FABC460D238 /* QRadioElement.m in Sources */,
-				B816652D280889E3F255E011 /* QRadioItemElement.m in Sources */,
-				1C737494D85597932409650F /* QRadioSection.m in Sources */,
-				D129787F02383B2488A374D0 /* QRootBuilder.m in Sources */,
-				F728493D6164572C5B7AB4A8 /* QRootElement+JsonBuilder.m in Sources */,
-				A1D48E0616BE273E4BD3A2CF /* QRootElement.m in Sources */,
-				39F4E2636BD72D3A5F66F333 /* QSection.m in Sources */,
-				5B941C46B8B93A51B33504FA /* QSegmentedElement.m in Sources */,
-				EE89BCE00A7451CEB03BBE0B /* QSelectItemElement.m in Sources */,
-				CE35E1E20FE0C616993BC879 /* QSelectSection.m in Sources */,
-				B2056A6F6FF23389F1421777 /* QSortingSection.m in Sources */,
-				46FB0F08DD983976A6728820 /* QTableViewCell.m in Sources */,
-				40D9AC54CE32F639B771C6E9 /* QTextElement.m in Sources */,
-				F8CCD4605531213358F300DC /* QTextField.m in Sources */,
-				F1A7A0EC653B70951116F351 /* QuickDialogController+Animations.m in Sources */,
-				5DEAC93B372BB45C01D52A26 /* QuickDialogController+Helpers.m in Sources */,
-				AF5A05A906F47826C8EB9255 /* QuickDialogController+Loading.m in Sources */,
-				1C8BA82784F3D64BE15B7304 /* QuickDialogController+Navigation.m in Sources */,
-				B18F9B20F43D63EA47615C92 /* QuickDialogController.m in Sources */,
-				497617583B1EBD5CB132885F /* QuickDialogDataSource.m in Sources */,
-				5E02CC376D45745BAAFE36C2 /* QuickDialogTableDelegate.m in Sources */,
-				E41817A4703E8F18DE916499 /* QuickDialogTableView.m in Sources */,
-				8AE42B655258B1EC9C4123F1 /* QuickDialogWebController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EF56AE60DE58ED9498A6E031 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7D12089E6BBBD485862946E /* AFHTTPRequestOperation.m in Sources */,
-				991CBB0AA72516B92288C4D7 /* AFHTTPRequestOperationManager.m in Sources */,
-				86C865C6EA1B6D427FE7937E /* AFHTTPSessionManager.m in Sources */,
-				ECAAAD87F81CA85367453823 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				31F92AD6AD444AB65D388FE6 /* AFNetworkReachabilityManager.m in Sources */,
-				B4AB15221F19AD776C4831B1 /* AFSecurityPolicy.m in Sources */,
-				EB621AC396C8176FD142A0EA /* AFURLConnectionOperation.m in Sources */,
-				2DA6BD354FB250FF09206FD3 /* AFURLRequestSerialization.m in Sources */,
-				617175FAF8EBC6B28601C107 /* AFURLResponseSerialization.m in Sources */,
-				5BEFE0664936EBF15A98C9E0 /* AFURLSessionManager.m in Sources */,
-				C4747397CD7FEF29EB8CE693 /* Pods-AFNetworking-dummy.m in Sources */,
-				CE41CB081C244F3605D05B53 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				C9A2C403F8BC3D761927A562 /* UIAlertView+AFNetworking.m in Sources */,
-				F35B15D1A9A8F6F948F41B4C /* UIButton+AFNetworking.m in Sources */,
-				33C9C7E93EF4A94B164612AD /* UIImageView+AFNetworking.m in Sources */,
-				127AEC1D612C944E75AE3751 /* UIProgressView+AFNetworking.m in Sources */,
-				8589DFB43D6490ED9D70F6BE /* UIRefreshControl+AFNetworking.m in Sources */,
-				BFB8D86683D878EBC5E91F4D /* UIWebView+AFNetworking.m in Sources */,
+				0A130DAD6E83CE7563D6BD66 /* Pods-Voxxel-SSKeychain-dummy.m in Sources */,
+				A2ADA553879A9E214A440BC1 /* SSKeychain.m in Sources */,
+				31024E1DB7F89F9D786F3022 /* SSKeychainQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AD0F2B24E01D5834F218B85C /* PBXTargetDependency */ = {
+		5EBC2B711CFDAA1E17A9F4AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-SSKeychain";
-			target = ED3A2D3172BE6A402B4F0569 /* Pods-SSKeychain */;
-			targetProxy = 23B9D3F7FB68E348CEBF00FB /* PBXContainerItemProxy */;
+			name = "Pods-Voxxel-SSKeychain";
+			target = 02033468F83C1E9B1542A7CD /* Pods-Voxxel-SSKeychain */;
+			targetProxy = 035B3C33099A48A76EF969C1 /* PBXContainerItemProxy */;
 		};
-		C10FD875345332CF07CD8D6B /* PBXTargetDependency */ = {
+		A86893FB5627ED77C663685A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-QuickDialog";
-			target = 5FB55E74713C66A4D7A66E43 /* Pods-QuickDialog */;
-			targetProxy = 39DC3DCDB3B699C78AAE8F5E /* PBXContainerItemProxy */;
-		};
-		E68FF6D1B15971AABF7352CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-AFNetworking";
-			target = 66C5AC307DA3FD239066CAF3 /* Pods-AFNetworking */;
-			targetProxy = 30E9ADD385892CDA5612124C /* PBXContainerItemProxy */;
+			name = "Pods-Voxxel-Alamofire";
+			target = BF44D0D8F3BBB7F9B057F2F4 /* Pods-Voxxel-Alamofire */;
+			targetProxy = 2248FD963A4EDBC592015D5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2871F7EAF250537AEEDD1A44 /* Debug */ = {
+		00993CF10E6933BFB80F9704 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107C5C2EED9321712E75DBDA /* Pods-Voxxel-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		0E4FE1ED94CAC49E17FF0527 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "PRODUCTION=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
+		1529C5E5B5867BD4632165D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4039F19BC318C0C1ABC8CC34 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D16E6181A7D5B94BDD3C8A3 /* Pods-Voxxel.development.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Voxxel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		4B925670BEEA7E1ABE6C4158 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259A247CA8E416567F34908C /* Pods-Voxxel.staging.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Voxxel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		5339F73E3389FCE1F5CEEA29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0540DD46A2900DBB66599D /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A534193FEA92EC16635A54B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "STAGING=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		7855BCFF4C161DE41D42BA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E284FC0AEF3B9F27C5DA3A32 /* Pods-Voxxel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Voxxel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88321F39A1F0AD0EF13E7D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0540DD46A2900DBB66599D /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96F76EDDBD24FA8291AEC09F /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107C5C2EED9321712E75DBDA /* Pods-Voxxel-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		AC36332407452352DC22C10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107C5C2EED9321712E75DBDA /* Pods-Voxxel-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BBA04F285ECB1CB9C61FCE6F /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEVELOPMENT=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development;
+		};
+		C2EEA8F6BE915895F458EAF8 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107C5C2EED9321712E75DBDA /* Pods-Voxxel-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		C7108E457BAC3CAFF6A78E1C /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0540DD46A2900DBB66599D /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		CC1EE38B35591957E08D1932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CE39A8C5F995CE55C6FEBC /* Pods-Voxxel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Voxxel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DBB1A6B6260CFD79496E9CB3 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76FA664B67CA42A825D7AA6 /* Pods-Voxxel.production.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Voxxel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		DBDB8FD8B09DDD0662A4B459 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0540DD46A2900DBB66599D /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		DE396EDF3C4E03699580DCF0 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0540DD46A2900DBB66599D /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		E645D4C64ACBB9EDDB2D7E16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1168,224 +981,93 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		2CF3CDB16B85051DFD698207 /* Release */ = {
+		EA34665BED6E2D049C19C0C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8C678D5FC47A1A329057FAC /* Pods-QuickDialog-Private.xcconfig */;
+			baseConfigurationReference = 107C5C2EED9321712E75DBDA /* Pods-Voxxel-Alamofire-Private.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-QuickDialog/Pods-QuickDialog-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		4A0348A6EAB2254A4B2925C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB7B20930600AFCDF6C23406 /* Pods-AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		4CBEF5BF380A47B65B4A958C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		94B76D21023257F52F93ED0D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB7B20930600AFCDF6C23406 /* Pods-AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		9F119C7C6EAE8DD06F9A190A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45615160934916DFC1B5BCBB /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		BDD845C3FF28E21B6B7FFA3D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC076811E2FC4340FE46B450 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		CDFA7A5F7527E9C36B857652 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7F91D0CC555D22421A29A9A /* Pods-SSKeychain-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SSKeychain/Pods-SSKeychain-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DE44F9584F4A0619F1ED6D19 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8C678D5FC47A1A329057FAC /* Pods-QuickDialog-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-QuickDialog/Pods-QuickDialog-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DF10366B5FAAF3EE456A8C1D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7F91D0CC555D22421A29A9A /* Pods-SSKeychain-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SSKeychain/Pods-SSKeychain-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52E2E1ACDF0E265A6B9C86C8 /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */ = {
+		2C6F03ADDCB4B918DEA20953 /* Build configuration list for PBXNativeTarget "Pods-Voxxel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A0348A6EAB2254A4B2925C2 /* Debug */,
-				94B76D21023257F52F93ED0D /* Release */,
+				CC1EE38B35591957E08D1932 /* Debug */,
+				4039F19BC318C0C1ABC8CC34 /* Development */,
+				DBB1A6B6260CFD79496E9CB3 /* Production */,
+				7855BCFF4C161DE41D42BA18 /* Release */,
+				4B925670BEEA7E1ABE6C4158 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65094AD2F8CE0FAEB0AF193E /* Build configuration list for PBXNativeTarget "Pods-QuickDialog" */ = {
+		62F568AC9B0AD1A6B5EE421E /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE44F9584F4A0619F1ED6D19 /* Debug */,
-				2CF3CDB16B85051DFD698207 /* Release */,
+				E645D4C64ACBB9EDDB2D7E16 /* Debug */,
+				BBA04F285ECB1CB9C61FCE6F /* Development */,
+				0E4FE1ED94CAC49E17FF0527 /* Production */,
+				1529C5E5B5867BD4632165D1 /* Release */,
+				5A534193FEA92EC16635A54B /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6765144AA225DA7A6592929D /* Build configuration list for PBXProject "Pods" */ = {
+		6FC6C1DB8643913436AA0B13 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SSKeychain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2871F7EAF250537AEEDD1A44 /* Debug */,
-				4CBEF5BF380A47B65B4A958C /* Release */,
+				88321F39A1F0AD0EF13E7D79 /* Debug */,
+				DBDB8FD8B09DDD0662A4B459 /* Development */,
+				DE396EDF3C4E03699580DCF0 /* Production */,
+				5339F73E3389FCE1F5CEEA29 /* Release */,
+				C7108E457BAC3CAFF6A78E1C /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E260452B33000C244DB4FB2 /* Build configuration list for PBXNativeTarget "Pods-SSKeychain" */ = {
+		C58CFF8E158C18CA8119AB2D /* Build configuration list for PBXNativeTarget "Pods-Voxxel-Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDFA7A5F7527E9C36B857652 /* Debug */,
-				DF10366B5FAAF3EE456A8C1D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B19DC3CBC963BBC57F0E7473 /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F119C7C6EAE8DD06F9A190A /* Debug */,
-				BDD845C3FF28E21B6B7FFA3D /* Release */,
+				EA34665BED6E2D049C19C0C4 /* Debug */,
+				C2EEA8F6BE915895F458EAF8 /* Development */,
+				00993CF10E6933BFB80F9704 /* Production */,
+				AC36332407452352DC22C10D /* Release */,
+				96F76EDDBD24FA8291AEC09F /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 60F74F759F750144080AB8BD /* Project object */;
+	rootObject = E205A277098B9E5E81892A23 /* Project object */;
 }
