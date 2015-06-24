@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftValidator
 
 class SignupViewController: UIViewController {
     
@@ -17,9 +18,15 @@ class SignupViewController: UIViewController {
     
     let authService = AuthService.init()
     let authManager = AuthManager.manager
+    let validator = Validator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        validator.registerField(txtSignupEmail, rules: [RequiredRule(), EmailRule()])
+        validator.registerField(txtSignupUsername, rules: [RequiredRule()]) // TODO: regexp rule
+        validator.registerField(txtSignupPassword, rules: [RequiredRule(), PasswordRule()])
+        validator.registerField(txtSignupConfirm, rules: [RequiredRule()]) //TODO: confirm rule
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,33 +40,29 @@ class SignupViewController: UIViewController {
         if self.txtSignupPassword.isFirstResponder() { self.txtSignupPassword.resignFirstResponder() }
         if self.txtSignupConfirm.isFirstResponder() { self.txtSignupConfirm.resignFirstResponder() }
         
-        let email = self.txtSignupEmail.text!
-        let username = self.txtSignupUsername.text!
-        let password = self.txtSignupPassword.text!
-        let confirm = self.txtSignupConfirm.text!
+        let params = [
+            "email": self.txtSignupEmail.text!,
+            "username": self.txtSignupUsername.text!,
+            "password": self.txtSignupPassword.text!,
+            "password_confirmation": self.txtSignupConfirm.text!
+        ]
         
-        if validateSignupParams(email, username: username, password: password, confirm: confirm) {
-            let params = ["email": email, "username": username, "password": password, "confirm": confirm]
-            authService.signup(params,
-                onSuccess: { (req, user) in
-                
-                }, onError: { (req, err) in
-                    
-            })
-        } else {
-            print("validation failed")
+        validator.validate() { (errors) in
+            if errors.isEmpty {
+                self.authService.signup(params,
+                    onSuccess: { (req, user) in
+                        //transition to LoginController with notification to confirm email addy
+                    }, onError: { (req, err) in
+                        print("signup failed")
+                        print(err)
+                })
+            } else {
+                print("validation failed")
+            }
         }
-        
     }
 
     @IBAction func didPressCancel(sender: UIButton) {
         dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    func validateSignupParams(email: String, username: String, password: String, confirm: String) -> Bool {
-        return (email.characters.count > 0)
-            && (username.characters.count > 0)
-            && (password.characters.count > 0)
-            && (confirm.characters.count > 0)
     }
 }

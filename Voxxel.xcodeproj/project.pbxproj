@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		183E106C673B3145022B1C62 /* Pods_Voxxel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431AA00D1B2FA94700D52CC7 /* AuthService.swift */; };
+		43C5474C1B3AF6370044F749 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5474B1B3AF6370044F749 /* UIHelper.swift */; };
 		43E97AEA1B294154004CC7ED /* DevelopmentConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AE91B294154004CC7ED /* DevelopmentConfig.plist */; };
 		43E97AEC1B294164004CC7ED /* StagingConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AEB1B294164004CC7ED /* StagingConfig.plist */; };
 		43E97AEE1B294175004CC7ED /* ProductionConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AED1B294175004CC7ED /* ProductionConfig.plist */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxxel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431AA00D1B2FA94700D52CC7 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		43C5474B1B3AF6370044F749 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		43E97AE91B294154004CC7ED /* DevelopmentConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DevelopmentConfig.plist; sourceTree = "<group>"; };
 		43E97AEB1B294164004CC7ED /* StagingConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StagingConfig.plist; sourceTree = "<group>"; };
 		43E97AED1B294175004CC7ED /* ProductionConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductionConfig.plist; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				43FBC02A1B2DED4500B0094C /* SignupViewController.swift */,
 				43FBF2271B312CD300E97C79 /* Config.swift */,
 				43FF93321B3AD4AD00246A70 /* ArtistListViewController.swift */,
+				43C5474B1B3AF6370044F749 /* UIHelper.swift */,
 			);
 			path = Voxxel;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */,
 				43FF932B1B3A648B00246A70 /* ApiHelper.swift in Sources */,
 				43E97AF01B294F96004CC7ED /* Voxxel-Bridging-Header.h in Sources */,
+				43C5474C1B3AF6370044F749 /* UIHelper.swift in Sources */,
 				C7F2D5F4A846B072F5C9029C /* AccessTokenModel.swift in Sources */,
 				43FF93311B3A783300246A70 /* Sound.swift in Sources */,
 				43FBF2281B312CD300E97C79 /* Config.swift in Sources */,

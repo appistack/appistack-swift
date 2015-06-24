@@ -7,47 +7,59 @@
 //
 
 import UIKit
+import SwiftValidator
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FormValidatable {
     
     @IBOutlet weak var txtLoginEmail: UITextField!
     @IBOutlet weak var txtLoginPassword: UITextField!
+    
     let authService = AuthService.init()
     let authManager = AuthManager.manager
+    let validator = Validator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //TODO: add error labels
+        //TODO: setup to allow login with username
+        validator.registerField(txtLoginEmail, rules: [RequiredRule(), EmailRule()])
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func didPressLogin(sender: UIButton) {
         if self.txtLoginEmail.isFirstResponder() { self.txtLoginEmail.resignFirstResponder() }
         if self.txtLoginPassword.isFirstResponder() { self.txtLoginPassword.resignFirstResponder() }
-
-        let username = self.txtLoginEmail.text!
-        let password = self.txtLoginPassword.text!
         
-        if validateLoginParams(username, password:password) {
-            authService.login(username, password:password, completionHandler: { (req, res, data, err) in
-                
-            })
-        } else {
-            print("invalid username/password")
+        let params = [
+            "email": self.txtLoginEmail.text!,
+            "password": self.txtLoginPassword.text!
+        ]
+        
+        validator.validate() { (errors) in
+            if errors.isEmpty {
+                self.authService.login(params,
+                    onSuccess: { (res, user) in
+                        //transition to HomeController
+                    }, onError: { (res, err) in
+                        print("login failed")
+                        print(err)
+                })
+            } else {
+                print("validation failed")
+            }
+            
         }
     }
-
+    
     @IBAction func didPressSignup(sender: UIButton) {
         if let signupController = self.storyboard?.instantiateViewControllerWithIdentifier("SignupViewController") as? SignupViewController {
             self.presentViewController(signupController, animated:true, completion:nil)
         }
     }
-
-    func validateLoginParams(username:String, password:String) -> Bool {
-        return (username.characters.count > 0) && (password.characters.count > 0)
-    }
-
+    
 }
