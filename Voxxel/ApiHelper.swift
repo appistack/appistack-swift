@@ -13,6 +13,9 @@ import Alamofire
 }
 
 extension Alamofire.Request {
+    
+    // TODO: refactor completionHandler to onSuccess/onError here? 
+    //   or do i need specific error handling behavior per Api request types
     public func responseObject<T: ResponseObjectSerializable>(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, T?, NSError?) -> Void) -> Self {
         let serializer: Serializer = { (req, res, data) in
             let JSONSerializer = Request.JSONResponseSerializer(options: .AllowFragments)
