@@ -9,11 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let authManager = AuthManager.manager
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if !AuthManager.isLoggedIn() {
+        if !authManager.isLoggedIn() {
             if let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as? LoginViewController {
                 self.navigationController?.presentViewController(loginController, animated:true, completion:nil)
             }
