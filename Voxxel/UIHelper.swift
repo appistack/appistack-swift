@@ -20,7 +20,7 @@ extension FormValidatable {
         validator.styleTransformers(success: { (rule) -> Void in
             rule.errorLabel?.hidden = false
             rule.errorLabel?.text = ""
-            validationError.textField.layer.borderColor = UIColor.blackColor().CGColor
+            rule.textField.layer.borderColor = UIColor.blackColor().CGColor
             rule.textField.layer.borderWidth = 0
             }, error: { (err) -> Void in
                 err.errorLabel?.hidden = false
