@@ -7,29 +7,50 @@
 //
 
 import Foundation
+import Alamofire
 
 class AuthService {
-    var apiUrl:String
+    let apiUrl = Config.conf.opts["api_base_url"]!
     
-    init() {
-        print(Config.conf.opts)
-        apiUrl = Config.conf.opts["api_base_url"]!;
-        print(apiUrl)
-//        apiUrl = config.getKey("api_base_url")
-//        print(AuthService.apiUrl)
+    //TODO: refactor using Router enum pattern?
+    
+    func validateToken(token:AccessTokenModel, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
+        Alamofire.request(.GET, URLString: apiUrl + "/auth/validate_token")
+            .validate()
+            .responseJSON() { (req, res, data, err) in
+                //TODO: clear token if invalid (and redirect user to login?)
+        }
     }
     
-    func validateToken(token:AccessTokenModel) -> Bool {
-        return false
-    }
-    
-    func login(username:String, password:String) -> AccessTokenModel? {
+    func login(email:String, password:String, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
+        let params = ["email": email, "password": password]
         
-        return nil
+        //TODO: change to success/error handler instead of single handler
+        
+        Alamofire.request(.POST, URLString: apiUrl + "/auth/sign_in", parameters: params)
+            .validate()
+            .responseObject<User>() { (req, res, data, err) in
+                //TODO: update authmanager singleton token/user
+                completionHandler(req, res, data, err)
+        }
     }
     
-    func logout() -> Bool {
-        return false
+    func logout(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
+        Alamofire.request(.DELETE, URLString: apiUrl + "/auth/sign_out")
+            .validate()
+            .responseJSON() { (req, res, data, err) in
+                //TODO: update authmanager singleton token/user
+                completionHandler(req, res, data, err)
+        }
+    }
+    
+    func signup(email:String, username:String, password:String, confirm:String,
+        completionHandler: (NSURLRequest?, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
+            let params = ["email": email, "username": username, "password": password, "confirm": confirm]
+            
+            Alamofire.request(.POST, URLString: apiUrl + "/auth", parameters: params)
+                .validate()
+                .responseJSON(completionHandler: completionHandler)
     }
     
 }
