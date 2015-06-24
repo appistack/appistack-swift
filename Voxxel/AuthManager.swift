@@ -7,34 +7,42 @@ import Foundation
 import SSKeychain
 
 class AuthManager {
-    static let SERVICE_NAME = "VoxxelApp",
+    let SERVICE_NAME = "VoxxelApp",
         TOKEN_KEY = "token",
         TOKEN_TYPE_KEY = "token_type",
         TOKEN_CLIENT_KEY = "token_client",
         TOKEN_EXPIRY_KEY = "token_expiry",
         TOKEN_UID_KEY = "token_uid"
+    
+    static let manager = AuthManager()
+    
+    var authToken: AccessTokenModel = AccessTokenModel()
+    
+    init () {
+        authToken = getAccessToken()
+    }
 
-    class func token() -> String? {
+    func token() -> String? {
         return getSecureValue(TOKEN_KEY)
     }
 
-    class func tokenType() -> String? {
+    func tokenType() -> String? {
         return getSecureValue(TOKEN_TYPE_KEY)
     }
 
-    class func client() -> String? {
+    func client() -> String? {
         return getSecureValue(TOKEN_CLIENT_KEY)
     }
 
-    class func expiry() -> String? {
+    func expiry() -> String? {
         return getSecureValue(TOKEN_EXPIRY_KEY)
     }
 
-    class func uid() -> String? {
+    func uid() -> String? {
         return getSecureValue(TOKEN_UID_KEY);
     }
 
-    class func isLoggedIn() -> Bool {
+    func isLoggedIn() -> Bool {
         //better way to do this? revert to instantiated class?
         if token() != nil {
             //TODO: check if token is expired
@@ -44,7 +52,7 @@ class AuthManager {
         }
     }
 
-    class func getAccessToken() -> AccessTokenModel {
+    func getAccessToken() -> AccessTokenModel {
         let aToken = AccessTokenModel()
         aToken.token = token()
         aToken.tokenType = tokenType()
@@ -54,11 +62,11 @@ class AuthManager {
         return aToken
     }
 
-    class func getSecureValue(key:String) -> String? {
+    func getSecureValue(key:String) -> String? {
         return SSKeychain.passwordForService(SERVICE_NAME, account:key)
     }
 
-    class func setSecureValue(value:String?, forKey:String) {
+    func setSecureValue(value:String?, forKey:String) {
         if let v = value {
             SSKeychain.setPassword(v, forService:SERVICE_NAME, account:forKey)
         } else {
@@ -66,12 +74,13 @@ class AuthManager {
         }
     }
 
-    class func clearAccessToken() {
+    func clearAccessToken() -> AccessTokenModel {
         setSecureValue(nil, forKey:TOKEN_KEY)
         setSecureValue(nil, forKey:TOKEN_TYPE_KEY)
         setSecureValue(nil, forKey:TOKEN_CLIENT_KEY)
         setSecureValue(nil, forKey:TOKEN_EXPIRY_KEY)
         setSecureValue(nil, forKey:TOKEN_UID_KEY)
+        return getAccessToken()
     }
 
 }
