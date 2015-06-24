@@ -19,38 +19,54 @@ class AuthService {
             .validate()
             .responseJSON() { (req, res, data, err) in
                 //TODO: clear token if invalid (and redirect user to login?)
+                //TODO: also clear headers from
+                //TODO: set user returned by token to json.valueForKeyPath("data")
+                //{"success":true,"data":{"id":1,"username":"dcunit3d","email":"dconner.pro@gmail.com","name":null,"nickname":null,"image":null,"provider":"email","uid":"dconner.pro@gmail.com","roles":[]}}
         }
     }
     
-    func login(email:String, password:String, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
-        let params = ["email": email, "password": password]
-        
-        //TODO: change to success/error handler instead of single handler
+    func login(params: [String: AnyObject],
+        onSuccess: (NSHTTPURLResponse?, AnyObject?) -> Void,
+        onError: (NSHTTPURLResponse?, NSError?) -> Void)  {
         
         Alamofire.request(.POST, URLString: apiUrl + "/auth/sign_in", parameters: params)
             .validate()
-            .responseObject<User>() { (req, res, data, err) in
-                //TODO: update authmanager singleton token/user
-                completionHandler(req, res, data, err)
-        }
+            .responseObject() { (req, res, user: User?, err) in
+                if err == nil {
+                    onSuccess(res, user)
+                } else {
+                    onError(res, err)
+                }
+            }
     }
     
-    func logout(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
+    func logout(onSuccess: (NSHTTPURLResponse?, AnyObject?) -> Void,
+        onError: (NSHTTPURLResponse?, NSError?) -> Void) {
+        
         Alamofire.request(.DELETE, URLString: apiUrl + "/auth/sign_out")
             .validate()
             .responseJSON() { (req, res, data, err) in
-                //TODO: update authmanager singleton token/user
-                completionHandler(req, res, data, err)
-        }
+                if err == nil {
+                    onSuccess(res, data)
+                } else {
+                    onError(res, err)
+                }
+            }
     }
     
-    func signup(email:String, username:String, password:String, confirm:String,
-        completionHandler: (NSURLRequest?, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
-            let params = ["email": email, "username": username, "password": password, "confirm": confirm]
+    func signup(params: [String: AnyObject],
+        onSuccess: (NSHTTPURLResponse?, AnyObject?) -> Void,
+        onError: (NSHTTPURLResponse?, NSError?) -> Void) {
             
-            Alamofire.request(.POST, URLString: apiUrl + "/auth", parameters: params)
-                .validate()
-                .responseJSON(completionHandler: completionHandler)
+        Alamofire.request(.POST, URLString: apiUrl + "/auth", parameters: params)
+            .validate()
+            .responseObject() { (req, res, user: User?, err) in
+                if err == nil {
+                    onSuccess(res, user)
+                } else {
+                    onError(res, err)
+                }
+            }
     }
     
 }
