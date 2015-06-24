@@ -13,10 +13,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var txtLoginEmail: UITextField!
     @IBOutlet weak var txtLoginPassword: UITextField!
     let authService = AuthService.init()
+    let authManager = AuthManager.manager
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print(authService.apiUrl)
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,11 +28,13 @@ class LoginViewController: UIViewController {
         if self.txtLoginEmail.isFirstResponder() { self.txtLoginEmail.resignFirstResponder() }
         if self.txtLoginPassword.isFirstResponder() { self.txtLoginPassword.resignFirstResponder() }
 
-        let username = self.txtLoginEmail.text
-        let password = self.txtLoginPassword.text
+        let username = self.txtLoginEmail.text!
+        let password = self.txtLoginPassword.text!
         
-        if validateLoginParams(username!, password:password!) {
-            print("user: \(username) pass: \(password)")
+        if validateLoginParams(username, password:password) {
+            authService.login(username, password:password, completionHandler: { (req, res, data, err) in
+                
+            })
         } else {
             print("invalid username/password")
         }
