@@ -1,10 +1,12 @@
 PODS:
   - Alamofire (1.2.2)
   - SSKeychain (1.2.3)
+  - SwiftValidator (2.1.1)
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, tag `swift-2.0`)
   - SSKeychain (~> 1.2.3)
+  - SwiftValidator (~> 2.1.1)
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -19,5 +21,6 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 11a6022f5089887d92ffb5a3014c97a0a915ab98
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
+  SwiftValidator: 79936ea870f1dba8a0824763375375bb209fe30d
 
 COCOAPODS: 0.37.2
