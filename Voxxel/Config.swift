@@ -17,10 +17,6 @@ class Config {
         self.opts = Config.loadDefaults()
     }
 
-    func getKey(key:String) -> String? {
-        return self.opts[key]!
-    }
-
     class func loadDefaults() -> Dictionary<String,String> {
         let plistName = NSBundle.mainBundle().objectForInfoDictionaryKey("ConfigPlist") as! String
         let path = NSBundle.mainBundle().pathForResource(plistName, ofType: "plist")
