@@ -18,3 +18,9 @@
 #define COCOAPODS_VERSION_MINOR_SSKeychain 2
 #define COCOAPODS_VERSION_PATCH_SSKeychain 3
 
+// SwiftValidator
+#define COCOAPODS_POD_AVAILABLE_SwiftValidator
+#define COCOAPODS_VERSION_MAJOR_SwiftValidator 2
+#define COCOAPODS_VERSION_MINOR_SwiftValidator 1
+#define COCOAPODS_VERSION_PATCH_SwiftValidator 1
+
