@@ -13,6 +13,8 @@ class LoginViewController: UIViewController, FormValidatable {
     
     @IBOutlet weak var txtLoginEmail: UITextField!
     @IBOutlet weak var txtLoginPassword: UITextField!
+    @IBOutlet weak var lblLoginEmail: UILabel!
+    @IBOutlet weak var lblLoginPassword: UILabel!
     
     let authService = AuthService.init()
     let authManager = AuthManager.manager
@@ -23,7 +25,9 @@ class LoginViewController: UIViewController, FormValidatable {
         
         //TODO: add error labels
         //TODO: setup to allow login with username
-        validator.registerField(txtLoginEmail, rules: [RequiredRule(), EmailRule()])
+        setupValidationStyles(validator)
+        validator.registerField(txtLoginEmail, errorLabel: lblLoginEmail, rules: [RequiredRule(), EmailRule()])
+        validator.registerField(txtLoginPassword, errorLabel: lblLoginPassword, rules: [RequiredRule()])
     }
     
     override func didReceiveMemoryWarning() {

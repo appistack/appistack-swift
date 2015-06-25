@@ -29,5 +29,10 @@ extension FormValidatable {
                 err.textField.layer.borderWidth = 1.0
         })
     }
-    
+}
+
+public class PasswordConfirmRule: ConfirmationRule {
+    public override func errorMessage() -> String {
+        return "Password confirmation does not match"
+    }
 }
