@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     
     let authManager = AuthManager.manager
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
         if !authManager.isLoggedIn() {
             if let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as? LoginViewController {
