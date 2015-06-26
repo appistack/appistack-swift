@@ -1,10 +1,12 @@
 PODS:
   - Alamofire (1.2.2)
+  - CRToast (0.0.7)
   - SSKeychain (1.2.3)
   - SwiftValidator (2.1.1)
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, tag `swift-2.0`)
+  - CRToast (~> 0.0.7)
   - SSKeychain (~> 1.2.3)
   - SwiftValidator (from `https://github.com/dcunited001/SwiftValidator.git`, tag
     `swift-2.0`)
@@ -27,6 +29,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 11a6022f5089887d92ffb5a3014c97a0a915ab98
+  CRToast: 99a28f4387def43b439ad88f957ce31357ff7373
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
   SwiftValidator: 79936ea870f1dba8a0824763375375bb209fe30d
 
