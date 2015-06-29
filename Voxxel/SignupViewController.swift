@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftValidator
+import CRToast
 
 class SignupViewController: UIViewController, FormValidatable {
     
@@ -62,7 +63,9 @@ class SignupViewController: UIViewController, FormValidatable {
             if errors.isEmpty {
                 self.authService.signup(params,
                     onSuccess: { (req, user) in
-                        self.dismissViewControllerAnimated(true, completion: nil)
+                        self.displayConfirmEmailToast() { () in
+                            self.dismissViewControllerAnimated(true, completion: nil)
+                        }
                     }, onError: { (req, err) in
                         print("signup failed")
                         print(err)
@@ -70,8 +73,37 @@ class SignupViewController: UIViewController, FormValidatable {
             }
         }
     }
-    
+
     @IBAction func didPressCancel(sender: UIButton) {
-        dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    //ui navigation controller UINavigationControllerDelegate
+    // http://makeapppie.com/tag/uinavigationcontroller-in-swift/
+    // http://www.raywenderlich.com/86521/how-to-make-a-view-controller-transition-animation-like-in-the-ping-app
+    // https://stackoverflow.com/questions/28475661/how-to-send-an-uiviewcontroller-that-conforms-uiimagepickercontrollerdelegate-u
+    //        if let stack = self.navigationController?.viewControllers {
+    //            let loginVc = stack[stack.count-2] as! LoginViewController
+    //            loginVc.displayConfirmEmail = true
+    //            self.navigationController!.popToViewController(loginVc, animated: true)
+    //        }
+    
+    func displayConfirmEmailToast(completionBlock: (() -> Void)) {
+        let toastOptions: [NSObject: AnyObject] = [
+            kCRToastTextKey: "Great Success!",
+            kCRToastSubtitleTextKey: "Please confirm your email address",
+            kCRToastNotificationTypeKey: CRToastType.NavigationBar.rawValue,
+            kCRToastTextAlignmentKey: NSTextAlignment.Center.rawValue,
+            kCRToastBackgroundColorKey: UIColor.grayColor(),
+            kCRToastAnimationInTypeKey: CRToastAnimationType.Gravity.rawValue,
+            kCRToastAnimationOutTypeKey: CRToastAnimationType.Gravity.rawValue,
+            kCRToastAnimationInDirectionKey: CRToastAnimationDirection.Top.rawValue,
+            kCRToastAnimationOutDirectionKey: CRToastAnimationDirection.Top.rawValue,
+            kCRToastTimeIntervalKey: 3
+            //TODO: set fonts?
+            //            kCRToastFontKey: UIFont(name: "System", size: 15) as AnyObject,
+            //            kCRToastSubtitleFontKey: UIFont(name: "System", size: 12) as AnyObject,
+        ]
+        CRToastManager.showNotificationWithOptions(toastOptions, completionBlock: completionBlock)
     }
 }

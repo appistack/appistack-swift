@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         if !authManager.isLoggedIn() {
             if let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as? LoginViewController {
-                self.navigationController?.presentViewController(loginController, animated:true, completion:nil)
+                self.navigationController!.presentViewController(loginController, animated:true, completion:nil)
             }
         }
     }

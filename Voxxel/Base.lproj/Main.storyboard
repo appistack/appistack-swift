@@ -272,8 +272,9 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8s-QK-EhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="DoL-Ed-qeR" customClass="HomeNavControllerDelegate" customModule="Voxxel" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="-13.866666666666667" y="454.39999999999998"/>
+            <point key="canvasLocation" x="-36" y="360"/>
         </scene>
     </scenes>
     <resources>

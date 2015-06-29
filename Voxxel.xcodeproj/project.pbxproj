@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		183E106C673B3145022B1C62 /* Pods_Voxxel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431AA00D1B2FA94700D52CC7 /* AuthService.swift */; };
+		434681DD1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434681DC1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift */; };
 		43C5474C1B3AF6370044F749 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5474B1B3AF6370044F749 /* UIHelper.swift */; };
 		43E97AEA1B294154004CC7ED /* DevelopmentConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AE91B294154004CC7ED /* DevelopmentConfig.plist */; };
 		43E97AEC1B294164004CC7ED /* StagingConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AEB1B294164004CC7ED /* StagingConfig.plist */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxxel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431AA00D1B2FA94700D52CC7 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		434681DC1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavControllerDelegate.swift; sourceTree = "<group>"; };
 		43C5474B1B3AF6370044F749 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		43E97AE91B294154004CC7ED /* DevelopmentConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DevelopmentConfig.plist; sourceTree = "<group>"; };
 		43E97AEB1B294164004CC7ED /* StagingConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StagingConfig.plist; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				43FBF2271B312CD300E97C79 /* Config.swift */,
 				43FF93321B3AD4AD00246A70 /* ArtistListViewController.swift */,
 				43C5474B1B3AF6370044F749 /* UIHelper.swift */,
+				434681DC1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift */,
 			);
 			path = Voxxel;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				C7F9978C698368E77344B62F /* AuthManager.swift in Sources */,
 				43FF932F1B3A75C600246A70 /* Artist.swift in Sources */,
 				43FF93291B38D62900246A70 /* ArtistService.swift in Sources */,
+				434681DD1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift in Sources */,
 				43FF932D1B3A705900246A70 /* User.swift in Sources */,
 				C7F2DE28E51370E1A52CA9A5 /* LoginViewController.swift in Sources */,
 			);
