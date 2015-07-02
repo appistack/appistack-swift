@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Artist: NSObject, ResponseObjectSerializable {
+final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable {
+    let apiUrl = Config.conf.opts["api_base_url"]!
     
     let id: Int
     let firstName: String
@@ -17,25 +18,38 @@ class Artist: NSObject, ResponseObjectSerializable {
     var headshot: String?
     var desc: String?
     
+    @objc static func collection(response response: NSHTTPURLResponse, json: AnyObject) -> [Artist] {
+        var artists = [Artist]()
+        
+        for artist in json as! [NSDictionary] {
+            artists.append(Artist(json: artist))
+        }
+        
+        return artists
+    }
+    
     init(id: Int, firstName: String, lastName: String) {
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
     }
     
-    required init(response: NSHTTPURLResponse, json: AnyObject) {
+    init(json: AnyObject) {
         self.id = json.valueForKeyPath("id") as! Int
         self.firstName = json.valueForKeyPath("first_name") as! String
         self.lastName = json.valueForKeyPath("last_name") as! String
-        
+
         self.headshot = json.valueForKeyPath("headshot") as? String
         self.desc = json.valueForKeyPath("description") as? String
+    }
+    
+    required convenience init(response: NSHTTPURLResponse, json: AnyObject) {
+        self.init(json: json)
     }
     
     func name() -> String {
         return "\(firstName) \(lastName)"
     }
-    
     
     // Used by NSMutableOrderedSet to maintain the order
     override func isEqual(object: AnyObject!) -> Bool {
