@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     let authManager = AuthManager.manager
     let authService = AuthService.init()

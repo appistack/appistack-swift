@@ -30,7 +30,7 @@
 		C7F9978C698368E77344B62F /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F4DC952B1CA01AC02CD56A /* AuthManager.swift */; };
 		C7FD11C12246F2214CC7387B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7FC5FED1C2FB0D9C0533A00 /* LaunchScreen.xib */; };
 		C7FE34A036ACE77126808871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FEC1F5F66422A22B6931CA /* Main.storyboard */; };
-		C7FEA8B48D140BB55E2FBF7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF6F5A425142898BDF04A0 /* ViewController.swift */; };
+		C7FEA8B48D140BB55E2FBF7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF6F5A425142898BDF04A0 /* HomeViewController.swift */; };
 		C7FEEB36656F4E3F09161E24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD591EA60B4AA9EED49104 /* AppDelegate.swift */; };
 		C7FFB87E6BB653E9BD308AF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C7FA09A5D177650456FF4806 /* README.md */; };
 /* End PBXBuildFile section */
@@ -76,7 +76,7 @@
 		C7FC8CD49C6A25C71D24A37E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C7FD591EA60B4AA9EED49104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7FE2C7984B78BFF1ACFB25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C7FF6F5A425142898BDF04A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7FF6F5A425142898BDF04A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C7FFB27ECFE21F8B6288AB2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB2F9A91B23FDB3F08C13C22 /* Pods-Voxxel.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxxel.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,7 +172,7 @@
 				C7FC5FED1C2FB0D9C0533A00 /* LaunchScreen.xib */,
 				C7FD591EA60B4AA9EED49104 /* AppDelegate.swift */,
 				C7FEC1F5F66422A22B6931CA /* Main.storyboard */,
-				C7FF6F5A425142898BDF04A0 /* ViewController.swift */,
+				C7FF6F5A425142898BDF04A0 /* HomeViewController.swift */,
 				C7F4DC952B1CA01AC02CD56A /* AuthManager.swift */,
 				43E97AEF1B294F96004CC7ED /* Voxxel-Bridging-Header.h */,
 				C7FC8CD49C6A25C71D24A37E /* LoginViewController.swift */,
@@ -350,7 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FEEB36656F4E3F09161E24 /* AppDelegate.swift in Sources */,
-				C7FEA8B48D140BB55E2FBF7F /* ViewController.swift in Sources */,
+				C7FEA8B48D140BB55E2FBF7F /* HomeViewController.swift in Sources */,
 				43FF93331B3AD4AD00246A70 /* ArtistListViewController.swift in Sources */,
 				43FBC02B1B2DED4500B0094C /* SignupViewController.swift in Sources */,
 				431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */,
