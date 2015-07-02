@@ -5,6 +5,7 @@
 
 import Foundation
 import SSKeychain
+import Alamofire
 
 class AuthManager {
     let SERVICE_NAME = "VoxxelApp",
@@ -14,9 +15,11 @@ class AuthManager {
         TOKEN_EXPIRY_KEY = "token_expiry",
         TOKEN_UID_KEY = "token_uid"
     
+    static let defaultHeaders = Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders ?? [:]
     static let manager = AuthManager()
     
     var authToken: AccessTokenModel = AccessTokenModel()
+    var user: User?
     
     init () {
         authToken = getAccessToken()
@@ -61,6 +64,17 @@ class AuthManager {
         aToken.uid = uid()
         return aToken
     }
+    
+    func setAccessToken(accessToken: AccessTokenModel) {
+        setSecureValue(accessToken.token, forKey:TOKEN_KEY)
+        setSecureValue(accessToken.tokenType, forKey:TOKEN_TYPE_KEY)
+        setSecureValue(accessToken.client, forKey:TOKEN_CLIENT_KEY)
+        setSecureValue(accessToken.expiry, forKey:TOKEN_EXPIRY_KEY)
+        setSecureValue(accessToken.uid, forKey:TOKEN_UID_KEY)
+        authToken = getAccessToken()
+        VoxxelApi.setAuthHeaders(authToken)
+
+    }
 
     func getSecureValue(key:String) -> String? {
         return SSKeychain.passwordForService(SERVICE_NAME, account:key)
@@ -74,13 +88,14 @@ class AuthManager {
         }
     }
 
-    func clearAccessToken() -> AccessTokenModel {
+    func clearAccessToken() {
         setSecureValue(nil, forKey:TOKEN_KEY)
         setSecureValue(nil, forKey:TOKEN_TYPE_KEY)
         setSecureValue(nil, forKey:TOKEN_CLIENT_KEY)
         setSecureValue(nil, forKey:TOKEN_EXPIRY_KEY)
         setSecureValue(nil, forKey:TOKEN_UID_KEY)
-        return getAccessToken()
+        VoxxelApi.clearAuthHeaders()
+        user = nil
+        authToken = getAccessToken()
     }
-
 }
