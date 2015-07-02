@@ -8,5 +8,6 @@ target 'Voxxel' do
     pod 'SSKeychain', '~> 1.2.3'
     pod 'SwiftValidator', git: 'https://github.com/dcunited001/SwiftValidator.git', tag: 'swift-2.0' #, '~> 2.1.1'
     pod 'CRToast', '~> 0.0.7'
+    #pod 'Dollar'
   #  pod 'AFNetworking', '~> 2.5'
 end
