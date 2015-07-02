@@ -7,23 +7,47 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     
     let authManager = AuthManager.manager
+    let authService = AuthService.init()
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         if !authManager.isLoggedIn() {
-            if let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as? LoginViewController {
-                self.navigationController!.presentViewController(loginController, animated:true, completion:nil)
-            }
+            navigateToLogin()
+        } else {
+            VoxxelApi.setAuthHeaders(authManager.getAccessToken())
+            authService.validateToken({(res, json) in
+                self.loadArtists()
+                }, onError: {(res, json, err) in
+                    self.navigateToLogin()
+                    })
         }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func didPressLogout(sender: UIButton) {
+        self.authService.logout({ (res, json) in
+                self.navigateToLogin()
+            }, onError: { (res, json, err) in
+                print("error logging out")
+        })
+    }
+    
+    func loadArtists() {
+        
+    }
 
+    func navigateToLogin() {
+        if let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as? LoginViewController {
+            self.navigationController!.presentViewController(loginController, animated:true, completion:nil)
+        }
+    }
 }

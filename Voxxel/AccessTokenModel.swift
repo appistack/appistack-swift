@@ -11,8 +11,28 @@ class AccessTokenModel : NSObject {
     var client:String?
     var expiry:String?
     var uid:String?
-
-//    override init() {
-//
-//    }
+    
+    static func parseFromHeaders(res: NSHTTPURLResponse) -> AccessTokenModel {
+        let headers = res.allHeaderFields
+        let aToken = AccessTokenModel()
+        aToken.token = headers["Access-Token"] as? String
+        aToken.tokenType = headers["Token-Type"] as? String
+        aToken.client = headers["Client"] as? String
+        aToken.expiry = headers["Expiry"] as? String
+        aToken.uid = headers["Uid"] as? String
+        return aToken
+    }
+    
+    func getAuthHeaders() -> [NSObject: AnyObject] {
+        let authHeaders: [NSObject: AnyObject] = [
+            "Accept": "application/json;version=1",
+            "access-token": self.token!,
+            "token-type": self.tokenType!,
+            "client": self.client!,
+            "expiry": self.expiry!,
+            "uid": self.uid!
+        ]
+        
+        return authHeaders
+    }
 }

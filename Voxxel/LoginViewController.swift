@@ -47,8 +47,9 @@ class LoginViewController: UIViewController, FormValidatable {
             if errors.isEmpty {
                 self.authService.login(params,
                     onSuccess: { (res, user) in
-                        //transition to HomeController
-                    }, onError: { (res, err) in
+                        self.dismissViewControllerAnimated(true, completion: nil)
+                    }, onError: { (res, json, err) in
+                        print(res)
                         print("login failed")
                         print(err)
                 })

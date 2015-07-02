@@ -56,7 +56,9 @@ class SignupViewController: UIViewController, FormValidatable {
             "email": self.txtSignupEmail.text!,
             "username": self.txtSignupUsername.text!,
             "password": self.txtSignupPassword.text!,
-            "password_confirmation": self.txtSignupConfirm.text!
+            "password_confirmation": self.txtSignupConfirm.text!,
+            "confirm_success_url": Config.conf.opts["signup_confirm_success_url"]!,
+            "config_name": "default"
         ]
         
         validator.validate() { (errors) in
@@ -66,7 +68,7 @@ class SignupViewController: UIViewController, FormValidatable {
                         self.displayConfirmEmailToast() { () in
                             self.dismissViewControllerAnimated(true, completion: nil)
                         }
-                    }, onError: { (req, err) in
+                    }, onError: { (req, json, err) in
                         print("signup failed")
                         print(err)
                 })
