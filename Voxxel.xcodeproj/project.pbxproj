@@ -11,6 +11,7 @@
 		431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431AA00D1B2FA94700D52CC7 /* AuthService.swift */; };
 		434681DD1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434681DC1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift */; };
 		43C5474C1B3AF6370044F749 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5474B1B3AF6370044F749 /* UIHelper.swift */; };
+		43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6A2441B4A608000B093BD /* NavViewController.swift */; };
 		43E97AEA1B294154004CC7ED /* DevelopmentConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AE91B294154004CC7ED /* DevelopmentConfig.plist */; };
 		43E97AEC1B294164004CC7ED /* StagingConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AEB1B294164004CC7ED /* StagingConfig.plist */; };
 		43E97AEE1B294175004CC7ED /* ProductionConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AED1B294175004CC7ED /* ProductionConfig.plist */; };
@@ -50,6 +51,7 @@
 		431AA00D1B2FA94700D52CC7 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		434681DC1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavControllerDelegate.swift; sourceTree = "<group>"; };
 		43C5474B1B3AF6370044F749 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		43E6A2441B4A608000B093BD /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		43E97AE91B294154004CC7ED /* DevelopmentConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DevelopmentConfig.plist; sourceTree = "<group>"; };
 		43E97AEB1B294164004CC7ED /* StagingConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StagingConfig.plist; sourceTree = "<group>"; };
 		43E97AED1B294175004CC7ED /* ProductionConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductionConfig.plist; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				43FF93321B3AD4AD00246A70 /* ArtistListViewController.swift */,
 				43C5474B1B3AF6370044F749 /* UIHelper.swift */,
 				434681DC1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift */,
+				43E6A2441B4A608000B093BD /* NavViewController.swift */,
 			);
 			path = Voxxel;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				C7FEA8B48D140BB55E2FBF7F /* HomeViewController.swift in Sources */,
 				43FF93331B3AD4AD00246A70 /* ArtistListViewController.swift in Sources */,
 				43FBC02B1B2DED4500B0094C /* SignupViewController.swift in Sources */,
+				43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */,
 				431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */,
 				43FF932B1B3A648B00246A70 /* ApiHelper.swift in Sources */,
 				43E97AF01B294F96004CC7ED /* Voxxel-Bridging-Header.h in Sources */,
