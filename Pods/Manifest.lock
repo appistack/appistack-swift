@@ -3,6 +3,7 @@ PODS:
   - CRToast (0.0.7)
   - SSKeychain (1.2.3)
   - SwiftValidator (2.1.1)
+  - SwiftyJSON (2.2.0)
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, tag `swift-2.0`)
@@ -10,6 +11,7 @@ DEPENDENCIES:
   - SSKeychain (~> 1.2.3)
   - SwiftValidator (from `https://github.com/dcunited001/SwiftValidator.git`, tag
     `swift-2.0`)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`, branch `xcode7`)
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -18,6 +20,9 @@ EXTERNAL SOURCES:
   SwiftValidator:
     :git: https://github.com/dcunited001/SwiftValidator.git
     :tag: swift-2.0
+  SwiftyJSON:
+    :branch: xcode7
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 CHECKOUT OPTIONS:
   Alamofire:
@@ -26,11 +31,15 @@ CHECKOUT OPTIONS:
   SwiftValidator:
     :git: https://github.com/dcunited001/SwiftValidator.git
     :tag: swift-2.0
+  SwiftyJSON:
+    :commit: fb9f6b43cd8d3684c3129793057eb2a2564e2430
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
   Alamofire: 11a6022f5089887d92ffb5a3014c97a0a915ab98
   CRToast: 99a28f4387def43b439ad88f957ce31357ff7373
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
   SwiftValidator: 79936ea870f1dba8a0824763375375bb209fe30d
+  SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
 
 COCOAPODS: 0.37.2

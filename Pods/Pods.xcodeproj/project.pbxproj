@@ -7,496 +7,541 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1024937B552567A3527ADAC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86A42D1A19697E1FBB1F44F /* Foundation.framework */; };
-		14E8DC023915F216D70C1D2D /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CC280AC4D6BBDA7E7090EB /* ValidationRule.swift */; };
-		16BE3314525F57282DC46EE0 /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8F03CB455C70567EF1FB4 /* MinLengthRule.swift */; };
-		1824FBD3B3CE8FA90F393D37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86A42D1A19697E1FBB1F44F /* Foundation.framework */; };
-		1938D24B1642786303A0A2C9 /* FullNameRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AD8AAD3575BCA1EE34104F /* FullNameRule.swift */; };
-		1BBB33620E77702A8D54A7E2 /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DDCA92B280074FBF0A92F /* EmailRule.swift */; };
-		1C96174874419A67AC0B6D62 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97B66F27E7DE5E23A80A6CB /* Upload.swift */; };
-		254A3E93E4E2FA3E6F12BCA6 /* Pods-Voxxel-SwiftValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC04498A4C089347633BF157 /* Pods-Voxxel-SwiftValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C32E66EF019FF2B3279BAD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86A42D1A19697E1FBB1F44F /* Foundation.framework */; };
-		2FF8EFF2D101B862564F359F /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C0902067A5B322CA23F14 /* FloatRule.swift */; };
-		319F19F1C648AF98B781C062 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD08654DDB7D03D97D172314 /* Manager.swift */; };
-		3AA32523C6D0B33FFDD8879D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F15364335EB33F0BE3BAF /* Security.framework */; };
-		419A3D7C6E8C16D4847D121D /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22624C262181458ED1406359 /* Validation.swift */; };
-		49C681C0A6553834A61E4737 /* Pods-Voxxel-CRToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3916CF8818A370399309D5 /* Pods-Voxxel-CRToast-dummy.m */; };
-		51EEDB657556254FF0E78289 /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C2E4408BDCCD26D231BCF /* RequiredRule.swift */; };
-		54C0A63C029A4E281DED46F7 /* Pods-Voxxel-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DE1ACB13EF0DCB24C6203A /* Pods-Voxxel-Alamofire-dummy.m */; };
-		5ABC042DB215493088ED4538 /* CRToast.h in Headers */ = {isa = PBXBuildFile; fileRef = C816A3C882F4CE2F0145FC58 /* CRToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B4EB44D422CD631948211B6 /* Pods-Voxxel-SSKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF171095077D8D38BA82722D /* Pods-Voxxel-SSKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BEAFC10B993F47CA80E3CE6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F5705035F6FBFC0EA4C372 /* Request.swift */; };
-		5E142D21A17BCFB0010803F2 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2946A06D5518F8E03BAD8147 /* Alamofire.swift */; };
-		612D11D09517854106E97A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86A42D1A19697E1FBB1F44F /* Foundation.framework */; };
-		61BAD8544725BBA88B5A4AC3 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 40889F70B8DDD4C65689B0C0 /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		684AF4BD3290F73F4DE8546B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0D955B7EF910D509CBEDEE /* UIKit.framework */; };
-		6FE9654082C157550C697C34 /* ZipCodeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6E3E3564118382495B09B /* ZipCodeRule.swift */; };
-		72F9A27A8398DA1833F19B1A /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2536265971E563ACFB326BD8 /* SSKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7401FE47831C2294113013DD /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417054FC762BB1D0D1FA08C8 /* Validator.swift */; };
-		761B7201FD9FF07C370B8828 /* Pods-Voxxel-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 535C229A76A981B6DC621564 /* Pods-Voxxel-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77C770FF9BBE00C002E83A7E /* CRToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CC3C1E9376D003F7339FF4 /* CRToast.m */; };
-		7901AAEA93C01FE5DC315ADB /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE3CB8BD222116F0769E9E /* PasswordRule.swift */; };
-		8071DC741F7C2662DB98625D /* Pods-Voxxel-SSKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DEE6EFB4803A47AA8D473A /* Pods-Voxxel-SSKeychain-dummy.m */; };
-		81135627581B2ACF2A45C714 /* Pods-Voxxel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1A00BB598DD502785601CAF /* Pods-Voxxel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DB8AB043C87990DE2002055 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03950AD9A45CC5CEC12111 /* Rule.swift */; };
-		9258D3A78A8E437CE5C383D7 /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958F9CCA70FEBD8765B0A50 /* RegexRule.swift */; };
-		98585BC953847C830866B597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2E9009DE263D23A2F1F41 /* AppDelegate.swift */; };
-		9B191352F4438CDC24C71380 /* Pods-Voxxel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE66ED32DDE38BFAFFE7C251 /* Pods-Voxxel-dummy.m */; };
-		9C42AAFF58CB79F6D0C2543E /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321B02680A8DAAEFDB8C4C77 /* ParameterEncoding.swift */; };
-		9C4C566075AE3A2DF5C281AA /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36217C27DB28E5C98CCE8AC8 /* ResponseSerialization.swift */; };
-		9CB1B393E618C8542EB08D18 /* Pods-Voxxel-CRToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD83DE6A67F2B10A31A8EAC6 /* Pods-Voxxel-CRToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AACA2FA56272F004DF62458E /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 63260D402BF3D1ED6BA179A9 /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADCE35038A889B2168AC77BC /* ConfirmRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A525F520BC270535A489F6E /* ConfirmRule.swift */; };
-		B604BE48576ACD3918E14DA9 /* SSKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E09CEC920613E079FC13AC5 /* SSKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB63225FA137D93FBACAAEFD /* PhoneNumberRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18A591E7439B75AAD6412D /* PhoneNumberRule.swift */; };
-		D1B87410B9BA1BD8D72AD9FC /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9B79B2DCDF7C5C76C23BA3 /* MaxLengthRule.swift */; };
-		D25FF8866AB9895B6954D9A7 /* Pods-Voxxel-SwiftValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FA8823B3B289C3BE9D1E15 /* Pods-Voxxel-SwiftValidator-dummy.m */; };
-		D3CCC56F35EBE09DB92947C1 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C35DA8B7C2C20DB463766 /* Download.swift */; };
-		DB135EBF6912592BBA255A3F /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9A8368E8D6D19FA002CE1 /* ValidationError.swift */; };
-		E35D48DCAA294CE47C736C7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86A42D1A19697E1FBB1F44F /* Foundation.framework */; };
-		F0A4267C9398B8C55CDA46AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E306C1B771872220A44CD1C /* ViewController.swift */; };
+		0619609A4279CB448FB72FBA /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B43CD237B1994EE43B1FA922 /* SSKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0D31D3AD0E8247561B69D27E /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDE730AF6F404939E82912 /* Validator.swift */; };
+		1025D6FA38F9B15FC6A61D03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91DD7E2B89436EAE76EBB05 /* Foundation.framework */; };
+		13FB24550AD501BD0A3B3091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91DD7E2B89436EAE76EBB05 /* Foundation.framework */; };
+		15B54ED517BDB4072FB9CAB3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFB63D16EF93AA6F01AA808 /* Request.swift */; };
+		16189AC16958ACA99E565F64 /* PhoneNumberRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0D107B52E81E9A5DA89CF /* PhoneNumberRule.swift */; };
+		1C900C0AFCE9F1042D27398D /* Pods-Voxxel-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3911C580FA344B7EFFCB83B /* Pods-Voxxel-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D34D5D0B1D525964D9B3358 /* Pods-Voxxel-CRToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F19DE37758F7B7EF5B85E80 /* Pods-Voxxel-CRToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27FE09F96F9E165B7EA3FA07 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0BC789AF61998923F7CC4B /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		29DAAA59AA503D3D9F4415D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91DD7E2B89436EAE76EBB05 /* Foundation.framework */; };
+		392F14DF8562653C2ACC2D59 /* SSKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BC120BE18C4CE7526E59FA0 /* SSKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ADF4AF5F923397E2E394BF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0029BFF9DB7F5DE23EF34B4A /* Security.framework */; };
+		3F55C3AEC27E7E2AA12B7BF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20242C9F913C170AAF7F0C6 /* UIKit.framework */; };
+		473BC765F0A48F16941B0E90 /* Pods-Voxxel-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A75F2EEBB9FB5E221FF1E6 /* Pods-Voxxel-SwiftyJSON-dummy.m */; };
+		49FC740095BF5A2E7B3964AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91DD7E2B89436EAE76EBB05 /* Foundation.framework */; };
+		514AD292B0ED01F5A05576BD /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 4181B075C7003E7D30303E9F /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54E509448EB1AD643A990092 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D1AC2CCADC8EEEB07522B /* ParameterEncoding.swift */; };
+		5E61F4DE23EC1952FA5B9315 /* Pods-Voxxel-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B5B9D8E19BC9FFECA76D2 /* Pods-Voxxel-Alamofire-dummy.m */; };
+		69D4247C96184FD94AC5953F /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9309A354243B48F699E10E /* MaxLengthRule.swift */; };
+		69F7502C883CD974F50ADEF0 /* Pods-Voxxel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63763A2412C778B1735D90CC /* Pods-Voxxel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		727CF38AB478F3416B440496 /* CRToast.h in Headers */ = {isa = PBXBuildFile; fileRef = C466FCB27A33DA3DF01BC457 /* CRToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74389C31F3E5F0AD16C72244 /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC42CCF410626D6BDA5501 /* RequiredRule.swift */; };
+		75508BA9D5F2A6AAC15CA5CE /* Pods-Voxxel-SSKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 319A116CBAF3D73DB9C80205 /* Pods-Voxxel-SSKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C3477AB5EA4D18D5893C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46537D5C88B210B8148C7E7 /* AppDelegate.swift */; };
+		7A31C7DDC0351237B7F65144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91DD7E2B89436EAE76EBB05 /* Foundation.framework */; };
+		830B3C653341D7F4CAB10F21 /* ConfirmRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B9B3293AE3CF04A4ABADB /* ConfirmRule.swift */; };
+		83B9EF6C0F50C730065C3E53 /* Pods-Voxxel-CRToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA09C0880A57D5A127C0AEC /* Pods-Voxxel-CRToast-dummy.m */; };
+		8A0964445C4C1C821989B474 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5101D05ADB9EBBD3CCD60A /* Validation.swift */; };
+		8DC310F0562730DD2942C69A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91DD7E2B89436EAE76EBB05 /* Foundation.framework */; };
+		90C9B07BDB4B2F1718D8E958 /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E6ACE544DD9BE608468B0 /* FloatRule.swift */; };
+		95EF10A81D2261CEEC248D37 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF0ACC547B0D3E53430DE2 /* Download.swift */; };
+		9B70623EE59DE7CB3EA08E00 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E8E9506F925D0DE4C8D9C /* ResponseSerialization.swift */; };
+		9D4E1DB750849735A11763CF /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C738899A86EDBF26E7F3B /* RegexRule.swift */; };
+		A77D228CAB3A6528100B0B1F /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FDD2010609E939E1FD791 /* Rule.swift */; };
+		A7D06E98E687F9DFD24DA338 /* Pods-Voxxel-SSKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C47D389B08E61C56A89C36BB /* Pods-Voxxel-SSKeychain-dummy.m */; };
+		AB6377DC95C002021EA12831 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5182AA25F8D2C52EE7F9E5F /* ValidationError.swift */; };
+		AF67E8D9CA8040C772D489E9 /* Pods-Voxxel-SwiftValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 264894A59C3F14A37B35DA12 /* Pods-Voxxel-SwiftValidator-dummy.m */; };
+		B632A9030B5B27C5A26C282E /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB85543D61A760E8ECD6918 /* MinLengthRule.swift */; };
+		B9D3C37543E0CBFA77715394 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E781C76707220811CB0D1 /* Manager.swift */; };
+		BA45424313D599EE62D21075 /* ZipCodeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ECC21F0B98D0FCA0A318E /* ZipCodeRule.swift */; };
+		C02D4A8360467773550FFFAF /* Pods-Voxxel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54658771BB8E5733BF9CAC11 /* Pods-Voxxel-dummy.m */; };
+		C61CDF04FD4E479EB6901256 /* FullNameRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2D03190275F01555F60D5 /* FullNameRule.swift */; };
+		C9725FCD1575EFC7FB6AFD54 /* Pods-Voxxel-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D275174E821A9E484A0D8B4 /* Pods-Voxxel-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D796E2DCA8AC68F49EDB0E66 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5603B5243B084FE7D2F1E2C /* SwiftyJSON.swift */; };
+		DA3E46714C827214A4508E66 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA74EBF7413A461A2B73A4F /* Alamofire.swift */; };
+		DE5D50B7D2289748CE4AB9DB /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB03EF859318C3BF23FA862 /* EmailRule.swift */; };
+		E1360DA39BB128DB360AEF32 /* Pods-Voxxel-SwiftValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0B030B4D25667EA81C5865 /* Pods-Voxxel-SwiftValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6DC5CD2A3A6993CA865A60C /* CRToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D0F2D3FB34A51E0C3FC79 /* CRToast.m */; };
+		EAF8EA1FBD01C780419B20E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA9E389ED28D472900FE43A /* ViewController.swift */; };
+		F511A691B85527A422BA9A61 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A018EEF83FD886A85E873482 /* Upload.swift */; };
+		F86431237C0CBC5DC12A5304 /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE29826B97C753A8A296E1 /* PasswordRule.swift */; };
+		FB8A8128D66DFB577E382456 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2641256A8178E0A506DFA81 /* ValidationRule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		093DDB0502D6B1C3E14C5FA1 /* PBXContainerItemProxy */ = {
+		5585C35482D66634E97A93A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B1F0C8F671ED13790E8D6D17 /* Project object */;
+			containerPortal = 945129FD0E16DB29A6218A7E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 18A7156800B5750789457E26;
-			remoteInfo = "Pods-Voxxel-SwiftValidator";
-		};
-		451E9CFAAD7ED32CFA9AACC8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1F0C8F671ED13790E8D6D17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9FA15F7D64E31FD46E8421B7;
+			remoteGlobalIDString = B12F0E341CD1F52F1066E1EF;
 			remoteInfo = "Pods-Voxxel-SSKeychain";
 		};
-		5D8F08D3B9D0EEFF9DA7CB6C /* PBXContainerItemProxy */ = {
+		9A6889E9FE54A683F2FC918B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B1F0C8F671ED13790E8D6D17 /* Project object */;
+			containerPortal = 945129FD0E16DB29A6218A7E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B8AFF78497025F8EF08480B2;
+			remoteGlobalIDString = BAB457F14F7959ECAD2FDB73;
 			remoteInfo = "Pods-Voxxel-CRToast";
 		};
-		7373F0F8BBA3BF2385E73BAC /* PBXContainerItemProxy */ = {
+		CD6CAFD2F72436AA48CBBE93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B1F0C8F671ED13790E8D6D17 /* Project object */;
+			containerPortal = 945129FD0E16DB29A6218A7E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A3C3A2F0CF75A8C5316B9AF;
+			remoteGlobalIDString = 36154757E54E171935A2BD43;
 			remoteInfo = "Pods-Voxxel-Alamofire";
+		};
+		E86A4FFEE151C9C9E5A55616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 945129FD0E16DB29A6218A7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A4512390E6D5790173B051;
+			remoteInfo = "Pods-Voxxel-SwiftValidator";
+		};
+		F51EBB6E8DCA1E8211C6707B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 945129FD0E16DB29A6218A7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02A624D2171826BB3E8CDD6;
+			remoteInfo = "Pods-Voxxel-SwiftyJSON";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07923F02C34D070FAA9CC79D /* Pods-Voxxel-SSKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SSKeychain-prefix.pch"; sourceTree = "<group>"; };
-		07CC280AC4D6BBDA7E7090EB /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = Validator/ValidationRule.swift; sourceTree = "<group>"; };
-		0A0F0E22550A9FC745A13948 /* Pods-Voxxel-CRToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-CRToast.modulemap"; sourceTree = "<group>"; };
-		13DE1ACB13EF0DCB24C6203A /* Pods-Voxxel-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-Alamofire-dummy.m"; sourceTree = "<group>"; };
-		1419C4477F8507EE014C5FF0 /* Pods-Voxxel-CRToast-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-CRToast-Private.xcconfig"; sourceTree = "<group>"; };
-		1488D8921FB4484B7A6CD30A /* Pods-Voxxel-SSKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SSKeychain.xcconfig"; sourceTree = "<group>"; };
-		16583B3A9D71D97479A6FF23 /* CRToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1958F9CCA70FEBD8765B0A50 /* RegexRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexRule.swift; path = Validator/RegexRule.swift; sourceTree = "<group>"; };
-		1E09CEC920613E079FC13AC5 /* SSKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
-		22624C262181458ED1406359 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		2536265971E563ACFB326BD8 /* SSKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
-		275F15364335EB33F0BE3BAF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		281B989C508D250E3124EF1F /* Pods-Voxxel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel.modulemap"; sourceTree = "<group>"; };
-		2946A06D5518F8E03BAD8147 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		29D6E3E3564118382495B09B /* ZipCodeRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipCodeRule.swift; path = Validator/ZipCodeRule.swift; sourceTree = "<group>"; };
-		2CC0851B7C1BF21038497197 /* Pods_Voxxel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxxel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		305C2E4408BDCCD26D231BCF /* RequiredRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredRule.swift; path = Validator/RequiredRule.swift; sourceTree = "<group>"; };
-		321B02680A8DAAEFDB8C4C77 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		34FA8823B3B289C3BE9D1E15 /* Pods-Voxxel-SwiftValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-SwiftValidator-dummy.m"; sourceTree = "<group>"; };
-		35F5CC625D7A420F612CE951 /* Pods-Voxxel-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voxxel-frameworks.sh"; sourceTree = "<group>"; };
-		36217C27DB28E5C98CCE8AC8 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		36A6396D537E0F20C82A09EF /* Pods-Voxxel-CRToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-CRToast-prefix.pch"; sourceTree = "<group>"; };
-		383DF3A24AEE0512E91B2731 /* Pods-Voxxel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.debug.xcconfig"; sourceTree = "<group>"; };
-		3E121E8026A933A5176A6AC1 /* Pods-Voxxel-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		3EDCEBC64C9FBD449BA10C2F /* Pods-Voxxel-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voxxel-resources.sh"; sourceTree = "<group>"; };
-		40889F70B8DDD4C65689B0C0 /* SSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
-		417054FC762BB1D0D1FA08C8 /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Validator/Validator.swift; sourceTree = "<group>"; };
-		47A0D026211F4D47114BB883 /* Pods-Voxxel-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-Alamofire.modulemap"; sourceTree = "<group>"; };
-		4A0520968A63D5F992A5E65A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50C9A8368E8D6D19FA002CE1 /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = Validator/ValidationError.swift; sourceTree = "<group>"; };
-		50F5705035F6FBFC0EA4C372 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		535C229A76A981B6DC621564 /* Pods-Voxxel-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		5BEA7E9A0470488B75629AFE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D0D955B7EF910D509CBEDEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5E306C1B771872220A44CD1C /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Validator/ViewController.swift; sourceTree = "<group>"; };
-		60D95096697E5A421AC2A7DB /* Pods-Voxxel-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Voxxel-acknowledgements.plist"; sourceTree = "<group>"; };
-		63260D402BF3D1ED6BA179A9 /* SSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
-		67E7711473ECBBA921841BE7 /* Pods-Voxxel.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.staging.xcconfig"; sourceTree = "<group>"; };
-		6BA4D1CE755E97BAC1C3EAE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C3916CF8818A370399309D5 /* Pods-Voxxel-CRToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-CRToast-dummy.m"; sourceTree = "<group>"; };
-		72E70954698892BE72FD8366 /* Pods-Voxxel-SSKeychain-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SSKeychain-Private.xcconfig"; sourceTree = "<group>"; };
-		777968C6BDDC88B7BD1AA589 /* SSKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A525F520BC270535A489F6E /* ConfirmRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmRule.swift; path = Validator/ConfirmRule.swift; sourceTree = "<group>"; };
-		7B2583A4A5000E2F2186D15E /* SwiftValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E18B1F2FDA867D3D14A67D3 /* Pods-Voxxel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.release.xcconfig"; sourceTree = "<group>"; };
-		8FDC6B6FC1981D23AAF95028 /* Pods-Voxxel-SwiftValidator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SwiftValidator.xcconfig"; sourceTree = "<group>"; };
-		92EE34FDC116E0B50436C5D8 /* Pods-Voxxel.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.production.xcconfig"; sourceTree = "<group>"; };
-		93B546D8F4CF526A75C1546D /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		941C35DA8B7C2C20DB463766 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		98AD8AAD3575BCA1EE34104F /* FullNameRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullNameRule.swift; path = Validator/FullNameRule.swift; sourceTree = "<group>"; };
-		A1FFC7289899A72FAB321C1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A58DDCA92B280074FBF0A92F /* EmailRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmailRule.swift; path = Validator/EmailRule.swift; sourceTree = "<group>"; };
-		AA0BA6EAF36AD256ED5040A8 /* Pods-Voxxel-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-Alamofire.xcconfig"; sourceTree = "<group>"; };
-		B0F44423804B9D6D93961809 /* Pods-Voxxel-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-environment.h"; sourceTree = "<group>"; };
-		B1930CAAA6090BD91B18318B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1BD4D9E7348A2C5D195A550 /* Pods-Voxxel-SwiftValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SwiftValidator-prefix.pch"; sourceTree = "<group>"; };
-		B3CC3C1E9376D003F7339FF4 /* CRToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRToast.m; path = CRToast/CRToast.m; sourceTree = "<group>"; };
-		B5034B4CA5741185A919A59E /* Pods-Voxxel-SwiftValidator-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SwiftValidator-Private.xcconfig"; sourceTree = "<group>"; };
-		BB18A591E7439B75AAD6412D /* PhoneNumberRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberRule.swift; path = Validator/PhoneNumberRule.swift; sourceTree = "<group>"; };
-		BD83DE6A67F2B10A31A8EAC6 /* Pods-Voxxel-CRToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-CRToast-umbrella.h"; sourceTree = "<group>"; };
-		C1A00BB598DD502785601CAF /* Pods-Voxxel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-umbrella.h"; sourceTree = "<group>"; };
-		C2DEE6EFB4803A47AA8D473A /* Pods-Voxxel-SSKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-SSKeychain-dummy.m"; sourceTree = "<group>"; };
-		C6013FDE373533A81ABCE638 /* Pods-Voxxel-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
-		C7BEAB65A6D866118E174220 /* Pods-Voxxel-CRToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-CRToast.xcconfig"; sourceTree = "<group>"; };
-		C816A3C882F4CE2F0145FC58 /* CRToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRToast.h; path = CRToast/CRToast.h; sourceTree = "<group>"; };
-		CADCA2AF603E4AAB1F9139C5 /* Pods-Voxxel-SSKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-SSKeychain.modulemap"; sourceTree = "<group>"; };
-		CCB2E9009DE263D23A2F1F41 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Validator/AppDelegate.swift; sourceTree = "<group>"; };
-		CD08654DDB7D03D97D172314 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
-		CD6C0902067A5B322CA23F14 /* FloatRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatRule.swift; path = Validator/FloatRule.swift; sourceTree = "<group>"; };
-		D7101BA637BBE58DB34E015D /* Pods-Voxxel-SwiftValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-SwiftValidator.modulemap"; sourceTree = "<group>"; };
-		D86A42D1A19697E1FBB1F44F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DF171095077D8D38BA82722D /* Pods-Voxxel-SSKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SSKeychain-umbrella.h"; sourceTree = "<group>"; };
-		DF9B79B2DCDF7C5C76C23BA3 /* MaxLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaxLengthRule.swift; path = Validator/MaxLengthRule.swift; sourceTree = "<group>"; };
-		E0C8F03CB455C70567EF1FB4 /* MinLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinLengthRule.swift; path = Validator/MinLengthRule.swift; sourceTree = "<group>"; };
-		E86F94EF2CAF9B1FA6B739CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E97B66F27E7DE5E23A80A6CB /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		EC04498A4C089347633BF157 /* Pods-Voxxel-SwiftValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SwiftValidator-umbrella.h"; sourceTree = "<group>"; };
-		ED174F7E288E21A65E12C3C3 /* Pods-Voxxel-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Voxxel-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EE66ED32DDE38BFAFFE7C251 /* Pods-Voxxel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-dummy.m"; sourceTree = "<group>"; };
-		F8F4E43AD162686E3BE8ED77 /* Pods-Voxxel.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.development.xcconfig"; sourceTree = "<group>"; };
-		F8FE3CB8BD222116F0769E9E /* PasswordRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordRule.swift; path = Validator/PasswordRule.swift; sourceTree = "<group>"; };
-		FB03950AD9A45CC5CEC12111 /* Rule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rule.swift; path = Validator/Rule.swift; sourceTree = "<group>"; };
+		0029BFF9DB7F5DE23EF34B4A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		03F5071839D2CDDFF569A772 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049E07727C8820EDA450AC6C /* Pods-Voxxel-SwiftValidator-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SwiftValidator-Private.xcconfig"; sourceTree = "<group>"; };
+		0B3D0F2D3FB34A51E0C3FC79 /* CRToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRToast.m; path = CRToast/CRToast.m; sourceTree = "<group>"; };
+		0B4C738899A86EDBF26E7F3B /* RegexRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexRule.swift; path = Validator/RegexRule.swift; sourceTree = "<group>"; };
+		0BC120BE18C4CE7526E59FA0 /* SSKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
+		0D275174E821A9E484A0D8B4 /* Pods-Voxxel-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		0F19DE37758F7B7EF5B85E80 /* Pods-Voxxel-CRToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-CRToast-umbrella.h"; sourceTree = "<group>"; };
+		0F3B9B3293AE3CF04A4ABADB /* ConfirmRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmRule.swift; path = Validator/ConfirmRule.swift; sourceTree = "<group>"; };
+		10DF0ACC547B0D3E53430DE2 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		1272751A0CD8D919D2262EE4 /* Pods-Voxxel-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		1487C84145F209C21B3613AF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		210696A87F7DBF35C58C06DC /* Pods-Voxxel-SwiftValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SwiftValidator-prefix.pch"; sourceTree = "<group>"; };
+		246BD1BFFABBC6A1C3A835F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		264894A59C3F14A37B35DA12 /* Pods-Voxxel-SwiftValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-SwiftValidator-dummy.m"; sourceTree = "<group>"; };
+		274E6ACE544DD9BE608468B0 /* FloatRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatRule.swift; path = Validator/FloatRule.swift; sourceTree = "<group>"; };
+		28FEF959815C20E5C340D746 /* Pods-Voxxel-SSKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-SSKeychain.modulemap"; sourceTree = "<group>"; };
+		2C5101D05ADB9EBBD3CCD60A /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		2E90EF19B4AB338F23D58F81 /* Pods-Voxxel-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-Alamofire.modulemap"; sourceTree = "<group>"; };
+		319A116CBAF3D73DB9C80205 /* Pods-Voxxel-SSKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SSKeychain-umbrella.h"; sourceTree = "<group>"; };
+		364B7DF9C4BC5F1ADC7404DF /* Pods-Voxxel-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		3DA74EBF7413A461A2B73A4F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		3F9309A354243B48F699E10E /* MaxLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaxLengthRule.swift; path = Validator/MaxLengthRule.swift; sourceTree = "<group>"; };
+		4181B075C7003E7D30303E9F /* SSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
+		451E62C5024C22E171D3A8E0 /* SwiftValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0BC789AF61998923F7CC4B /* SSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
+		4E5D1AC2CCADC8EEEB07522B /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		53C8DC727912472748277A4C /* Pods-Voxxel-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		54658771BB8E5733BF9CAC11 /* Pods-Voxxel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-dummy.m"; sourceTree = "<group>"; };
+		57365DDE671EF546518FBFE8 /* Pods-Voxxel-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voxxel-frameworks.sh"; sourceTree = "<group>"; };
+		5C87B7FF2DA03C56E1F6A6D3 /* SSKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA09C0880A57D5A127C0AEC /* Pods-Voxxel-CRToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-CRToast-dummy.m"; sourceTree = "<group>"; };
+		5F54F84A5A8506C146000987 /* Pods-Voxxel-CRToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-CRToast.modulemap"; sourceTree = "<group>"; };
+		63763A2412C778B1735D90CC /* Pods-Voxxel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-umbrella.h"; sourceTree = "<group>"; };
+		672E781C76707220811CB0D1 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		67CDE730AF6F404939E82912 /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Validator/Validator.swift; sourceTree = "<group>"; };
+		6BBE37199E7AA7944A51A9EF /* Pods-Voxxel-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		6DE4C07A02B3117FC427262B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76341820A37314A2C53CD1AE /* Pods-Voxxel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.release.xcconfig"; sourceTree = "<group>"; };
+		76FC07410BE10478969C5A42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DA9E389ED28D472900FE43A /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Validator/ViewController.swift; sourceTree = "<group>"; };
+		84B0D107B52E81E9A5DA89CF /* PhoneNumberRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberRule.swift; path = Validator/PhoneNumberRule.swift; sourceTree = "<group>"; };
+		8AFA047C658CA656B8154EA4 /* Pods-Voxxel-SwiftValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-SwiftValidator.modulemap"; sourceTree = "<group>"; };
+		8F0B5B9D8E19BC9FFECA76D2 /* Pods-Voxxel-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		9246498D0AFD57EA4A52DFAE /* Pods_Voxxel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxxel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9454CFC332DD8F43F88065C4 /* CRToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		964F63EBDB575C9C82F104B8 /* Pods-Voxxel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.debug.xcconfig"; sourceTree = "<group>"; };
+		969684B4B525CC07C0653FD9 /* Pods-Voxxel-SSKeychain-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SSKeychain-Private.xcconfig"; sourceTree = "<group>"; };
+		99360839C0ABE8F37F56DB2B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0B030B4D25667EA81C5865 /* Pods-Voxxel-SwiftValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SwiftValidator-umbrella.h"; sourceTree = "<group>"; };
+		A018EEF83FD886A85E873482 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		A5603B5243B084FE7D2F1E2C /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		A7EC42CCF410626D6BDA5501 /* RequiredRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredRule.swift; path = Validator/RequiredRule.swift; sourceTree = "<group>"; };
+		A91DD7E2B89436EAE76EBB05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A95DA77BA942C6DAE9E03940 /* Pods-Voxxel-SwiftValidator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SwiftValidator.xcconfig"; sourceTree = "<group>"; };
+		A9CE2AB18A7E471B16EF27BB /* Pods-Voxxel.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.development.xcconfig"; sourceTree = "<group>"; };
+		AF46441D3E704FEF9C1779E3 /* Pods-Voxxel-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		B16FDD2010609E939E1FD791 /* Rule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rule.swift; path = Validator/Rule.swift; sourceTree = "<group>"; };
+		B43CD237B1994EE43B1FA922 /* SSKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
+		B50AACF07001603A0DF3925D /* Pods-Voxxel-CRToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-CRToast-prefix.pch"; sourceTree = "<group>"; };
+		BAFB63D16EF93AA6F01AA808 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		BBB85543D61A760E8ECD6918 /* MinLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinLengthRule.swift; path = Validator/MinLengthRule.swift; sourceTree = "<group>"; };
+		BC1ECC21F0B98D0FCA0A318E /* ZipCodeRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipCodeRule.swift; path = Validator/ZipCodeRule.swift; sourceTree = "<group>"; };
+		BC48549D97F08A6FE204B706 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA2F9B5DD79E1F731DEF1EB /* Pods-Voxxel-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-environment.h"; sourceTree = "<group>"; };
+		C466FCB27A33DA3DF01BC457 /* CRToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRToast.h; path = CRToast/CRToast.h; sourceTree = "<group>"; };
+		C47D389B08E61C56A89C36BB /* Pods-Voxxel-SSKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-SSKeychain-dummy.m"; sourceTree = "<group>"; };
+		C4B2D03190275F01555F60D5 /* FullNameRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullNameRule.swift; path = Validator/FullNameRule.swift; sourceTree = "<group>"; };
+		C9658F7551F01954992488ED /* Pods-Voxxel.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.production.xcconfig"; sourceTree = "<group>"; };
+		CB94DF7E5F54802384387FE0 /* Pods-Voxxel-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Voxxel-resources.sh"; sourceTree = "<group>"; };
+		CC5276C8CC2F0B52FFE61C12 /* Pods-Voxxel-SSKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-SSKeychain.xcconfig"; sourceTree = "<group>"; };
+		CCDF5C831679D85FF1D5B43B /* Pods-Voxxel-SSKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-SSKeychain-prefix.pch"; sourceTree = "<group>"; };
+		CE432F567167BD0C354C9BF1 /* Pods-Voxxel-CRToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-CRToast.xcconfig"; sourceTree = "<group>"; };
+		CEDC81704F513671532E456F /* Pods-Voxxel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel.modulemap"; sourceTree = "<group>"; };
+		D21E8E9506F925D0DE4C8D9C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		D2641256A8178E0A506DFA81 /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = Validator/ValidationRule.swift; sourceTree = "<group>"; };
+		D3911C580FA344B7EFFCB83B /* Pods-Voxxel-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Voxxel-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		D5182AA25F8D2C52EE7F9E5F /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = Validator/ValidationError.swift; sourceTree = "<group>"; };
+		D5A75F2EEBB9FB5E221FF1E6 /* Pods-Voxxel-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Voxxel-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		D5AC3B358798FEA610A556F8 /* Pods-Voxxel-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Voxxel-acknowledgements.plist"; sourceTree = "<group>"; };
+		D8F9CEFA6570386C23E01774 /* Pods-Voxxel-CRToast-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-CRToast-Private.xcconfig"; sourceTree = "<group>"; };
+		DDB03EF859318C3BF23FA862 /* EmailRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmailRule.swift; path = Validator/EmailRule.swift; sourceTree = "<group>"; };
+		E328F44F23AB4BE3DD801256 /* Pods-Voxxel-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Voxxel-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		E3CB0AD8458C4B752193C77A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46537D5C88B210B8148C7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Validator/AppDelegate.swift; sourceTree = "<group>"; };
+		E7403E6647F0085715F79984 /* Pods-Voxxel-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		E8253A8C9B06AAE3C21FDD9B /* Pods-Voxxel-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Voxxel-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F20242C9F913C170AAF7F0C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F29E29F23ACDCD4F75FD895B /* Pods-Voxxel.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Voxxel.staging.xcconfig"; sourceTree = "<group>"; };
+		F4CE29826B97C753A8A296E1 /* PasswordRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordRule.swift; path = Validator/PasswordRule.swift; sourceTree = "<group>"; };
+		FA14A9FDC48138517EF912A9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0BEA44E7F18E015C64DD36E9 /* Frameworks */ = {
+		383DA6182759D8F9CE5217FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E35D48DCAA294CE47C736C7D /* Foundation.framework in Frameworks */,
+				8DC310F0562730DD2942C69A /* Foundation.framework in Frameworks */,
+				3F55C3AEC27E7E2AA12B7BF9 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CA213A8A951F69EAF84082F /* Frameworks */ = {
+		679196A50F39005A65DDE672 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1024937B552567A3527ADAC1 /* Foundation.framework in Frameworks */,
+				29DAAA59AA503D3D9F4415D8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9412E865F7361A25439FA7F5 /* Frameworks */ = {
+		867A974B9CCA797ECF9BBB80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1824FBD3B3CE8FA90F393D37 /* Foundation.framework in Frameworks */,
-				684AF4BD3290F73F4DE8546B /* UIKit.framework in Frameworks */,
+				1025D6FA38F9B15FC6A61D03 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8F0C03C1E950C4FEF31AAA4 /* Frameworks */ = {
+		B8D349DCCA551C67C555EEE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				612D11D09517854106E97A2D /* Foundation.framework in Frameworks */,
+				49FC740095BF5A2E7B3964AD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDF17D7FA9FFAA072201D829 /* Frameworks */ = {
+		C525A09A9ED758178987D7BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C32E66EF019FF2B3279BAD1 /* Foundation.framework in Frameworks */,
-				3AA32523C6D0B33FFDD8879D /* Security.framework in Frameworks */,
+				13FB24550AD501BD0A3B3091 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC503FBF41432E71E6922B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A31C7DDC0351237B7F65144 /* Foundation.framework in Frameworks */,
+				3ADF4AF5F923397E2E394BF7 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		40183B8C432C9FBE43D64BDD /* Frameworks */ = {
+		03E84BA2987720CBD60398A6 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				77BA90C662581E1A8324228F /* iOS */,
+				A91DD7E2B89436EAE76EBB05 /* Foundation.framework */,
+				0029BFF9DB7F5DE23EF34B4A /* Security.framework */,
+				F20242C9F913C170AAF7F0C6 /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		4D9D0EE6C54CBD45163541CA /* SwiftValidator */ = {
+		17BD997CB9744DB76096CDD9 /* SSKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				CCB2E9009DE263D23A2F1F41 /* AppDelegate.swift */,
-				7A525F520BC270535A489F6E /* ConfirmRule.swift */,
-				A58DDCA92B280074FBF0A92F /* EmailRule.swift */,
-				CD6C0902067A5B322CA23F14 /* FloatRule.swift */,
-				98AD8AAD3575BCA1EE34104F /* FullNameRule.swift */,
-				DF9B79B2DCDF7C5C76C23BA3 /* MaxLengthRule.swift */,
-				E0C8F03CB455C70567EF1FB4 /* MinLengthRule.swift */,
-				F8FE3CB8BD222116F0769E9E /* PasswordRule.swift */,
-				BB18A591E7439B75AAD6412D /* PhoneNumberRule.swift */,
-				1958F9CCA70FEBD8765B0A50 /* RegexRule.swift */,
-				305C2E4408BDCCD26D231BCF /* RequiredRule.swift */,
-				FB03950AD9A45CC5CEC12111 /* Rule.swift */,
-				50C9A8368E8D6D19FA002CE1 /* ValidationError.swift */,
-				07CC280AC4D6BBDA7E7090EB /* ValidationRule.swift */,
-				417054FC762BB1D0D1FA08C8 /* Validator.swift */,
-				5E306C1B771872220A44CD1C /* ViewController.swift */,
-				29D6E3E3564118382495B09B /* ZipCodeRule.swift */,
-				51AC248A656C27DDCF69288B /* Support Files */,
+				4181B075C7003E7D30303E9F /* SSKeychain.h */,
+				4D0BC789AF61998923F7CC4B /* SSKeychain.m */,
+				0BC120BE18C4CE7526E59FA0 /* SSKeychainQuery.h */,
+				B43CD237B1994EE43B1FA922 /* SSKeychainQuery.m */,
+				65FB33263BD9E6D943479DA4 /* Support Files */,
 			);
-			path = SwiftValidator;
+			path = SSKeychain;
 			sourceTree = "<group>";
 		};
-		4DCCB5AE5D8D334B83E91C0E /* Support Files */ = {
+		3527F16AE5A8FB11FC92075D /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				E86F94EF2CAF9B1FA6B739CC /* Info.plist */,
-				CADCA2AF603E4AAB1F9139C5 /* Pods-Voxxel-SSKeychain.modulemap */,
-				1488D8921FB4484B7A6CD30A /* Pods-Voxxel-SSKeychain.xcconfig */,
-				72E70954698892BE72FD8366 /* Pods-Voxxel-SSKeychain-Private.xcconfig */,
-				C2DEE6EFB4803A47AA8D473A /* Pods-Voxxel-SSKeychain-dummy.m */,
-				07923F02C34D070FAA9CC79D /* Pods-Voxxel-SSKeychain-prefix.pch */,
-				DF171095077D8D38BA82722D /* Pods-Voxxel-SSKeychain-umbrella.h */,
+				3DA74EBF7413A461A2B73A4F /* Alamofire.swift */,
+				10DF0ACC547B0D3E53430DE2 /* Download.swift */,
+				672E781C76707220811CB0D1 /* Manager.swift */,
+				4E5D1AC2CCADC8EEEB07522B /* ParameterEncoding.swift */,
+				BAFB63D16EF93AA6F01AA808 /* Request.swift */,
+				D21E8E9506F925D0DE4C8D9C /* ResponseSerialization.swift */,
+				A018EEF83FD886A85E873482 /* Upload.swift */,
+				2C5101D05ADB9EBBD3CCD60A /* Validation.swift */,
+				CDEF7D934D327D32BAF86004 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		50E4BDE60D5AB104CA6336E6 = {
+			isa = PBXGroup;
+			children = (
+				99360839C0ABE8F37F56DB2B /* Podfile */,
+				DDE8D66B8907FD738C5E1433 /* Frameworks */,
+				73C71A6CD474CE3A84FEB927 /* Pods */,
+				E2FCB6935BD6213428BE49C5 /* Products */,
+				ABA2FFB76ED17B606BD72BCA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		65FB33263BD9E6D943479DA4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76FC07410BE10478969C5A42 /* Info.plist */,
+				28FEF959815C20E5C340D746 /* Pods-Voxxel-SSKeychain.modulemap */,
+				CC5276C8CC2F0B52FFE61C12 /* Pods-Voxxel-SSKeychain.xcconfig */,
+				969684B4B525CC07C0653FD9 /* Pods-Voxxel-SSKeychain-Private.xcconfig */,
+				C47D389B08E61C56A89C36BB /* Pods-Voxxel-SSKeychain-dummy.m */,
+				CCDF5C831679D85FF1D5B43B /* Pods-Voxxel-SSKeychain-prefix.pch */,
+				319A116CBAF3D73DB9C80205 /* Pods-Voxxel-SSKeychain-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Voxxel-SSKeychain";
 			sourceTree = "<group>";
 		};
-		4DEBC930C022B53473A73D47 /* Products */ = {
+		73C71A6CD474CE3A84FEB927 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5BEA7E9A0470488B75629AFE /* Alamofire.framework */,
-				16583B3A9D71D97479A6FF23 /* CRToast.framework */,
-				2CC0851B7C1BF21038497197 /* Pods_Voxxel.framework */,
-				777968C6BDDC88B7BD1AA589 /* SSKeychain.framework */,
-				7B2583A4A5000E2F2186D15E /* SwiftValidator.framework */,
+				3527F16AE5A8FB11FC92075D /* Alamofire */,
+				AD335D195D517EAA4FB1C9EC /* CRToast */,
+				17BD997CB9744DB76096CDD9 /* SSKeychain */,
+				81B8D883C756B8CD8DBE31CD /* SwiftValidator */,
+				97467998ED7BC2CCDEFA0321 /* SwiftyJSON */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		51AC248A656C27DDCF69288B /* Support Files */ = {
+		7CE8B04A6DA09C57E10CA074 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B1930CAAA6090BD91B18318B /* Info.plist */,
-				D7101BA637BBE58DB34E015D /* Pods-Voxxel-SwiftValidator.modulemap */,
-				8FDC6B6FC1981D23AAF95028 /* Pods-Voxxel-SwiftValidator.xcconfig */,
-				B5034B4CA5741185A919A59E /* Pods-Voxxel-SwiftValidator-Private.xcconfig */,
-				34FA8823B3B289C3BE9D1E15 /* Pods-Voxxel-SwiftValidator-dummy.m */,
-				B1BD4D9E7348A2C5D195A550 /* Pods-Voxxel-SwiftValidator-prefix.pch */,
-				EC04498A4C089347633BF157 /* Pods-Voxxel-SwiftValidator-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Voxxel-SwiftValidator";
-			sourceTree = "<group>";
-		};
-		75EF54F765B3285F19BF6E77 /* Pods-Voxxel */ = {
-			isa = PBXGroup;
-			children = (
-				4A0520968A63D5F992A5E65A /* Info.plist */,
-				281B989C508D250E3124EF1F /* Pods-Voxxel.modulemap */,
-				ED174F7E288E21A65E12C3C3 /* Pods-Voxxel-acknowledgements.markdown */,
-				60D95096697E5A421AC2A7DB /* Pods-Voxxel-acknowledgements.plist */,
-				EE66ED32DDE38BFAFFE7C251 /* Pods-Voxxel-dummy.m */,
-				B0F44423804B9D6D93961809 /* Pods-Voxxel-environment.h */,
-				35F5CC625D7A420F612CE951 /* Pods-Voxxel-frameworks.sh */,
-				3EDCEBC64C9FBD449BA10C2F /* Pods-Voxxel-resources.sh */,
-				C1A00BB598DD502785601CAF /* Pods-Voxxel-umbrella.h */,
-				383DF3A24AEE0512E91B2731 /* Pods-Voxxel.debug.xcconfig */,
-				F8F4E43AD162686E3BE8ED77 /* Pods-Voxxel.development.xcconfig */,
-				92EE34FDC116E0B50436C5D8 /* Pods-Voxxel.production.xcconfig */,
-				7E18B1F2FDA867D3D14A67D3 /* Pods-Voxxel.release.xcconfig */,
-				67E7711473ECBBA921841BE7 /* Pods-Voxxel.staging.xcconfig */,
-			);
-			name = "Pods-Voxxel";
-			path = "Target Support Files/Pods-Voxxel";
-			sourceTree = "<group>";
-		};
-		77BA90C662581E1A8324228F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D86A42D1A19697E1FBB1F44F /* Foundation.framework */,
-				275F15364335EB33F0BE3BAF /* Security.framework */,
-				5D0D955B7EF910D509CBEDEE /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		77F1562C7B31BA348372D1AD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A1FFC7289899A72FAB321C1F /* Info.plist */,
-				0A0F0E22550A9FC745A13948 /* Pods-Voxxel-CRToast.modulemap */,
-				C7BEAB65A6D866118E174220 /* Pods-Voxxel-CRToast.xcconfig */,
-				1419C4477F8507EE014C5FF0 /* Pods-Voxxel-CRToast-Private.xcconfig */,
-				6C3916CF8818A370399309D5 /* Pods-Voxxel-CRToast-dummy.m */,
-				36A6396D537E0F20C82A09EF /* Pods-Voxxel-CRToast-prefix.pch */,
-				BD83DE6A67F2B10A31A8EAC6 /* Pods-Voxxel-CRToast-umbrella.h */,
+				BC48549D97F08A6FE204B706 /* Info.plist */,
+				5F54F84A5A8506C146000987 /* Pods-Voxxel-CRToast.modulemap */,
+				CE432F567167BD0C354C9BF1 /* Pods-Voxxel-CRToast.xcconfig */,
+				D8F9CEFA6570386C23E01774 /* Pods-Voxxel-CRToast-Private.xcconfig */,
+				5EA09C0880A57D5A127C0AEC /* Pods-Voxxel-CRToast-dummy.m */,
+				B50AACF07001603A0DF3925D /* Pods-Voxxel-CRToast-prefix.pch */,
+				0F19DE37758F7B7EF5B85E80 /* Pods-Voxxel-CRToast-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Voxxel-CRToast";
 			sourceTree = "<group>";
 		};
-		77F76ACCF5817F391291EDA6 /* CRToast */ = {
+		81B8D883C756B8CD8DBE31CD /* SwiftValidator */ = {
 			isa = PBXGroup;
 			children = (
-				C816A3C882F4CE2F0145FC58 /* CRToast.h */,
-				B3CC3C1E9376D003F7339FF4 /* CRToast.m */,
-				77F1562C7B31BA348372D1AD /* Support Files */,
+				E46537D5C88B210B8148C7E7 /* AppDelegate.swift */,
+				0F3B9B3293AE3CF04A4ABADB /* ConfirmRule.swift */,
+				DDB03EF859318C3BF23FA862 /* EmailRule.swift */,
+				274E6ACE544DD9BE608468B0 /* FloatRule.swift */,
+				C4B2D03190275F01555F60D5 /* FullNameRule.swift */,
+				3F9309A354243B48F699E10E /* MaxLengthRule.swift */,
+				BBB85543D61A760E8ECD6918 /* MinLengthRule.swift */,
+				F4CE29826B97C753A8A296E1 /* PasswordRule.swift */,
+				84B0D107B52E81E9A5DA89CF /* PhoneNumberRule.swift */,
+				0B4C738899A86EDBF26E7F3B /* RegexRule.swift */,
+				A7EC42CCF410626D6BDA5501 /* RequiredRule.swift */,
+				B16FDD2010609E939E1FD791 /* Rule.swift */,
+				D5182AA25F8D2C52EE7F9E5F /* ValidationError.swift */,
+				D2641256A8178E0A506DFA81 /* ValidationRule.swift */,
+				67CDE730AF6F404939E82912 /* Validator.swift */,
+				7DA9E389ED28D472900FE43A /* ViewController.swift */,
+				BC1ECC21F0B98D0FCA0A318E /* ZipCodeRule.swift */,
+				BD8D1FF9D6828B8E8CD00496 /* Support Files */,
+			);
+			path = SwiftValidator;
+			sourceTree = "<group>";
+		};
+		97467998ED7BC2CCDEFA0321 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A5603B5243B084FE7D2F1E2C /* SwiftyJSON.swift */,
+				B9CD201EC25404487FC52E20 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		ABA2FFB76ED17B606BD72BCA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2540D3F20878A0F6E6C22DE /* Pods-Voxxel */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AD335D195D517EAA4FB1C9EC /* CRToast */ = {
+			isa = PBXGroup;
+			children = (
+				C466FCB27A33DA3DF01BC457 /* CRToast.h */,
+				0B3D0F2D3FB34A51E0C3FC79 /* CRToast.m */,
+				7CE8B04A6DA09C57E10CA074 /* Support Files */,
 			);
 			path = CRToast;
 			sourceTree = "<group>";
 		};
-		85B0092F81E2468EFAC10459 /* SSKeychain */ = {
+		B9CD201EC25404487FC52E20 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				63260D402BF3D1ED6BA179A9 /* SSKeychain.h */,
-				40889F70B8DDD4C65689B0C0 /* SSKeychain.m */,
-				1E09CEC920613E079FC13AC5 /* SSKeychainQuery.h */,
-				2536265971E563ACFB326BD8 /* SSKeychainQuery.m */,
-				4DCCB5AE5D8D334B83E91C0E /* Support Files */,
+				6DE4C07A02B3117FC427262B /* Info.plist */,
+				E328F44F23AB4BE3DD801256 /* Pods-Voxxel-SwiftyJSON.modulemap */,
+				53C8DC727912472748277A4C /* Pods-Voxxel-SwiftyJSON.xcconfig */,
+				AF46441D3E704FEF9C1779E3 /* Pods-Voxxel-SwiftyJSON-Private.xcconfig */,
+				D5A75F2EEBB9FB5E221FF1E6 /* Pods-Voxxel-SwiftyJSON-dummy.m */,
+				6BBE37199E7AA7944A51A9EF /* Pods-Voxxel-SwiftyJSON-prefix.pch */,
+				0D275174E821A9E484A0D8B4 /* Pods-Voxxel-SwiftyJSON-umbrella.h */,
 			);
-			path = SSKeychain;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Voxxel-SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		896ABFF8FA232AB4D7991D17 /* Alamofire */ = {
+		BD8D1FF9D6828B8E8CD00496 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2946A06D5518F8E03BAD8147 /* Alamofire.swift */,
-				941C35DA8B7C2C20DB463766 /* Download.swift */,
-				CD08654DDB7D03D97D172314 /* Manager.swift */,
-				321B02680A8DAAEFDB8C4C77 /* ParameterEncoding.swift */,
-				50F5705035F6FBFC0EA4C372 /* Request.swift */,
-				36217C27DB28E5C98CCE8AC8 /* ResponseSerialization.swift */,
-				E97B66F27E7DE5E23A80A6CB /* Upload.swift */,
-				22624C262181458ED1406359 /* Validation.swift */,
-				92DD0F721B6F7C94117DA783 /* Support Files */,
+				03F5071839D2CDDFF569A772 /* Info.plist */,
+				8AFA047C658CA656B8154EA4 /* Pods-Voxxel-SwiftValidator.modulemap */,
+				A95DA77BA942C6DAE9E03940 /* Pods-Voxxel-SwiftValidator.xcconfig */,
+				049E07727C8820EDA450AC6C /* Pods-Voxxel-SwiftValidator-Private.xcconfig */,
+				264894A59C3F14A37B35DA12 /* Pods-Voxxel-SwiftValidator-dummy.m */,
+				210696A87F7DBF35C58C06DC /* Pods-Voxxel-SwiftValidator-prefix.pch */,
+				9E0B030B4D25667EA81C5865 /* Pods-Voxxel-SwiftValidator-umbrella.h */,
 			);
-			path = Alamofire;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Voxxel-SwiftValidator";
 			sourceTree = "<group>";
 		};
-		92DD0F721B6F7C94117DA783 /* Support Files */ = {
+		CDEF7D934D327D32BAF86004 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6BA4D1CE755E97BAC1C3EAE0 /* Info.plist */,
-				47A0D026211F4D47114BB883 /* Pods-Voxxel-Alamofire.modulemap */,
-				AA0BA6EAF36AD256ED5040A8 /* Pods-Voxxel-Alamofire.xcconfig */,
-				C6013FDE373533A81ABCE638 /* Pods-Voxxel-Alamofire-Private.xcconfig */,
-				13DE1ACB13EF0DCB24C6203A /* Pods-Voxxel-Alamofire-dummy.m */,
-				3E121E8026A933A5176A6AC1 /* Pods-Voxxel-Alamofire-prefix.pch */,
-				535C229A76A981B6DC621564 /* Pods-Voxxel-Alamofire-umbrella.h */,
+				E3CB0AD8458C4B752193C77A /* Info.plist */,
+				2E90EF19B4AB338F23D58F81 /* Pods-Voxxel-Alamofire.modulemap */,
+				364B7DF9C4BC5F1ADC7404DF /* Pods-Voxxel-Alamofire.xcconfig */,
+				E7403E6647F0085715F79984 /* Pods-Voxxel-Alamofire-Private.xcconfig */,
+				8F0B5B9D8E19BC9FFECA76D2 /* Pods-Voxxel-Alamofire-dummy.m */,
+				1272751A0CD8D919D2262EE4 /* Pods-Voxxel-Alamofire-prefix.pch */,
+				D3911C580FA344B7EFFCB83B /* Pods-Voxxel-Alamofire-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Voxxel-Alamofire";
 			sourceTree = "<group>";
 		};
-		94628C82FCF7D772702201B7 /* Pods */ = {
+		DDE8D66B8907FD738C5E1433 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				896ABFF8FA232AB4D7991D17 /* Alamofire */,
-				77F76ACCF5817F391291EDA6 /* CRToast */,
-				85B0092F81E2468EFAC10459 /* SSKeychain */,
-				4D9D0EE6C54CBD45163541CA /* SwiftValidator */,
+				03E84BA2987720CBD60398A6 /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D0AC808D2459B855C6A2A29E = {
+		E2540D3F20878A0F6E6C22DE /* Pods-Voxxel */ = {
 			isa = PBXGroup;
 			children = (
-				93B546D8F4CF526A75C1546D /* Podfile */,
-				40183B8C432C9FBE43D64BDD /* Frameworks */,
-				94628C82FCF7D772702201B7 /* Pods */,
-				4DEBC930C022B53473A73D47 /* Products */,
-				D71E9111C0B12EF4B52DCE4C /* Targets Support Files */,
+				246BD1BFFABBC6A1C3A835F9 /* Info.plist */,
+				CEDC81704F513671532E456F /* Pods-Voxxel.modulemap */,
+				E8253A8C9B06AAE3C21FDD9B /* Pods-Voxxel-acknowledgements.markdown */,
+				D5AC3B358798FEA610A556F8 /* Pods-Voxxel-acknowledgements.plist */,
+				54658771BB8E5733BF9CAC11 /* Pods-Voxxel-dummy.m */,
+				BCA2F9B5DD79E1F731DEF1EB /* Pods-Voxxel-environment.h */,
+				57365DDE671EF546518FBFE8 /* Pods-Voxxel-frameworks.sh */,
+				CB94DF7E5F54802384387FE0 /* Pods-Voxxel-resources.sh */,
+				63763A2412C778B1735D90CC /* Pods-Voxxel-umbrella.h */,
+				964F63EBDB575C9C82F104B8 /* Pods-Voxxel.debug.xcconfig */,
+				A9CE2AB18A7E471B16EF27BB /* Pods-Voxxel.development.xcconfig */,
+				C9658F7551F01954992488ED /* Pods-Voxxel.production.xcconfig */,
+				76341820A37314A2C53CD1AE /* Pods-Voxxel.release.xcconfig */,
+				F29E29F23ACDCD4F75FD895B /* Pods-Voxxel.staging.xcconfig */,
 			);
+			name = "Pods-Voxxel";
+			path = "Target Support Files/Pods-Voxxel";
 			sourceTree = "<group>";
 		};
-		D71E9111C0B12EF4B52DCE4C /* Targets Support Files */ = {
+		E2FCB6935BD6213428BE49C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75EF54F765B3285F19BF6E77 /* Pods-Voxxel */,
+				FA14A9FDC48138517EF912A9 /* Alamofire.framework */,
+				9454CFC332DD8F43F88065C4 /* CRToast.framework */,
+				9246498D0AFD57EA4A52DFAE /* Pods_Voxxel.framework */,
+				5C87B7FF2DA03C56E1F6A6D3 /* SSKeychain.framework */,
+				451E62C5024C22E171D3A8E0 /* SwiftValidator.framework */,
+				1487C84145F209C21B3613AF /* SwiftyJSON.framework */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		199517B0788DD98F2B1BD942 /* Headers */ = {
+		00B6FF588345FB9F35451EE6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				254A3E93E4E2FA3E6F12BCA6 /* Pods-Voxxel-SwiftValidator-umbrella.h in Headers */,
+				1C900C0AFCE9F1042D27398D /* Pods-Voxxel-Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29BDCFA0A8ABB8F651EF2A6C /* Headers */ = {
+		210D2B1EAB3B9DE4A5BA0FBE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ABC042DB215493088ED4538 /* CRToast.h in Headers */,
-				9CB1B393E618C8542EB08D18 /* Pods-Voxxel-CRToast-umbrella.h in Headers */,
+				E1360DA39BB128DB360AEF32 /* Pods-Voxxel-SwiftValidator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8075363AE808C6C305153992 /* Headers */ = {
+		4E03D2E703CADC74D5026900 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				761B7201FD9FF07C370B8828 /* Pods-Voxxel-Alamofire-umbrella.h in Headers */,
+				69F7502C883CD974F50ADEF0 /* Pods-Voxxel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9862043591B0FBAB36137869 /* Headers */ = {
+		8713DFA99650BA89A0E57821 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81135627581B2ACF2A45C714 /* Pods-Voxxel-umbrella.h in Headers */,
+				75508BA9D5F2A6AAC15CA5CE /* Pods-Voxxel-SSKeychain-umbrella.h in Headers */,
+				514AD292B0ED01F5A05576BD /* SSKeychain.h in Headers */,
+				392F14DF8562653C2ACC2D59 /* SSKeychainQuery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9E713FC0BC40931A04BE622 /* Headers */ = {
+		896C3D4E4263A9FB85769DDD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B4EB44D422CD631948211B6 /* Pods-Voxxel-SSKeychain-umbrella.h in Headers */,
-				AACA2FA56272F004DF62458E /* SSKeychain.h in Headers */,
-				B604BE48576ACD3918E14DA9 /* SSKeychainQuery.h in Headers */,
+				C9725FCD1575EFC7FB6AFD54 /* Pods-Voxxel-SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED70151AAA926E97E0BE57BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727CF38AB478F3416B440496 /* CRToast.h in Headers */,
+				1D34D5D0B1D525964D9B3358 /* Pods-Voxxel-CRToast-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		18A7156800B5750789457E26 /* Pods-Voxxel-SwiftValidator */ = {
+		36154757E54E171935A2BD43 /* Pods-Voxxel-Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCC923E04E806AB8094946B8 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SwiftValidator" */;
+			buildConfigurationList = F820D2EEB2D313FA98EEC7DA /* Build configuration list for PBXNativeTarget "Pods-Voxxel-Alamofire" */;
 			buildPhases = (
-				565F65EDCFBD7771F08E57DB /* Sources */,
-				9412E865F7361A25439FA7F5 /* Frameworks */,
-				199517B0788DD98F2B1BD942 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Voxxel-SwiftValidator";
-			productName = "Pods-Voxxel-SwiftValidator";
-			productReference = 7B2583A4A5000E2F2186D15E /* SwiftValidator.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9A3C3A2F0CF75A8C5316B9AF /* Pods-Voxxel-Alamofire */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8EF3ABD8B9205AE9AF6118DE /* Build configuration list for PBXNativeTarget "Pods-Voxxel-Alamofire" */;
-			buildPhases = (
-				A517FE2A33CD024BCCEB834F /* Sources */,
-				4CA213A8A951F69EAF84082F /* Frameworks */,
-				8075363AE808C6C305153992 /* Headers */,
+				1C59D629AB00EAD3019F7585 /* Sources */,
+				C525A09A9ED758178987D7BD /* Frameworks */,
+				00B6FF588345FB9F35451EE6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -504,16 +549,72 @@
 			);
 			name = "Pods-Voxxel-Alamofire";
 			productName = "Pods-Voxxel-Alamofire";
-			productReference = 5BEA7E9A0470488B75629AFE /* Alamofire.framework */;
+			productReference = FA14A9FDC48138517EF912A9 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9FA15F7D64E31FD46E8421B7 /* Pods-Voxxel-SSKeychain */ = {
+		99A4512390E6D5790173B051 /* Pods-Voxxel-SwiftValidator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E6601960985EFF8B5456449 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SSKeychain" */;
+			buildConfigurationList = E00C1B4810F77D69C8323552 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SwiftValidator" */;
 			buildPhases = (
-				CAEF93B1296A2DB305828ED6 /* Sources */,
-				DDF17D7FA9FFAA072201D829 /* Frameworks */,
-				B9E713FC0BC40931A04BE622 /* Headers */,
+				190DDCEBD33B222F542AE752 /* Sources */,
+				383DA6182759D8F9CE5217FF /* Frameworks */,
+				210D2B1EAB3B9DE4A5BA0FBE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Voxxel-SwiftValidator";
+			productName = "Pods-Voxxel-SwiftValidator";
+			productReference = 451E62C5024C22E171D3A8E0 /* SwiftValidator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A02A624D2171826BB3E8CDD6 /* Pods-Voxxel-SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E11C61985FC1F1F648F2A63 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SwiftyJSON" */;
+			buildPhases = (
+				DE4CC721CAC72D8CAF7A0A77 /* Sources */,
+				867A974B9CCA797ECF9BBB80 /* Frameworks */,
+				896C3D4E4263A9FB85769DDD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Voxxel-SwiftyJSON";
+			productName = "Pods-Voxxel-SwiftyJSON";
+			productReference = 1487C84145F209C21B3613AF /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AEC00B82D7D0C24D38072B8A /* Pods-Voxxel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD6364313B62B804AB6F5AB3 /* Build configuration list for PBXNativeTarget "Pods-Voxxel" */;
+			buildPhases = (
+				34E1F1CA1EFA880910899461 /* Sources */,
+				B8D349DCCA551C67C555EEE6 /* Frameworks */,
+				4E03D2E703CADC74D5026900 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8E4CD83973365C32D66F435 /* PBXTargetDependency */,
+				79BAFEBF186480196390E596 /* PBXTargetDependency */,
+				C85540F727E3627BD6D769F2 /* PBXTargetDependency */,
+				1D133BD3E425B29AE201A6C3 /* PBXTargetDependency */,
+				516E235D73FA1AB34EFF2581 /* PBXTargetDependency */,
+			);
+			name = "Pods-Voxxel";
+			productName = "Pods-Voxxel";
+			productReference = 9246498D0AFD57EA4A52DFAE /* Pods_Voxxel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B12F0E341CD1F52F1066E1EF /* Pods-Voxxel-SSKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CEAD631FA780D56A9179497 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SSKeychain" */;
+			buildPhases = (
+				5C308F6E3D093B7230037511 /* Sources */,
+				DDC503FBF41432E71E6922B4 /* Frameworks */,
+				8713DFA99650BA89A0E57821 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -521,16 +622,16 @@
 			);
 			name = "Pods-Voxxel-SSKeychain";
 			productName = "Pods-Voxxel-SSKeychain";
-			productReference = 777968C6BDDC88B7BD1AA589 /* SSKeychain.framework */;
+			productReference = 5C87B7FF2DA03C56E1F6A6D3 /* SSKeychain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B8AFF78497025F8EF08480B2 /* Pods-Voxxel-CRToast */ = {
+		BAB457F14F7959ECAD2FDB73 /* Pods-Voxxel-CRToast */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2427D5D715EC176B79D9165 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-CRToast" */;
+			buildConfigurationList = 7A4D0CD4CAE2B11D34A6A5A5 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-CRToast" */;
 			buildPhases = (
-				A8C0CC687F24A2AC6150A897 /* Sources */,
-				0BEA44E7F18E015C64DD36E9 /* Frameworks */,
-				29BDCFA0A8ABB8F651EF2A6C /* Headers */,
+				F4B9D051A7EE9DB592F57BC8 /* Sources */,
+				679196A50F39005A65DDE672 /* Frameworks */,
+				ED70151AAA926E97E0BE57BF /* Headers */,
 			);
 			buildRules = (
 			);
@@ -538,443 +639,155 @@
 			);
 			name = "Pods-Voxxel-CRToast";
 			productName = "Pods-Voxxel-CRToast";
-			productReference = 16583B3A9D71D97479A6FF23 /* CRToast.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DDE7638DB50BE78045769005 /* Pods-Voxxel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E8BE87EA7DB9EAA959ACC99A /* Build configuration list for PBXNativeTarget "Pods-Voxxel" */;
-			buildPhases = (
-				425A4B076396FEB1A217FD73 /* Sources */,
-				A8F0C03C1E950C4FEF31AAA4 /* Frameworks */,
-				9862043591B0FBAB36137869 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B259B6F7BFB60420F84D6F6F /* PBXTargetDependency */,
-				F742C11C2F4EE7A4CF7990D0 /* PBXTargetDependency */,
-				6DE784F63CFF6647D3D7F415 /* PBXTargetDependency */,
-				55E459EBD27C05CC520047BE /* PBXTargetDependency */,
-			);
-			name = "Pods-Voxxel";
-			productName = "Pods-Voxxel";
-			productReference = 2CC0851B7C1BF21038497197 /* Pods_Voxxel.framework */;
+			productReference = 9454CFC332DD8F43F88065C4 /* CRToast.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B1F0C8F671ED13790E8D6D17 /* Project object */ = {
+		945129FD0E16DB29A6218A7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 17AC4C1A4F8B69C0BECECB06 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 692502F89D3D67D09200632B /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D0AC808D2459B855C6A2A29E;
-			productRefGroup = 4DEBC930C022B53473A73D47 /* Products */;
+			mainGroup = 50E4BDE60D5AB104CA6336E6;
+			productRefGroup = E2FCB6935BD6213428BE49C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDE7638DB50BE78045769005 /* Pods-Voxxel */,
-				9A3C3A2F0CF75A8C5316B9AF /* Pods-Voxxel-Alamofire */,
-				B8AFF78497025F8EF08480B2 /* Pods-Voxxel-CRToast */,
-				9FA15F7D64E31FD46E8421B7 /* Pods-Voxxel-SSKeychain */,
-				18A7156800B5750789457E26 /* Pods-Voxxel-SwiftValidator */,
+				AEC00B82D7D0C24D38072B8A /* Pods-Voxxel */,
+				36154757E54E171935A2BD43 /* Pods-Voxxel-Alamofire */,
+				BAB457F14F7959ECAD2FDB73 /* Pods-Voxxel-CRToast */,
+				B12F0E341CD1F52F1066E1EF /* Pods-Voxxel-SSKeychain */,
+				99A4512390E6D5790173B051 /* Pods-Voxxel-SwiftValidator */,
+				A02A624D2171826BB3E8CDD6 /* Pods-Voxxel-SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		425A4B076396FEB1A217FD73 /* Sources */ = {
+		190DDCEBD33B222F542AE752 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B191352F4438CDC24C71380 /* Pods-Voxxel-dummy.m in Sources */,
+				75C3477AB5EA4D18D5893C43 /* AppDelegate.swift in Sources */,
+				830B3C653341D7F4CAB10F21 /* ConfirmRule.swift in Sources */,
+				DE5D50B7D2289748CE4AB9DB /* EmailRule.swift in Sources */,
+				90C9B07BDB4B2F1718D8E958 /* FloatRule.swift in Sources */,
+				C61CDF04FD4E479EB6901256 /* FullNameRule.swift in Sources */,
+				69D4247C96184FD94AC5953F /* MaxLengthRule.swift in Sources */,
+				B632A9030B5B27C5A26C282E /* MinLengthRule.swift in Sources */,
+				F86431237C0CBC5DC12A5304 /* PasswordRule.swift in Sources */,
+				16189AC16958ACA99E565F64 /* PhoneNumberRule.swift in Sources */,
+				AF67E8D9CA8040C772D489E9 /* Pods-Voxxel-SwiftValidator-dummy.m in Sources */,
+				9D4E1DB750849735A11763CF /* RegexRule.swift in Sources */,
+				74389C31F3E5F0AD16C72244 /* RequiredRule.swift in Sources */,
+				A77D228CAB3A6528100B0B1F /* Rule.swift in Sources */,
+				AB6377DC95C002021EA12831 /* ValidationError.swift in Sources */,
+				FB8A8128D66DFB577E382456 /* ValidationRule.swift in Sources */,
+				0D31D3AD0E8247561B69D27E /* Validator.swift in Sources */,
+				EAF8EA1FBD01C780419B20E1 /* ViewController.swift in Sources */,
+				BA45424313D599EE62D21075 /* ZipCodeRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		565F65EDCFBD7771F08E57DB /* Sources */ = {
+		1C59D629AB00EAD3019F7585 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98585BC953847C830866B597 /* AppDelegate.swift in Sources */,
-				ADCE35038A889B2168AC77BC /* ConfirmRule.swift in Sources */,
-				1BBB33620E77702A8D54A7E2 /* EmailRule.swift in Sources */,
-				2FF8EFF2D101B862564F359F /* FloatRule.swift in Sources */,
-				1938D24B1642786303A0A2C9 /* FullNameRule.swift in Sources */,
-				D1B87410B9BA1BD8D72AD9FC /* MaxLengthRule.swift in Sources */,
-				16BE3314525F57282DC46EE0 /* MinLengthRule.swift in Sources */,
-				7901AAEA93C01FE5DC315ADB /* PasswordRule.swift in Sources */,
-				CB63225FA137D93FBACAAEFD /* PhoneNumberRule.swift in Sources */,
-				D25FF8866AB9895B6954D9A7 /* Pods-Voxxel-SwiftValidator-dummy.m in Sources */,
-				9258D3A78A8E437CE5C383D7 /* RegexRule.swift in Sources */,
-				51EEDB657556254FF0E78289 /* RequiredRule.swift in Sources */,
-				8DB8AB043C87990DE2002055 /* Rule.swift in Sources */,
-				DB135EBF6912592BBA255A3F /* ValidationError.swift in Sources */,
-				14E8DC023915F216D70C1D2D /* ValidationRule.swift in Sources */,
-				7401FE47831C2294113013DD /* Validator.swift in Sources */,
-				F0A4267C9398B8C55CDA46AF /* ViewController.swift in Sources */,
-				6FE9654082C157550C697C34 /* ZipCodeRule.swift in Sources */,
+				DA3E46714C827214A4508E66 /* Alamofire.swift in Sources */,
+				95EF10A81D2261CEEC248D37 /* Download.swift in Sources */,
+				B9D3C37543E0CBFA77715394 /* Manager.swift in Sources */,
+				54E509448EB1AD643A990092 /* ParameterEncoding.swift in Sources */,
+				5E61F4DE23EC1952FA5B9315 /* Pods-Voxxel-Alamofire-dummy.m in Sources */,
+				15B54ED517BDB4072FB9CAB3 /* Request.swift in Sources */,
+				9B70623EE59DE7CB3EA08E00 /* ResponseSerialization.swift in Sources */,
+				F511A691B85527A422BA9A61 /* Upload.swift in Sources */,
+				8A0964445C4C1C821989B474 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A517FE2A33CD024BCCEB834F /* Sources */ = {
+		34E1F1CA1EFA880910899461 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E142D21A17BCFB0010803F2 /* Alamofire.swift in Sources */,
-				D3CCC56F35EBE09DB92947C1 /* Download.swift in Sources */,
-				319F19F1C648AF98B781C062 /* Manager.swift in Sources */,
-				9C42AAFF58CB79F6D0C2543E /* ParameterEncoding.swift in Sources */,
-				54C0A63C029A4E281DED46F7 /* Pods-Voxxel-Alamofire-dummy.m in Sources */,
-				5BEAFC10B993F47CA80E3CE6 /* Request.swift in Sources */,
-				9C4C566075AE3A2DF5C281AA /* ResponseSerialization.swift in Sources */,
-				1C96174874419A67AC0B6D62 /* Upload.swift in Sources */,
-				419A3D7C6E8C16D4847D121D /* Validation.swift in Sources */,
+				C02D4A8360467773550FFFAF /* Pods-Voxxel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C0CC687F24A2AC6150A897 /* Sources */ = {
+		5C308F6E3D093B7230037511 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C770FF9BBE00C002E83A7E /* CRToast.m in Sources */,
-				49C681C0A6553834A61E4737 /* Pods-Voxxel-CRToast-dummy.m in Sources */,
+				A7D06E98E687F9DFD24DA338 /* Pods-Voxxel-SSKeychain-dummy.m in Sources */,
+				27FE09F96F9E165B7EA3FA07 /* SSKeychain.m in Sources */,
+				0619609A4279CB448FB72FBA /* SSKeychainQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CAEF93B1296A2DB305828ED6 /* Sources */ = {
+		DE4CC721CAC72D8CAF7A0A77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8071DC741F7C2662DB98625D /* Pods-Voxxel-SSKeychain-dummy.m in Sources */,
-				61BAD8544725BBA88B5A4AC3 /* SSKeychain.m in Sources */,
-				72F9A27A8398DA1833F19B1A /* SSKeychainQuery.m in Sources */,
+				473BC765F0A48F16941B0E90 /* Pods-Voxxel-SwiftyJSON-dummy.m in Sources */,
+				D796E2DCA8AC68F49EDB0E66 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B9D051A7EE9DB592F57BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DC5CD2A3A6993CA865A60C /* CRToast.m in Sources */,
+				83B9EF6C0F50C730065C3E53 /* Pods-Voxxel-CRToast-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		55E459EBD27C05CC520047BE /* PBXTargetDependency */ = {
+		1D133BD3E425B29AE201A6C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Voxxel-SwiftValidator";
-			target = 18A7156800B5750789457E26 /* Pods-Voxxel-SwiftValidator */;
-			targetProxy = 093DDB0502D6B1C3E14C5FA1 /* PBXContainerItemProxy */;
+			target = 99A4512390E6D5790173B051 /* Pods-Voxxel-SwiftValidator */;
+			targetProxy = E86A4FFEE151C9C9E5A55616 /* PBXContainerItemProxy */;
 		};
-		6DE784F63CFF6647D3D7F415 /* PBXTargetDependency */ = {
+		516E235D73FA1AB34EFF2581 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Voxxel-SSKeychain";
-			target = 9FA15F7D64E31FD46E8421B7 /* Pods-Voxxel-SSKeychain */;
-			targetProxy = 451E9CFAAD7ED32CFA9AACC8 /* PBXContainerItemProxy */;
+			name = "Pods-Voxxel-SwiftyJSON";
+			target = A02A624D2171826BB3E8CDD6 /* Pods-Voxxel-SwiftyJSON */;
+			targetProxy = F51EBB6E8DCA1E8211C6707B /* PBXContainerItemProxy */;
 		};
-		B259B6F7BFB60420F84D6F6F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Voxxel-Alamofire";
-			target = 9A3C3A2F0CF75A8C5316B9AF /* Pods-Voxxel-Alamofire */;
-			targetProxy = 7373F0F8BBA3BF2385E73BAC /* PBXContainerItemProxy */;
-		};
-		F742C11C2F4EE7A4CF7990D0 /* PBXTargetDependency */ = {
+		79BAFEBF186480196390E596 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Voxxel-CRToast";
-			target = B8AFF78497025F8EF08480B2 /* Pods-Voxxel-CRToast */;
-			targetProxy = 5D8F08D3B9D0EEFF9DA7CB6C /* PBXContainerItemProxy */;
+			target = BAB457F14F7959ECAD2FDB73 /* Pods-Voxxel-CRToast */;
+			targetProxy = 9A6889E9FE54A683F2FC918B /* PBXContainerItemProxy */;
+		};
+		C85540F727E3627BD6D769F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Voxxel-SSKeychain";
+			target = B12F0E341CD1F52F1066E1EF /* Pods-Voxxel-SSKeychain */;
+			targetProxy = 5585C35482D66634E97A93A5 /* PBXContainerItemProxy */;
+		};
+		C8E4CD83973365C32D66F435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Voxxel-Alamofire";
+			target = 36154757E54E171935A2BD43 /* Pods-Voxxel-Alamofire */;
+			targetProxy = CD6CAFD2F72436AA48CBBE93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0289CDF0209383B1219C67A4 /* Development */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1419C4477F8507EE014C5FF0 /* Pods-Voxxel-CRToast-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-CRToast/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CRToast;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Development;
-		};
-		04A3CA1EAFE6CAAB9CE9B483 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E18B1F2FDA867D3D14A67D3 /* Pods-Voxxel.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Voxxel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		13016350FFF03367D118EFC5 /* Production */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5034B4CA5741185A919A59E /* Pods-Voxxel-SwiftValidator-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftValidator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Production;
-		};
-		140AF1AEB99549C44436B1F1 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67E7711473ECBBA921841BE7 /* Pods-Voxxel.staging.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Voxxel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Staging;
-		};
-		184D8294808C51D3614B12F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1419C4477F8507EE014C5FF0 /* Pods-Voxxel-CRToast-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-CRToast/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CRToast;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1C806AAD8A43BBDCBA1FBDD5 /* Production */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72E70954698892BE72FD8366 /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SSKeychain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Production;
-		};
-		22D629FA2836562A06BE829E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 383DF3A24AEE0512E91B2731 /* Pods-Voxxel.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Voxxel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2C629AC7A63D91220F183B32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72E70954698892BE72FD8366 /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SSKeychain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3E21387BB3799FFBC1A77A0D /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "DEVELOPMENT=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Development;
-		};
-		57A7A9632CD4A1FEE80574EF /* Production */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6013FDE373533A81ABCE638 /* Pods-Voxxel-Alamofire-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Production;
-		};
-		57F0F6FD8F91411C80A98198 /* Production */ = {
+		0133AFFD97D45CBC8BFFF327 /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1007,9 +820,9 @@
 			};
 			name = Production;
 		};
-		6FF0F5297AC8E73CB7F0E7EB /* Development */ = {
+		0F02E0E7C338484ED47C0104 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72E70954698892BE72FD8366 /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			baseConfigurationReference = 049E07727C8820EDA450AC6C /* Pods-Voxxel-SwiftValidator-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1018,52 +831,25 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SSKeychain;
+				PRODUCT_NAME = SwiftValidator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Development;
+			name = Release;
 		};
-		7722D363B9C3E3B29D4E3733 /* Debug */ = {
+		1C162306166B5AA65227A807 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1419C4477F8507EE014C5FF0 /* Pods-Voxxel-CRToast-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-CRToast/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CRToast;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7C86B5BDC5A2E9706108BB66 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6013FDE373533A81ABCE638 /* Pods-Voxxel-Alamofire-Private.xcconfig */;
+			baseConfigurationReference = E7403E6647F0085715F79984 /* Pods-Voxxel-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1086,71 +872,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Staging;
-		};
-		810DAB38A8DCE15C5C9E9792 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "STAGING=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Staging;
-		};
-		96C5CF60F7DC0F780C1BDBF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5034B4CA5741185A919A59E /* Pods-Voxxel-SwiftValidator-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftValidator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
 			name = Release;
 		};
-		9C6EAE1EE3DA3352BA2DEC07 /* Release */ = {
+		1F1A69B62AB3FC6836A346CB /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72E70954698892BE72FD8366 /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			baseConfigurationReference = AF46441D3E704FEF9C1779E3 /* Pods-Voxxel-SwiftyJSON-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1159,98 +885,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftyJSON/Pods-Voxxel-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftyJSON/Pods-Voxxel-SwiftyJSON.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SSKeychain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A2A909F4648D0C4CD4F9928E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5034B4CA5741185A919A59E /* Pods-Voxxel-SwiftValidator-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftValidator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A2DE753944E5F1E780A06C64 /* Production */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92EE34FDC116E0B50436C5D8 /* Pods-Voxxel.production.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Voxxel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Production;
-		};
-		B1F8E66E2188AE0B89213E26 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1419C4477F8507EE014C5FF0 /* Pods-Voxxel-CRToast-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-CRToast/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CRToast;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1259,34 +901,7 @@
 			};
 			name = Staging;
 		};
-		B426A371B2E8ACCBE2CF01CD /* Development */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5034B4CA5741185A919A59E /* Pods-Voxxel-SwiftValidator-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftValidator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Development;
-		};
-		BF9F6EE525F32CED5FDC16FA /* Debug */ = {
+		1F6195E291821FDC80820F84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1325,9 +940,9 @@
 			};
 			name = Debug;
 		};
-		CC03881820C7C4D30B8657E2 /* Release */ = {
+		20B06412D8A71035BFBEFF2D /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6013FDE373533A81ABCE638 /* Pods-Voxxel-Alamofire-Private.xcconfig */;
+			baseConfigurationReference = E7403E6647F0085715F79984 /* Pods-Voxxel-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1350,11 +965,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Production;
 		};
-		CC9A7969A6DD5ACB1B7518DC /* Production */ = {
+		2214255AAB5010797BAA2175 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1419C4477F8507EE014C5FF0 /* Pods-Voxxel-CRToast-Private.xcconfig */;
+			baseConfigurationReference = D8F9CEFA6570386C23E01774 /* Pods-Voxxel-CRToast-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1379,9 +994,9 @@
 			};
 			name = Production;
 		};
-		D77D6ACFE443AC4F01E528F6 /* Development */ = {
+		2EE069C3161E4402F60BF607 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8F4E43AD162686E3BE8ED77 /* Pods-Voxxel.development.xcconfig */;
+			baseConfigurationReference = 76341820A37314A2C53CD1AE /* Pods-Voxxel.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1406,11 +1021,38 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Development;
+			name = Release;
 		};
-		D935EB0BFE8F76FA03BDFBCF /* Staging */ = {
+		31E85AABB616FFB73DDD7AC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5034B4CA5741185A919A59E /* Pods-Voxxel-SwiftValidator-Private.xcconfig */;
+			baseConfigurationReference = 969684B4B525CC07C0653FD9 /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38C1EFAE98295C5CFEADA442 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049E07727C8820EDA450AC6C /* Pods-Voxxel-SwiftValidator-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1433,9 +1075,91 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Development;
+		};
+		4A6B3DD580F263BFCEC67A6D /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969684B4B525CC07C0653FD9 /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
 			name = Staging;
 		};
-		E3E2617568AE0823537F6396 /* Release */ = {
+		539381DD82317786185D8476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF46441D3E704FEF9C1779E3 /* Pods-Voxxel-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftyJSON/Pods-Voxxel-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftyJSON/Pods-Voxxel-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69E11DF83B2FBF25B2852E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF46441D3E704FEF9C1779E3 /* Pods-Voxxel-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftyJSON/Pods-Voxxel-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftyJSON/Pods-Voxxel-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		754D76C336F48AF8EBD10B85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1469,9 +1193,346 @@
 			};
 			name = Release;
 		};
-		F9149E314576FB5F7E2356C6 /* Debug */ = {
+		79881347E16730D354CF64AC /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6013FDE373533A81ABCE638 /* Pods-Voxxel-Alamofire-Private.xcconfig */;
+			baseConfigurationReference = AF46441D3E704FEF9C1779E3 /* Pods-Voxxel-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftyJSON/Pods-Voxxel-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftyJSON/Pods-Voxxel-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		8019AEBA0919BDA231199B92 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29E29F23ACDCD4F75FD895B /* Pods-Voxxel.staging.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Voxxel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		834C6B4E9149A44E244FE642 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF46441D3E704FEF9C1779E3 /* Pods-Voxxel-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftyJSON/Pods-Voxxel-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftyJSON/Pods-Voxxel-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		855A80337B9198E64787C3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969684B4B525CC07C0653FD9 /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		862D03D486A7AAD49B0D1CEC /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F9CEFA6570386C23E01774 /* Pods-Voxxel-CRToast-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-CRToast/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CRToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		875F85BA45A7A3281D870292 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969684B4B525CC07C0653FD9 /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		88BD33D06932F2D5FB9DFABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964F63EBDB575C9C82F104B8 /* Pods-Voxxel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Voxxel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E5869246B3E0BF655207C70 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9658F7551F01954992488ED /* Pods-Voxxel.production.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Voxxel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		A452B210870BE0674227D415 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7403E6647F0085715F79984 /* Pods-Voxxel-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-Alamofire/Pods-Voxxel-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		AF8B919FB160778C34E41A4C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEVELOPMENT=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development;
+		};
+		B1147050CD24E77588CE6B4D /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049E07727C8820EDA450AC6C /* Pods-Voxxel-SwiftValidator-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		B2965FFAD8420E8BEED0F608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F9CEFA6570386C23E01774 /* Pods-Voxxel-CRToast-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-CRToast/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CRToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B417BD91E8DE416F2D551ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7403E6647F0085715F79984 /* Pods-Voxxel-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1497,36 +1558,9 @@
 			};
 			name = Debug;
 		};
-		F9A5FB970540D331B9EABD70 /* Staging */ = {
+		BDDADDF5E6C99730E54C227D /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72E70954698892BE72FD8366 /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SSKeychain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Staging;
-		};
-		FEB6F8C7F302CD4DCAD9484B /* Development */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6013FDE373533A81ABCE638 /* Pods-Voxxel-Alamofire-Private.xcconfig */;
+			baseConfigurationReference = E7403E6647F0085715F79984 /* Pods-Voxxel-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1549,84 +1583,294 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Staging;
+		};
+		CD03BE48CF8A620FE3A50453 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F9CEFA6570386C23E01774 /* Pods-Voxxel-CRToast-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-CRToast/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CRToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		D47174C41DD19C943502FAAC /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "STAGING=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		D93B6B0BBEA7BFFF548825D3 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969684B4B525CC07C0653FD9 /* Pods-Voxxel-SSKeychain-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SSKeychain/Pods-Voxxel-SSKeychain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SSKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		E7B99BB35F800EDBBE427388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F9CEFA6570386C23E01774 /* Pods-Voxxel-CRToast-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-CRToast/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-CRToast/Pods-Voxxel-CRToast.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CRToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7B11E715383CBEE4336F83C /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049E07727C8820EDA450AC6C /* Pods-Voxxel-SwiftValidator-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Production;
+		};
+		FAB13A1156D2D7D9A9CCB2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049E07727C8820EDA450AC6C /* Pods-Voxxel-SwiftValidator-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel-SwiftValidator/Pods-Voxxel-SwiftValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD28A0D28EA3D6E361212482 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CE2AB18A7E471B16EF27BB /* Pods-Voxxel.development.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Voxxel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Voxxel/Pods-Voxxel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Voxxel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
 			name = Development;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17AC4C1A4F8B69C0BECECB06 /* Build configuration list for PBXProject "Pods" */ = {
+		5CEAD631FA780D56A9179497 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SSKeychain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF9F6EE525F32CED5FDC16FA /* Debug */,
-				3E21387BB3799FFBC1A77A0D /* Development */,
-				57F0F6FD8F91411C80A98198 /* Production */,
-				E3E2617568AE0823537F6396 /* Release */,
-				810DAB38A8DCE15C5C9E9792 /* Staging */,
+				855A80337B9198E64787C3DD /* Debug */,
+				D93B6B0BBEA7BFFF548825D3 /* Development */,
+				875F85BA45A7A3281D870292 /* Production */,
+				31E85AABB616FFB73DDD7AC7 /* Release */,
+				4A6B3DD580F263BFCEC67A6D /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E6601960985EFF8B5456449 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SSKeychain" */ = {
+		692502F89D3D67D09200632B /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C629AC7A63D91220F183B32 /* Debug */,
-				6FF0F5297AC8E73CB7F0E7EB /* Development */,
-				1C806AAD8A43BBDCBA1FBDD5 /* Production */,
-				9C6EAE1EE3DA3352BA2DEC07 /* Release */,
-				F9A5FB970540D331B9EABD70 /* Staging */,
+				1F6195E291821FDC80820F84 /* Debug */,
+				AF8B919FB160778C34E41A4C /* Development */,
+				0133AFFD97D45CBC8BFFF327 /* Production */,
+				754D76C336F48AF8EBD10B85 /* Release */,
+				D47174C41DD19C943502FAAC /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EF3ABD8B9205AE9AF6118DE /* Build configuration list for PBXNativeTarget "Pods-Voxxel-Alamofire" */ = {
+		7A4D0CD4CAE2B11D34A6A5A5 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-CRToast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F9149E314576FB5F7E2356C6 /* Debug */,
-				FEB6F8C7F302CD4DCAD9484B /* Development */,
-				57A7A9632CD4A1FEE80574EF /* Production */,
-				CC03881820C7C4D30B8657E2 /* Release */,
-				7C86B5BDC5A2E9706108BB66 /* Staging */,
+				B2965FFAD8420E8BEED0F608 /* Debug */,
+				CD03BE48CF8A620FE3A50453 /* Development */,
+				2214255AAB5010797BAA2175 /* Production */,
+				E7B99BB35F800EDBBE427388 /* Release */,
+				862D03D486A7AAD49B0D1CEC /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2427D5D715EC176B79D9165 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-CRToast" */ = {
+		7E11C61985FC1F1F648F2A63 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7722D363B9C3E3B29D4E3733 /* Debug */,
-				0289CDF0209383B1219C67A4 /* Development */,
-				CC9A7969A6DD5ACB1B7518DC /* Production */,
-				184D8294808C51D3614B12F0 /* Release */,
-				B1F8E66E2188AE0B89213E26 /* Staging */,
+				69E11DF83B2FBF25B2852E97 /* Debug */,
+				79881347E16730D354CF64AC /* Development */,
+				834C6B4E9149A44E244FE642 /* Production */,
+				539381DD82317786185D8476 /* Release */,
+				1F1A69B62AB3FC6836A346CB /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8BE87EA7DB9EAA959ACC99A /* Build configuration list for PBXNativeTarget "Pods-Voxxel" */ = {
+		BD6364313B62B804AB6F5AB3 /* Build configuration list for PBXNativeTarget "Pods-Voxxel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22D629FA2836562A06BE829E /* Debug */,
-				D77D6ACFE443AC4F01E528F6 /* Development */,
-				A2DE753944E5F1E780A06C64 /* Production */,
-				04A3CA1EAFE6CAAB9CE9B483 /* Release */,
-				140AF1AEB99549C44436B1F1 /* Staging */,
+				88BD33D06932F2D5FB9DFABA /* Debug */,
+				FD28A0D28EA3D6E361212482 /* Development */,
+				9E5869246B3E0BF655207C70 /* Production */,
+				2EE069C3161E4402F60BF607 /* Release */,
+				8019AEBA0919BDA231199B92 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCC923E04E806AB8094946B8 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SwiftValidator" */ = {
+		E00C1B4810F77D69C8323552 /* Build configuration list for PBXNativeTarget "Pods-Voxxel-SwiftValidator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2A909F4648D0C4CD4F9928E /* Debug */,
-				B426A371B2E8ACCBE2CF01CD /* Development */,
-				13016350FFF03367D118EFC5 /* Production */,
-				96C5CF60F7DC0F780C1BDBF1 /* Release */,
-				D935EB0BFE8F76FA03BDFBCF /* Staging */,
+				FAB13A1156D2D7D9A9CCB2DA /* Debug */,
+				38C1EFAE98295C5CFEADA442 /* Development */,
+				F7B11E715383CBEE4336F83C /* Production */,
+				0F02E0E7C338484ED47C0104 /* Release */,
+				B1147050CD24E77588CE6B4D /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F820D2EEB2D313FA98EEC7DA /* Build configuration list for PBXNativeTarget "Pods-Voxxel-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B417BD91E8DE416F2D551ECF /* Debug */,
+				A452B210870BE0674227D415 /* Development */,
+				20B06412D8A71035BFBEFF2D /* Production */,
+				1C162306166B5AA65227A807 /* Release */,
+				BDDADDF5E6C99730E54C227D /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B1F0C8F671ED13790E8D6D17 /* Project object */;
+	rootObject = 945129FD0E16DB29A6218A7E /* Project object */;
 }
