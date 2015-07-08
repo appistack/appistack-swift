@@ -10,6 +10,7 @@
 		183E106C673B3145022B1C62 /* Pods_Voxxel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431AA00D1B2FA94700D52CC7 /* AuthService.swift */; };
 		434681DD1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434681DC1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift */; };
+		435E23661B4CEC8100B137FC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435E23651B4CEC8100B137FC /* SwiftyJSON.framework */; };
 		43C5474C1B3AF6370044F749 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5474B1B3AF6370044F749 /* UIHelper.swift */; };
 		43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6A2441B4A608000B093BD /* NavViewController.swift */; };
 		43E97AEA1B294154004CC7ED /* DevelopmentConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E97AE91B294154004CC7ED /* DevelopmentConfig.plist */; };
@@ -50,6 +51,7 @@
 		24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxxel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431AA00D1B2FA94700D52CC7 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		434681DC1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavControllerDelegate.swift; sourceTree = "<group>"; };
+		435E23651B4CEC8100B137FC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/Pods-Voxxel/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		43C5474B1B3AF6370044F749 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		43E6A2441B4A608000B093BD /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		43E97AE91B294154004CC7ED /* DevelopmentConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DevelopmentConfig.plist; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435E23661B4CEC8100B137FC /* SwiftyJSON.framework in Frameworks */,
 				183E106C673B3145022B1C62 /* Pods_Voxxel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +108,7 @@
 		3908E1A4542664A51D19FFF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				435E23651B4CEC8100B137FC /* SwiftyJSON.framework */,
 				24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */,
 			);
 			name = Frameworks;
