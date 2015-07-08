@@ -15,6 +15,34 @@ protocol NavSelectionDelegate: class {
 
 class NavViewController: UITableViewController {
     
+    let authManager = AuthManager.manager
+    let authService = AuthService.init()
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if !authManager.isLoggedIn() {
+            navigateToLogin()
+        } else {
+//            let token = authManager.getAccessToken()
+//            print(token.token)
+//            print(token.client)
+//            print(VoxxelApi.manager.session.configuration.HTTPAdditionalHeaders)
+//            VoxxelApi.manager(authToken: authManasetAuthHeaders(authManager.getAccessToken())
+            authService.validateToken({(res, json) in
+//                self.loadArtists()
+                }, onError: {(res, json, err) in
+                    self.navigateToLogin()
+            })
+        }
+    }
+    
+    func navigateToLogin() {
+        if let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as? LoginViewController {
+            self.navigationController!.presentViewController(loginController, animated:true, completion:nil)
+        }
+    }
+    
     var navDelegate: NavSelectionDelegate?
     
     var navItems = ["Home", "Artists", "Profile", "Settings", "Logout"]
@@ -42,4 +70,6 @@ class NavViewController: UITableViewController {
         default: self.performSegueWithIdentifier("showProfile", sender: self)
         }
     }
+    
+    
 }

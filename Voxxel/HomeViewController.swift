@@ -13,21 +13,24 @@ class HomeViewController: UIViewController {
     
     let authManager = AuthManager.manager
     let authService = AuthService.init()
-
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        if !authManager.isLoggedIn() {
-            navigateToLogin()
-        } else {
-            VoxxelApi.setAuthHeaders(authManager.getAccessToken())
-            authService.validateToken({(res, json) in
-                self.loadArtists()
-                }, onError: {(res, json, err) in
-                    self.navigateToLogin()
-                    })
-        }
-    }
+//
+//    override func viewDidAppear(animated: Bool) {
+//        super.viewDidAppear(animated)
+//        
+//        if !authManager.isLoggedIn() {
+//            navigateToLogin()
+//        } else {
+//            let token = authManager.getAccessToken()
+//            print(token.token)
+//            print(token.client)
+//            VoxxelApi.setAuthHeaders(authManager.getAccessToken())
+//            authService.validateToken({(res, json) in
+//                self.loadArtists()
+//                }, onError: {(res, json, err) in
+//                    self.navigateToLogin()
+//                    })
+//        }
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

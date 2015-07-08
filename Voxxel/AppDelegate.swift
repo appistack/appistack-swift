@@ -47,4 +47,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func applicationWillTerminate(application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    // This method is called when a split view controller is collapsing its children for a transition to a compact-width size class. Override this
+    // method to perform custom adjustments to the view controller hierarchy of the target controller.  When you return from this method, you're
+    // expected to have modified the `primaryViewController` so as to be suitable for display in a compact-width split view controller, potentially
+    // using `secondaryViewController` to do so.  Return YES to prevent UIKit from applying its default behavior; return NO to request that UIKit
+    // perform its default collapsing behavior.
+    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController, ontoPrimaryViewController primaryViewController:UIViewController) -> Bool {
+        if let secondaryAsNavController = secondaryViewController as? UINavigationController {
+            if let topAsDetailController = secondaryAsNavController.topViewController as? HomeViewController {
+//                if topAsDetailController.detailItem == nil {
+                    // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
+                    //If we don't do this, detail1 will open as the first view when run on iPhone, comment and see
+                    return true
+//                }
+            }
+        }
+        return false
+    }
+    
+    // This method is called when a split view controller is separating its child into two children for a transition from a compact-width size
+    // class to a regular-width size class. Override this method to perform custom separation behavior.  The controller returned from this method
+    // will be set as the secondary view controller of the split view controller.  When you return from this method, `primaryViewController` should
+    // have been configured for display in a regular-width split view controller. If you return `nil`, then `UISplitViewController` will perform
+    // its default behavior.
+//    // Correctly Handle Portrait to Landscape transition for iPhone 6+ when TableView2 is open in Portrait. Comment and see for yourself, what happens when you don't write this.
+//    func splitViewController(splitViewController: UISplitViewController, separateSecondaryViewControllerFromPrimaryViewController primaryViewController: UIViewController!) -> UIViewController? {
+//        if let primaryAsNavController = primaryViewController as? UINavigationController {
+//            if let topAsTableViewController = primaryAsNavController.topViewController as? TableViewController2 {
+//                //Return Navigation controller containing DetailView1 to be used as secondary view for Split View
+//                return (UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("detail1Nav") as! UIViewController)
+//            }
+//        }
+//        return nil
+//    }
+
 }
