@@ -58,11 +58,26 @@ class NavViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch indexPath.row {
-        case 0: self.performSegueWithIdentifier("showHome", sender: self)
-        case 1: self.performSegueWithIdentifier("showArtists", sender: self)
-        default: self.performSegueWithIdentifier("showProfile", sender: self)
+        case 0: self.performSegueWithIdentifier("navigateToHome", sender: self)
+        case 1: self.performSegueWithIdentifier("navigateToArtists", sender: self)
+        default: self.performSegueWithIdentifier("navigateToProfile", sender: self)
         }
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "navigateToHome" {
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! HomeViewController
+            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            controller.navigationItem.leftItemsSupplementBackButton = true
+            
+        } else if segue.identifier == "navigateToArtists" {
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController!
+            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            controller.navigationItem.leftItemsSupplementBackButton = true
+        } else if segue.identifier == "navigateToProfile" {
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController!
+            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            controller.navigationItem.leftItemsSupplementBackButton = true
+        }
+    }
 }
