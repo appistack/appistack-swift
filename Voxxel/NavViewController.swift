@@ -24,16 +24,10 @@ class NavViewController: UITableViewController {
         if !authManager.isLoggedIn() {
             navigateToLogin()
         } else {
-//            let token = authManager.getAccessToken()
-//            print(token.token)
-//            print(token.client)
-//            print(VoxxelApi.manager.session.configuration.HTTPAdditionalHeaders)
-//            VoxxelApi.manager(authToken: authManasetAuthHeaders(authManager.getAccessToken())
-            authService.validateToken({(res, json) in
-//                self.loadArtists()
-                }, onError: {(res, json, err) in
-                    self.navigateToLogin()
-            })
+            if authManager.authToken.isExpired() {
+                authManager.clearAccessToken()
+                navigateToLogin()
+            }
         }
     }
     
@@ -44,7 +38,6 @@ class NavViewController: UITableViewController {
     }
     
     var navDelegate: NavSelectionDelegate?
-    
     var navItems = ["Home", "Artists", "Profile", "Settings", "Logout"]
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

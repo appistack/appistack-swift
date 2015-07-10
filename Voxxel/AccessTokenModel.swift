@@ -38,6 +38,6 @@ class AccessTokenModel : NSObject {
     
     func isExpired() -> Bool {
         let seconds = NSDate().timeIntervalSince1970
-        return Int64(self.expiry!) > Int64(seconds)
+        return Int64(seconds) > Int64(self.expiry!)
     }
 }
