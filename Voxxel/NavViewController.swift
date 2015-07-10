@@ -27,6 +27,8 @@ class NavViewController: UITableViewController {
             if authManager.authToken.isExpired() {
                 authManager.clearAccessToken()
                 navigateToLogin()
+            } else {
+                VoxxelApi.setAuthHeaders(authManager.getAccessToken())
             }
         }
     }
