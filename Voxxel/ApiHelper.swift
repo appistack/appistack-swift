@@ -7,32 +7,31 @@
 //
 
 import Alamofire
+import SwiftyJSON
 //import Dollar
 
-@objc public protocol ResponseObjectSerializable {
-    init(response: NSHTTPURLResponse, json: AnyObject)
+public protocol ResponseObjectSerializable: AnyObject {
+    init(response: NSHTTPURLResponse, json: JSON)
 }
 
-@objc public protocol ResponseCollectionSerializable {
+public protocol ResponseCollectionSerializable: AnyObject {
     //TODO: any way to do this without using [Self] and forcing classes to be final?
-    static func collection(response response: NSHTTPURLResponse, json: AnyObject) -> [Self]
+    static func collection(response response: NSHTTPURLResponse, json: JSON) -> [Self]
 }
 
 extension Alamofire.Request {
-    
     // TODO: refactor completionHandler to onSuccess/onError here? 
     //   or do i need specific error handling behavior per Api request types
     public func responseObject<T: ResponseObjectSerializable>(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, T?, NSError?) -> Void) -> Self {
         let serializer: Serializer = { (req, res, data) in
-            let JSONSerializer = Request.JSONResponseSerializer(options: .AllowFragments)
-            let (json, serializationError):(AnyObject?, NSError?) = JSONSerializer(req, res, data)
+            let json = JSON(data!)
             if res != nil && json != nil {
-                return (T(response: res!, json: json!), nil)
+                return (T(response: res!, json: json), nil)
             } else {
-                return (nil, serializationError)
+                return (nil, json.error)
             }
         }
-        
+
         return response(serializer: serializer, completionHandler: { (req, res, obj, error) in
             completionHandler(req, res, obj as? T, error)
         })
@@ -40,12 +39,11 @@ extension Alamofire.Request {
     
     public func responseCollection<T: ResponseCollectionSerializable>(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, [T]?, NSError?) -> Void) -> Self {
         let serializer: Serializer = { (req, res, data) in
-            let JSONSerializer = Request.JSONResponseSerializer(options: .AllowFragments)
-            let (json, serializationError):(AnyObject?, NSError?) = JSONSerializer(req, res, data)
+            let json = JSON(data!)
             if res != nil && json != nil {
-                return (T.collection(response: res!, json: json!), nil)
+                return (T.collection(response: res!, json: json), nil)
             } else {
-                return (nil, serializationError)
+                return (nil, json.error)
             }
         }
         
