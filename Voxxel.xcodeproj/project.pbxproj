@@ -26,7 +26,6 @@
 		43FF932D1B3A705900246A70 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF932C1B3A705900246A70 /* User.swift */; };
 		43FF932F1B3A75C600246A70 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF932E1B3A75C600246A70 /* Artist.swift */; };
 		43FF93311B3A783300246A70 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF93301B3A783300246A70 /* Sound.swift */; };
-		43FF93331B3AD4AD00246A70 /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF93321B3AD4AD00246A70 /* ArtistListViewController.swift */; };
 		C7F2D5F4A846B072F5C9029C /* AccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F04D48D8D484008B84E4EE /* AccessTokenModel.swift */; };
 		C7F2DE28E51370E1A52CA9A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FC8CD49C6A25C71D24A37E /* LoginViewController.swift */; };
 		C7F3B3D78915694EFCFD10BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FFB27ECFE21F8B6288AB2A /* Images.xcassets */; };
@@ -69,7 +68,6 @@
 		43FF932C1B3A705900246A70 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		43FF932E1B3A75C600246A70 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		43FF93301B3A783300246A70 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
-		43FF93321B3AD4AD00246A70 /* ArtistListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
 		9E0565A60ADBE83E04E51E5E /* Pods-Voxxel.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxxel.production.xcconfig"; path = "Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel.production.xcconfig"; sourceTree = "<group>"; };
 		C19112CED7D9D4FC93362B84 /* Pods-Voxxel.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxxel.development.xcconfig"; path = "Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel.development.xcconfig"; sourceTree = "<group>"; };
 		C7F02D2D1857C9757EC91F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -188,7 +186,6 @@
 				C7FC8CD49C6A25C71D24A37E /* LoginViewController.swift */,
 				43FBC02A1B2DED4500B0094C /* SignupViewController.swift */,
 				43FBF2271B312CD300E97C79 /* Config.swift */,
-				43FF93321B3AD4AD00246A70 /* ArtistListViewController.swift */,
 				43C5474B1B3AF6370044F749 /* UIHelper.swift */,
 				434681DC1B40BCFF00BB7475 /* HomeNavControllerDelegate.swift */,
 				43E6A2441B4A608000B093BD /* NavViewController.swift */,
@@ -364,7 +361,6 @@
 			files = (
 				C7FEEB36656F4E3F09161E24 /* AppDelegate.swift in Sources */,
 				C7FEA8B48D140BB55E2FBF7F /* HomeViewController.swift in Sources */,
-				43FF93331B3AD4AD00246A70 /* ArtistListViewController.swift in Sources */,
 				43FBC02B1B2DED4500B0094C /* SignupViewController.swift in Sources */,
 				43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */,
 				431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */,
