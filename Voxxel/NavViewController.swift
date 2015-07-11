@@ -29,8 +29,25 @@ class NavViewController: UITableViewController {
                 navigateToLogin()
             } else {
                 VoxxelApi.setAuthHeaders(authManager.getAccessToken())
+                if authManager.user == nil {
+                    //get user data for current session
+                    authService.validateToken({(res, user) in
+                        
+                        }, onError: {(res, json, err) in
+                            self.authManager.clearAccessToken()
+                            self.navigateToLogin()
+                    })
+                }
             }
         }
+    }
+    
+    func logout() {
+        authService.logout({ (res, json) in
+            self.navigateToLogin()
+            }, onError: { (res, json, err) in
+                print("error logging out")
+        })
     }
     
     func navigateToLogin() {
@@ -62,6 +79,9 @@ class NavViewController: UITableViewController {
         switch indexPath.row {
         case 0: self.performSegueWithIdentifier("navigateToHome", sender: self)
         case 1: self.performSegueWithIdentifier("navigateToArtists", sender: self)
+        case 2: self.performSegueWithIdentifier("navigateToProfile", sender: self)
+        case 3: self.performSegueWithIdentifier("navigateToProfile", sender: self)
+        case 4: self.logout()
         default: self.performSegueWithIdentifier("navigateToProfile", sender: self)
         }
     }

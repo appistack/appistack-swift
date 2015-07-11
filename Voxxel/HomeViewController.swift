@@ -18,14 +18,6 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func didPressLogout(sender: UIButton) {
-        self.authService.logout({ (res, json) in
-                self.navigateToLogin()
-            }, onError: { (res, json, err) in
-                print("error logging out")
-        })
-    }
-    
     func loadArtists() {
         
     }
