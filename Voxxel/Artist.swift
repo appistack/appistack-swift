@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable {
+final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable
+{
     let apiUrl = Config.conf.opts["api_base_url"]!
     
     let id: Int
@@ -18,10 +20,10 @@ final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSeri
     var headshot: String?
     var desc: String?
     
-    @objc static func collection(response response: NSHTTPURLResponse, json: AnyObject) -> [Artist] {
+    static func collection(response response: NSHTTPURLResponse, json: JSON) -> [Artist] {
         var artists = [Artist]()
         
-        for artist in json as! [NSDictionary] {
+        for (_, artist) in json {
             artists.append(Artist(json: artist))
         }
         
@@ -34,16 +36,16 @@ final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSeri
         self.lastName = lastName
     }
     
-    init(json: AnyObject) {
-        self.id = json.valueForKeyPath("id") as! Int
-        self.firstName = json.valueForKeyPath("first_name") as! String
-        self.lastName = json.valueForKeyPath("last_name") as! String
+    init(json: JSON) {
+        self.id = json["id"].intValue
+        self.firstName = json["first_name"].stringValue
+        self.lastName = json["last_name"].stringValue
 
-        self.headshot = json.valueForKeyPath("headshot") as? String
-        self.desc = json.valueForKeyPath("description") as? String
+        self.headshot = json["headshot"].string
+        self.desc = json["description"].string
     }
     
-    required convenience init(response: NSHTTPURLResponse, json: AnyObject) {
+    required convenience init(response: NSHTTPURLResponse, json: JSON) {
         self.init(json: json)
     }
     
