@@ -8,9 +8,9 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class Sound: NSObject, ResponseObjectSerializable {
-    
     let id: Int
     let artistId: Int
     let name: String
@@ -23,11 +23,11 @@ class Sound: NSObject, ResponseObjectSerializable {
         self.name = name
     }
     
-    required init(response: NSHTTPURLResponse, json: AnyObject) {
-        self.id = json.valueForKeyPath("id") as! Int
-        self.artistId = json.valueForKeyPath("artist_id") as! Int
-        self.name = json.valueForKeyPath("name") as! String
-        self.desc = json.valueForKeyPath("description") as? String
+    required init(response: NSHTTPURLResponse, json: JSON) {
+        self.id = json["id"].intValue
+        self.artistId = json["artist_id"].intValue
+        self.name = json["name"].stringValue
+        self.desc = json["description"].string
     }
     
     // Used by NSMutableOrderedSet to maintain the order

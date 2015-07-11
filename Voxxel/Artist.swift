@@ -9,8 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable
-{
+final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable {
     let apiUrl = Config.conf.opts["api_base_url"]!
     
     let id: Int
