@@ -12,7 +12,7 @@ import Foundation
 
 class Util {
     class func MD5(string: String) -> String {
-        let data = (string as NSSTring).dataUsingEncoding(NSUTF8StringEncoding)
+        let data = (string as NSString).dataUsingEncoding(NSUTF8StringEncoding)
         let result = NSMutableData(length: Int(CC_MD5_DIGEST_LENGTH))!
         let resultBytes = UnsafeMutablePointer<CUnsignedChar>(result.bytes)
         CC_MD5(data.bytes, CC_LONG(data.length), resultBytes)

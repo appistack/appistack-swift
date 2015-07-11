@@ -47,5 +47,14 @@ class User: NSObject, ResponseObjectSerializable {
     override var hash: Int {
         return (self as User).id
     }
+    
+    func getImageUrl() -> String {
+        if image != nil {
+            let assets_url = Config.conf.opts["assets_url"]
+            return "\(assets_url)/\(image!)"
+        } else {
+            return "http://www.gravatar.com/avatar/\(Util.MD5(email))"
+        }
+    }
 
 }
