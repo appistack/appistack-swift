@@ -1,4 +1,5 @@
 import Foundation
+import SwiftyJSON
 
 class User: NSObject, ResponseObjectSerializable {
     let id: Int
@@ -25,16 +26,16 @@ class User: NSObject, ResponseObjectSerializable {
         self.provider = provider
     }
     
-    required init(response: NSHTTPURLResponse, json: AnyObject) {
-        self.id = json.valueForKeyPath("id") as! Int
-        self.email = json.valueForKeyPath("email") as! String
-        self.username = json.valueForKeyPath("username") as! String
-        self.uid = json.valueForKeyPath("uid") as! String
-        self.provider = json.valueForKeyPath("provider") as! String
+    required init(response: NSHTTPURLResponse, json: JSON) {
+        self.id = json["id"].intValue
+        self.email = json["email"].stringValue
+        self.username = json["username"].stringValue
+        self.uid = json["uid"].stringValue
+        self.provider = json["provider"].stringValue
         
-        self.name = json.valueForKeyPath("name") as? String
-        self.nickname = json.valueForKeyPath("nickname") as? String
-        self.image = json.valueForKeyPath("image") as? String
+        self.name = json["name"].string
+        self.nickname = json["nickname"].string
+        self.image = json["image"].string
     }
     
     // Used by NSMutableOrderedSet to maintain the order
