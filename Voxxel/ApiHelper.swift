@@ -24,6 +24,7 @@ extension Alamofire.Request {
     //   or do i need specific error handling behavior per Api request types
     public func responseObject<T: ResponseObjectSerializable>(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, T?, NSError?) -> Void) -> Self {
         let serializer: Serializer = { (req, res, data) in
+            //TODO: handle when data is nil?
             let json = JSON(data!)
             if res != nil && json != nil {
                 return (T(response: res!, json: json), nil)

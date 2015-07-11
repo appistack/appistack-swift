@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class AuthService {
     let apiUrl = Config.conf.opts["api_base_url"]!
@@ -23,7 +24,7 @@ class AuthService {
                 //TODO: set user returned by token to json.valueForKeyPath("data")
                 if err == nil && json != nil {
                     let data = json!.valueForKeyPath("data")
-                    let user = User(response: res!, json: data!)
+                    let user = User(response: res!, json: JSON(data!))
                     AuthManager.manager.user = user
                     onSuccess(res, user)
                 } else {
@@ -42,7 +43,7 @@ class AuthService {
             .responseJSON() { (req, res, json, err) in
                 if err == nil && json != nil {
                     let data = json!.valueForKeyPath("data")
-                    let user = User(response: res!, json: data!)
+                    let user = User(response: res!, json: JSON(data!))
                     let accessToken = AccessTokenModel.parseFromHeaders(res!)
                     AuthManager.manager.setAccessToken(accessToken)
                     AuthManager.manager.user = user
@@ -77,7 +78,7 @@ class AuthService {
             .responseJSON() { (req, res, json, err) in
                 if err == nil && json != nil {
                     let data = json!.valueForKeyPath("data")
-                    let user = User(response: res!, json: data!)
+                    let user = User(response: res!, json: JSON(data!))
                     onSuccess(res, user)
                 } else {
                     onError(res, json, err)
