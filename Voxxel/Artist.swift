@@ -54,7 +54,7 @@ final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSeri
     }
     
     func headshotUrl() -> NSURL! {
-        return NSURL(string: "\(assetsUrl)/img/artists/\(headshot!)")!
+        return NSURL(string: "\(assetsUrl)\(headshot!)")!
     }
     
     // Used by NSMutableOrderedSet to maintain the order
