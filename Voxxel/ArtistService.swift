@@ -20,7 +20,7 @@ class ArtistService {
     }
 
     func list(params: [String: AnyObject]? = nil, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, [Artist]?, NSError?) -> Void) {
-        Alamofire.request(.GET, URLString: apiUrl + "/artists.json", parameters: params)
+        VoxxelApi.manager.request(.GET, apiUrl + "/artists.json")
             .responseCollection(completionHandler)
     }
 
