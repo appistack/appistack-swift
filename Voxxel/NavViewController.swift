@@ -80,7 +80,7 @@ class NavViewController: UITableViewController {
         case 0: self.performSegueWithIdentifier("navigateToHome", sender: self)
         case 1: self.performSegueWithIdentifier("navigateToArtists", sender: self)
         case 2: self.performSegueWithIdentifier("navigateToProfile", sender: self)
-        case 3: self.performSegueWithIdentifier("navigateToProfile", sender: self)
+        case 3: self.performSegueWithIdentifier("navigateToSettings", sender: self)
         case 4: self.logout()
         default: self.performSegueWithIdentifier("navigateToProfile", sender: self)
         }
@@ -91,13 +91,16 @@ class NavViewController: UITableViewController {
             let controller = (segue.destinationViewController as! UINavigationController).topViewController as! HomeViewController
             controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
             controller.navigationItem.leftItemsSupplementBackButton = true
-            
         } else if segue.identifier == "navigateToArtists" {
             let controller = (segue.destinationViewController as! UINavigationController).topViewController!
             controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
             controller.navigationItem.leftItemsSupplementBackButton = true
         } else if segue.identifier == "navigateToProfile" {
-            let controller = (segue.destinationViewController as! UINavigationController).topViewController!
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController! as! ProfileViewController
+            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            controller.navigationItem.leftItemsSupplementBackButton = true
+        } else if segue.identifier == "navigateToSettings" {
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController! as! SettingsViewController
             controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
             controller.navigationItem.leftItemsSupplementBackButton = true
         }

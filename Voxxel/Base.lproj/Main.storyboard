@@ -365,7 +365,7 @@
                         <segue destination="P80-30-Xo9" kind="showDetail" identifier="navigateToHome" id="0k8-0J-67Z"/>
                         <segue destination="ws5-u3-OD6" kind="showDetail" identifier="navigateToArtists" id="O7X-ro-qpG"/>
                         <segue destination="fM9-UL-MW5" kind="showDetail" identifier="navigateToProfile" id="c70-CY-2s8"/>
-                        <segue destination="acg-o8-vHw" kind="showDetail" id="gSE-oP-ZDb"/>
+                        <segue destination="acg-o8-vHw" kind="showDetail" identifier="navigateToSettings" id="gSE-oP-ZDb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="com-LB-hXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
