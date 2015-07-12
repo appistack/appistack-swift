@@ -25,7 +25,7 @@ extension Alamofire.Request {
     public func responseObject<T: ResponseObjectSerializable>(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, T?, NSError?) -> Void) -> Self {
         let serializer: Serializer = { (req, res, data) in
             //TODO: handle when data is nil?
-            let json = JSON(data!)
+            let json = JSON(data: data!)
             if res != nil && json != nil {
                 return (T(response: res!, json: json), nil)
             } else {
@@ -40,7 +40,7 @@ extension Alamofire.Request {
     
     public func responseCollection<T: ResponseCollectionSerializable>(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, [T]?, NSError?) -> Void) -> Self {
         let serializer: Serializer = { (req, res, data) in
-            let json = JSON(data!)
+            let json = JSON(data: data!)
             if res != nil && json != nil {
                 return (T.collection(response: res!, json: json), nil)
             } else {
