@@ -9,7 +9,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, tag `swift-2.0`)
   - CRToast (~> 0.0.7)
-  - HanekeSwift (from `https://github.com/meteochu/HanekeSwift`, branch `swift-2.0`)
+  - HanekeSwift (from `https://github.com/meteochu/HanekeSwift.git`, branch `swift-2.0`)
   - SSKeychain (~> 1.2.3)
   - SwiftValidator (from `https://github.com/dcunited001/SwiftValidator.git`, tag
     `swift-2.0`)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
     :tag: swift-2.0
   HanekeSwift:
     :branch: swift-2.0
-    :git: https://github.com/meteochu/HanekeSwift
+    :git: https://github.com/meteochu/HanekeSwift.git
   SwiftValidator:
     :git: https://github.com/dcunited001/SwiftValidator.git
     :tag: swift-2.0
@@ -35,7 +35,7 @@ CHECKOUT OPTIONS:
     :tag: swift-2.0
   HanekeSwift:
     :commit: 5631483fccfb68893f3f3c44b0fab3cba8f7cddb
-    :git: https://github.com/meteochu/HanekeSwift
+    :git: https://github.com/meteochu/HanekeSwift.git
   SwiftValidator:
     :git: https://github.com/dcunited001/SwiftValidator.git
     :tag: swift-2.0

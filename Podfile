@@ -10,6 +10,7 @@ target 'Voxxel' do
     pod 'CRToast', '~> 0.0.7'
     pod 'SwiftyJSON', git: 'https://github.com/SwiftyJSON/SwiftyJSON.git', branch: 'xcode7'
     pod 'HanekeSwift', git: 'https://github.com/meteochu/HanekeSwift.git', branch: 'swift-2.0'
+    #pod 'CHTCollectionViewWaterfallLayout' #using swift file directly
     #pod 'Dollar'
     #pod 'AFNetworking', '~> 2.5'
 end
