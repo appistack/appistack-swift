@@ -17,14 +17,4 @@ class HomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    func loadArtists() {
-        
-    }
-
-    func navigateToLogin() {
-        if let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as? LoginViewController {
-            self.navigationController!.presentViewController(loginController, animated:true, completion:nil)
-        }
-    }
 }
