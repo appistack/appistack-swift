@@ -43,7 +43,7 @@
         <!--Artists-->
         <scene sceneID="iVf-in-bUZ">
             <objects>
-                <viewController id="Bdy-Fv-Ljr" sceneMemberID="viewController">
+                <viewController id="Bdy-Fv-Ljr" customClass="ArtistListViewController" customModule="Voxxel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rNW-3p-y58"/>
                         <viewControllerLayoutGuide type="bottom" id="dhy-Es-dnA"/>
@@ -51,13 +51,34 @@
                     <view key="view" contentMode="scaleToFill" id="s0s-Ne-vJy">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TLX-Me-hqW">
+                                <rect key="frame" x="0.0" y="112" width="600" height="468"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zB2-3d-eRA">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TLX-Me-hqW" firstAttribute="leading" secondItem="s0s-Ne-vJy" secondAttribute="leadingMargin" id="BSI-PN-whi"/>
+                            <constraint firstItem="TLX-Me-hqW" firstAttribute="top" secondItem="rNW-3p-y58" secondAttribute="bottom" constant="10" id="J4g-Hy-Fwo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TLX-Me-hqW" secondAttribute="trailing" id="aUa-97-2en"/>
+                            <constraint firstItem="dhy-Es-dnA" firstAttribute="top" secondItem="TLX-Me-hqW" secondAttribute="bottom" constant="10" id="jCv-Ic-5Oy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="maj-7z-Yn4"/>
+                    <connections>
+                        <outlet property="collectionView" destination="TLX-Me-hqW" id="t5N-jf-2yd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYc-kD-Npb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1398.75" y="1916.1971830985915"/>
+            <point key="canvasLocation" x="1398" y="1916"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
