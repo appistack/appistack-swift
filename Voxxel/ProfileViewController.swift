@@ -13,6 +13,7 @@ import Haneke
 
 class ProfileViewController: UIViewController {
     @IBOutlet weak var imgProfile: UIImageView!
+    @IBOutlet weak var lblUsername: UILabel!
     
     let authManager = AuthManager.manager
     
@@ -22,6 +23,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lblUsername.text = authManager.user!.username
         imgProfile.hnk_setImageFromURL(authManager.user!.getImageURL())
     }
 }
