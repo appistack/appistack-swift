@@ -11,6 +11,7 @@ import SwiftyJSON
 
 final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable {
     let apiUrl = Config.conf.opts["api_base_url"]!
+    let assetsUrl = Config.conf.opts["assets_url"]!
     
     let id: Int
     let firstName: String
@@ -50,6 +51,10 @@ final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSeri
     
     func name() -> String {
         return "\(firstName) \(lastName)"
+    }
+    
+    func headshotUrl() -> NSURL! {
+        return NSURL(string: "\(assetsUrl)/img/artists/\(headshot!)")!
     }
     
     // Used by NSMutableOrderedSet to maintain the order

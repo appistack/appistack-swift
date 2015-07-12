@@ -50,8 +50,8 @@ class User: NSObject, ResponseObjectSerializable {
     
     func getImageURL() -> NSURL! {
         if image != nil {
-            let assets_url = Config.conf.opts["assets_url"]
-            return NSURL(string: "\(assets_url)/\(image!)")!
+            let assetsUrl = Config.conf.opts["assets_url"]
+            return NSURL(string: "\(assetsUrl)/\(image!)")!
         } else {
             return NSURL(string: "http://www.gravatar.com/avatar/\(Util.MD5(email))?s=256")!
         }
