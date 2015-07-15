@@ -10,6 +10,7 @@
 		183E106C673B3145022B1C62 /* Pods_Voxxel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431AA00D1B2FA94700D52CC7 /* AuthService.swift */; };
 		435E23661B4CEC8100B137FC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435E23651B4CEC8100B137FC /* SwiftyJSON.framework */; };
+		4393B8781B56B945008C29D7 /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393B8771B56B945008C29D7 /* ArtistDetailViewController.swift */; };
 		43B323B61B50CA0500BF6E2B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B323B51B50CA0500BF6E2B /* ProfileViewController.swift */; };
 		43B323B81B50CBCB00BF6E2B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B323B71B50CBCB00BF6E2B /* Util.swift */; };
 		43B323BA1B524BA900BF6E2B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B323B91B524BA900BF6E2B /* SettingsViewController.swift */; };
@@ -55,6 +56,7 @@
 		24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxxel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431AA00D1B2FA94700D52CC7 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		435E23651B4CEC8100B137FC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/Pods-Voxxel/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		4393B8771B56B945008C29D7 /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
 		43B323B51B50CA0500BF6E2B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		43B323B71B50CBCB00BF6E2B /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		43B323B91B524BA900BF6E2B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				43B323BB1B524FCA00BF6E2B /* ArtistListViewController.swift */,
 				43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */,
 				43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */,
+				4393B8771B56B945008C29D7 /* ArtistDetailViewController.swift */,
 			);
 			path = Voxxel;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				43B323B61B50CA0500BF6E2B /* ProfileViewController.swift in Sources */,
 				C7F2D5F4A846B072F5C9029C /* AccessTokenModel.swift in Sources */,
 				43FF93311B3A783300246A70 /* Sound.swift in Sources */,
+				4393B8781B56B945008C29D7 /* ArtistDetailViewController.swift in Sources */,
 				43FBF2281B312CD300E97C79 /* Config.swift in Sources */,
 				C7F9978C698368E77344B62F /* AuthManager.swift in Sources */,
 				43FF932F1B3A75C600246A70 /* Artist.swift in Sources */,
