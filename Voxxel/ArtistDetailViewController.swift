@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 
 class ArtistDetailViewController: UIViewController {
+    var artist: Artist?
+    
+    @IBOutlet weak var lblArtistName: UILabel!
+    @IBOutlet weak var imgArtist: UIImageView!
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -17,5 +21,7 @@ class ArtistDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imgArtist.hnk_setImageFromURL((artist?.headshotUrl())!)
+        lblArtistName.text = artist?.name()
     }
 }
