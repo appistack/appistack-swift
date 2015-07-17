@@ -16,6 +16,7 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
     
     let artistService = ArtistService()
     var artists = [Artist]()
+    var selectedArtist: Artist?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +73,19 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
             }
         }
         return CGSize(width: 256, height: 256)
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        selectedArtist = artists[indexPath.item]
+        performSegueWithIdentifier("navigateFromArtistsToDetail", sender: selectedArtist)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "navigateFromArtistsToDetail" {
+            // TODO: set artist in segue or in the didSelectItem?
+            let controller = segue.destinationViewController as! ArtistDetailViewController
+            controller.artist = selectedArtist
+        }
     }
 }
 
