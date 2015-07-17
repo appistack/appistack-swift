@@ -66,19 +66,65 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TLX-Me-hqW" firstAttribute="leading" secondItem="s0s-Ne-vJy" secondAttribute="leadingMargin" id="BSI-PN-whi"/>
-                            <constraint firstItem="TLX-Me-hqW" firstAttribute="top" secondItem="rNW-3p-y58" secondAttribute="bottom" constant="10" id="J4g-Hy-Fwo"/>
+                            <constraint firstItem="TLX-Me-hqW" firstAttribute="top" secondItem="rNW-3p-y58" secondAttribute="bottom" id="J4g-Hy-Fwo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TLX-Me-hqW" secondAttribute="trailing" id="aUa-97-2en"/>
-                            <constraint firstItem="dhy-Es-dnA" firstAttribute="top" secondItem="TLX-Me-hqW" secondAttribute="bottom" constant="10" id="jCv-Ic-5Oy"/>
+                            <constraint firstItem="dhy-Es-dnA" firstAttribute="top" secondItem="TLX-Me-hqW" secondAttribute="bottom" id="jCv-Ic-5Oy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="maj-7z-Yn4"/>
                     <connections>
                         <outlet property="collectionView" destination="TLX-Me-hqW" id="t5N-jf-2yd"/>
+                        <segue destination="1sy-6t-xcq" kind="show" identifier="navigateFromArtistsToDetail" id="6Aa-eW-6uo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYc-kD-Npb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1398" y="1916"/>
+        </scene>
+        <!--Artist Detail View Controller-->
+        <scene sceneID="Utv-ym-tD8">
+            <objects>
+                <viewController id="1sy-6t-xcq" customClass="ArtistDetailViewController" customModule="Voxxel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kNX-DG-WcT"/>
+                        <viewControllerLayoutGuide type="bottom" id="bG9-22-I72"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gtT-mJ-PTz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8fB-Ha-eGz">
+                                <rect key="frame" x="137" y="116" width="297" height="216"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMD-E5-gGV">
+                                <rect key="frame" x="137" y="87" width="297" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jMD-E5-gGV" firstAttribute="centerX" secondItem="gtT-mJ-PTz" secondAttribute="centerX" id="ANG-Lf-jmW"/>
+                            <constraint firstItem="jMD-E5-gGV" firstAttribute="top" secondItem="kNX-DG-WcT" secondAttribute="bottom" constant="10" id="TbJ-kT-75e"/>
+                            <constraint firstItem="8fB-Ha-eGz" firstAttribute="centerX" secondItem="gtT-mJ-PTz" secondAttribute="centerX" id="edm-8y-0ju"/>
+                            <constraint firstItem="8fB-Ha-eGz" firstAttribute="top" secondItem="kNX-DG-WcT" secondAttribute="bottom" constant="20" id="rhM-QV-PEO"/>
+                            <constraint firstItem="8fB-Ha-eGz" firstAttribute="top" secondItem="jMD-E5-gGV" secondAttribute="bottom" constant="10" id="ziu-WX-38l"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rhM-QV-PEO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imgArtist" destination="8fB-Ha-eGz" id="mnV-re-t3N"/>
+                        <outlet property="lblArtistName" destination="jMD-E5-gGV" id="ZLv-a0-cZq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjE-aW-WSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="2620"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
