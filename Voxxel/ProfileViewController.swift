@@ -8,8 +8,6 @@
 
 import Foundation
 import UIKit
-import Haneke
-
 
 class ProfileViewController: UIViewController {
     @IBOutlet weak var imgProfile: UIImageView!
