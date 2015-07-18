@@ -1,7 +1,7 @@
 import Foundation
 import SwiftyJSON
 
-class User: NSObject, ResponseObjectSerializable {
+class User: NSObject, ResponseObjectSerializable, Photoable {
     let id: Int
     let email: String
     let username: String
@@ -11,6 +11,8 @@ class User: NSObject, ResponseObjectSerializable {
     var name: String?
     var nickname: String?
     var image: String?
+    
+    var photo: UIImage?
     
     //createdAt
     //updatedAt

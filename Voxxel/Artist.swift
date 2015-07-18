@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable {
+final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable, Photoable {
     let apiUrl = Config.conf.opts["api_base_url"]!
     let assetsUrl = Config.conf.opts["assets_url"]!
     
@@ -19,6 +19,8 @@ final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSeri
     
     var headshot: String?
     var desc: String?
+    
+    var photo: UIImage?
     
     static func collection(response response: NSHTTPURLResponse, json: JSON) -> [Artist] {
         var artists = [Artist]()
