@@ -14,20 +14,27 @@ class Sound: NSObject, ResponseObjectSerializable {
     let id: Int
     let artistId: Int
     let name: String
+    let audiofile: String
     
     var desc: String?
-    
-    init(id: Int, artistId: Int, name: String) {
+
+    init(id: Int, artistId: Int, name: String, audiofile: String) {
         self.id = id
         self.artistId = artistId
         self.name = name
+        self.audiofile = audiofile
     }
     
-    required init(response: NSHTTPURLResponse, json: JSON) {
+    init(json: JSON) {
         self.id = json["id"].intValue
         self.artistId = json["artist_id"].intValue
         self.name = json["name"].stringValue
         self.desc = json["description"].string
+        self.audiofile = json["audiofile"].stringValue
+    }
+    
+    required convenience init(response: NSHTTPURLResponse, json: JSON) {
+        self.init(json: json)
     }
     
     // Used by NSMutableOrderedSet to maintain the order
