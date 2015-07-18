@@ -21,7 +21,7 @@ class ArtistDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imgArtist.hnk_setImageFromURL((artist?.headshotUrl())!)
+//        imgArtist.hnk_setImageFromURL((artist?.headshotUrl())!)
         lblArtistName.text = artist?.name()
     }
 }

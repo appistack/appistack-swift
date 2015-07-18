@@ -61,7 +61,7 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("artistCell", forIndexPath: indexPath) as! ArtistCell
         //TODO: load asynchronously
-        cell.imgView.hnk_setImageFromURL(artists[indexPath.item].headshotUrl())
+//        cell.imgView.hnk_setImageFromURL(artists[indexPath.item].headshotUrl())
 //        cell.imgView.hnk_setImageFromURL(artists[indexPath.item].headshotUrl(), success: {(img) in
 //             TODO: haneke is breaking with callback that does nothing
 //            self.collectionView.reloadItemsAtIndexPaths([indexPath])
