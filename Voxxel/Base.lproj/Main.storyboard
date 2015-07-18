@@ -534,7 +534,7 @@
         <!--Settings-->
         <scene sceneID="pxT-08-b3z">
             <objects>
-                <viewController id="aYC-sB-Ghr" sceneMemberID="viewController">
+                <viewController id="aYC-sB-Ghr" customClass="SettingsViewController" customModule="Voxxel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wgw-aA-dl1"/>
                         <viewControllerLayoutGuide type="bottom" id="4UT-nM-NDB"/>
