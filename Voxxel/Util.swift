@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 //misc functions
 
@@ -25,5 +26,33 @@ class Util {
         }
         
         return hash as String
+    }
+}
+
+protocol Photoable {
+    var photo: UIImage? { get set }
+    
+    //TODO: refactor to avoid passing photoUrl?
+    mutating func loadPhoto(photoURL:NSURL, completion: (obj: Self, error: NSError?) -> Void)
+}
+
+extension Photoable {
+    mutating func loadPhoto(photoURL:NSURL, completion: (obj: Self, error: NSError?) -> Void) {
+        let loadRequest = NSURLRequest(URL: photoURL)
+        NSURLConnection.sendAsynchronousRequest(loadRequest, queue: NSOperationQueue.mainQueue()) { (res, data, err) in
+            if err != nil {
+                completion(obj: self, error: err)
+                return
+            }
+            
+            if data != nil {
+                let returnedImage = UIImage(data: data!)
+                self.photo = returnedImage
+                completion(obj: self, error: nil)
+                return
+            }
+            
+            completion(obj:self, error: nil)
+        }
     }
 }
