@@ -18,12 +18,6 @@
 #define COCOAPODS_VERSION_MINOR_CRToast 0
 #define COCOAPODS_VERSION_PATCH_CRToast 7
 
-// HanekeSwift
-#define COCOAPODS_POD_AVAILABLE_HanekeSwift
-#define COCOAPODS_VERSION_MAJOR_HanekeSwift 0
-#define COCOAPODS_VERSION_MINOR_HanekeSwift 9
-#define COCOAPODS_VERSION_PATCH_HanekeSwift 1
-
 // SSKeychain
 #define COCOAPODS_POD_AVAILABLE_SSKeychain
 #define COCOAPODS_VERSION_MAJOR_SSKeychain 1

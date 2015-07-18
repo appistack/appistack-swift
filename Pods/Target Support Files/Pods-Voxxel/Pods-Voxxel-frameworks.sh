@@ -50,7 +50,6 @@ code_sign() {
 if [[ "$CONFIGURATION" == "Development" ]]; then
   install_framework 'Alamofire.framework'
   install_framework 'CRToast.framework'
-  install_framework 'Haneke.framework'
   install_framework 'SSKeychain.framework'
   install_framework 'SwiftValidator.framework'
   install_framework 'SwiftyJSON.framework'
@@ -58,7 +57,6 @@ fi
 if [[ "$CONFIGURATION" == "Staging" ]]; then
   install_framework 'Alamofire.framework'
   install_framework 'CRToast.framework'
-  install_framework 'Haneke.framework'
   install_framework 'SSKeychain.framework'
   install_framework 'SwiftValidator.framework'
   install_framework 'SwiftyJSON.framework'
@@ -66,7 +64,6 @@ fi
 if [[ "$CONFIGURATION" == "Production" ]]; then
   install_framework 'Alamofire.framework'
   install_framework 'CRToast.framework'
-  install_framework 'Haneke.framework'
   install_framework 'SSKeychain.framework'
   install_framework 'SwiftValidator.framework'
   install_framework 'SwiftyJSON.framework'
