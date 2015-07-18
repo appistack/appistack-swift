@@ -19,6 +19,7 @@ final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSeri
     
     var headshot: String?
     var desc: String?
+    var sounds: [Sound]
     
     var photo: UIImage?
     
@@ -36,6 +37,7 @@ final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSeri
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
+        self.sounds = []
     }
     
     init(json: JSON) {
@@ -45,6 +47,11 @@ final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSeri
 
         self.headshot = json["headshot"].string
         self.desc = json["description"].string
+        
+        self.sounds = []
+        for (_, sound) in json["sounds"] {
+            self.sounds.append(Sound(json: sound))
+        }
     }
     
     required convenience init(response: NSHTTPURLResponse, json: JSON) {
