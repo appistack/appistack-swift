@@ -28,7 +28,7 @@ class User: NSObject, ResponseObjectSerializable, Photoable {
         self.provider = provider
     }
     
-    required init(response: NSHTTPURLResponse, json: JSON) {
+    init(json: JSON) {
         self.id = json["id"].intValue
         self.email = json["email"].stringValue
         self.username = json["username"].stringValue
@@ -38,6 +38,10 @@ class User: NSObject, ResponseObjectSerializable, Photoable {
         self.name = json["name"].string
         self.nickname = json["nickname"].string
         self.image = json["image"].string
+    }
+    
+    required convenience init(response: NSHTTPURLResponse, json: JSON) {
+        self.init(json: json)
     }
     
     // Used by NSMutableOrderedSet to maintain the order
