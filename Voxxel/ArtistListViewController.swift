@@ -60,25 +60,30 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("artistCell", forIndexPath: indexPath) as! ArtistCell
-        //TODO: load asynchronously
-//        cell.imgView.hnk_setImageFromURL(artists[indexPath.item].headshotUrl())
-//        cell.imgView.hnk_setImageFromURL(artists[indexPath.item].headshotUrl(), success: {(img) in
-//             TODO: haneke is breaking with callback that does nothing
-//            self.collectionView.reloadItemsAtIndexPaths([indexPath])
-//            self.collectionView.reloadData()
-//        })
+        var artist = artists[indexPath.item]
         
         cell.backgroundColor = UIColor.whiteColor()
+        
+        if artist.photo != nil {
+            cell.imgView.image = artist.photo
+            return cell
+        }
+        
+        artist.loadPhoto(artist.headshotUrl()) { (art, err) in
+            if (err != nil) {
+                return
+            }
+
+            cell.imgView.image = artist.photo
+            self.collectionView.reloadItemsAtIndexPaths([indexPath])
+        }
+        
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        if let cell = collectionView.cellForItemAtIndexPath(indexPath) as? ArtistCell {
-            if let size = cell.imgView?.image?.size {
-                return size
-            }
-        }
-        return CGSize(width: 256, height: 256)
+        let artist = artists[indexPath.item]
+        return artist.photo?.size ?? CGSize(width: 256, height: 256)
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
