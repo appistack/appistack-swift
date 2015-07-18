@@ -32,6 +32,12 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
             self.collectionView.reloadData()
         }
     }
+
+    //Collection view renders items correctly when forced to reload itmes (i.e. during fullscreen transition on iphone 6+)
+    
+//    override func viewDidAppear(animated: Bool) {
+//        super.viewDidAppear(animated)
+//    }
     
     func setupCollectionView() {
         let layout = CHTCollectionViewWaterfallLayout()
@@ -55,12 +61,12 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("artistCell", forIndexPath: indexPath) as! ArtistCell
         //TODO: load asynchronously
-//        cell.imgView.hnk_setImageFromURL(artists[indexPath.item].headshotUrl())
-        cell.imgView.hnk_setImageFromURL(artists[indexPath.item].headshotUrl(), success: {(img) in
+        cell.imgView.hnk_setImageFromURL(artists[indexPath.item].headshotUrl())
+//        cell.imgView.hnk_setImageFromURL(artists[indexPath.item].headshotUrl(), success: {(img) in
 //             TODO: haneke is breaking with callback that does nothing
 //            self.collectionView.reloadItemsAtIndexPaths([indexPath])
-            self.collectionView.reloadData()
-        })
+//            self.collectionView.reloadData()
+//        })
         
         cell.backgroundColor = UIColor.whiteColor()
         return cell
