@@ -17,18 +17,36 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rwm-dN-JnB">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="349"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwY-pb-kju">
+                        <rect key="frame" x="29" y="320" width="329" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <size key="shadowOffset" width="1" height="1"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
+                <constraint firstItem="PwY-pb-kju" firstAttribute="trailing" secondItem="Rwm-dN-JnB" secondAttribute="trailing" id="2zL-C5-Ca8"/>
+                <constraint firstItem="PwY-pb-kju" firstAttribute="centerX" secondItem="Rwm-dN-JnB" secondAttribute="centerX" id="7jD-Ie-Tda"/>
+                <constraint firstItem="PwY-pb-kju" firstAttribute="width" secondItem="Rwm-dN-JnB" secondAttribute="width" constant="-10" id="a11-2j-oGL"/>
+                <constraint firstItem="PwY-pb-kju" firstAttribute="bottom" secondItem="Rwm-dN-JnB" secondAttribute="bottom" id="jHZ-Ky-jd2"/>
                 <constraint firstAttribute="bottom" secondItem="Rwm-dN-JnB" secondAttribute="bottom" id="lju-6x-fIX"/>
                 <constraint firstItem="Rwm-dN-JnB" firstAttribute="top" secondItem="6J7-W1-c68" secondAttribute="top" id="w72-Bp-xyt"/>
                 <constraint firstAttribute="trailing" secondItem="Rwm-dN-JnB" secondAttribute="trailing" id="xKL-O5-VCl"/>
                 <constraint firstItem="Rwm-dN-JnB" firstAttribute="leading" secondItem="6J7-W1-c68" secondAttribute="leading" id="zkl-07-pvt"/>
             </constraints>
             <size key="customSize" width="390" height="349"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2zL-C5-Ca8"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="imgView" destination="Rwm-dN-JnB" id="Tge-Dy-KD3"/>
+                <outlet property="lblName" destination="PwY-pb-kju" id="z22-Yr-ADa"/>
             </connections>
             <point key="canvasLocation" x="442" y="386.5"/>
         </collectionViewCell>
