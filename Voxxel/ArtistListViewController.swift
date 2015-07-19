@@ -32,12 +32,6 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
             self.collectionView.reloadData()
         }
     }
-
-    //Collection view renders items correctly when forced to reload itmes (i.e. during fullscreen transition on iphone 6+)
-    
-//    override func viewDidAppear(animated: Bool) {
-//        super.viewDidAppear(animated)
-//    }
     
     func setupCollectionView() {
         let layout = CHTCollectionViewWaterfallLayout()
