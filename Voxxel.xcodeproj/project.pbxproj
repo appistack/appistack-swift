@@ -16,6 +16,7 @@
 		43B323BA1B524BA900BF6E2B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B323B91B524BA900BF6E2B /* SettingsViewController.swift */; };
 		43B323BC1B524FCA00BF6E2B /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B323BB1B524FCA00BF6E2B /* ArtistListViewController.swift */; };
 		43C5474C1B3AF6370044F749 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5474B1B3AF6370044F749 /* UIHelper.swift */; };
+		43D5C5621B5C2ABD0043979F /* SoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D5C5611B5C2ABD0043979F /* SoundCell.xib */; };
 		43DB76BA1B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */; };
 		43DB76BC1B5259F600FD3C2C /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */; };
 		43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6A2441B4A608000B093BD /* NavViewController.swift */; };
@@ -62,6 +63,7 @@
 		43B323B91B524BA900BF6E2B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		43B323BB1B524FCA00BF6E2B /* ArtistListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
 		43C5474B1B3AF6370044F749 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		43D5C5611B5C2ABD0043979F /* SoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundCell.xib; sourceTree = "<group>"; };
 		43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
 		43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		43E6A2441B4A608000B093BD /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */,
 				43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */,
 				4393B8771B56B945008C29D7 /* ArtistDetailViewController.swift */,
+				43D5C5611B5C2ABD0043979F /* SoundCell.xib */,
 			);
 			path = Voxxel;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				43E97AEA1B294154004CC7ED /* DevelopmentConfig.plist in Resources */,
 				43DB76BC1B5259F600FD3C2C /* ArtistCell.xib in Resources */,
 				C7FFB87E6BB653E9BD308AF9 /* README.md in Resources */,
+				43D5C5621B5C2ABD0043979F /* SoundCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
