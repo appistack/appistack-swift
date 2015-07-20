@@ -77,13 +77,3 @@ class ArtistDetailViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
 }
-
-class SoundCell: UITableViewCell {
-    @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblDesc: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
-}
