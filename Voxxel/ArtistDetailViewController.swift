@@ -68,7 +68,15 @@ class ArtistDetailViewController: UIViewController, UICollectionViewDelegate, UI
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        // TODO: user selects sound
+        let selectedSound = sounds[indexPath.item]
+        performSegueWithIdentifier("navigateToSoundFromArtist", sender: selectedSound)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "navigateToSoundFromArtist" {
+            let controller = segue.destinationViewController as! SoundDetailViewController
+            controller.sound = sender as? Sound
+        }
     }
 }
 
