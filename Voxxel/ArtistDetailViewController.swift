@@ -9,13 +9,12 @@
 import Foundation
 import UIKit
 
-class ArtistDetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ArtistDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let artistService = ArtistService()
     var artist: Artist?
     var sounds = [Sound]()
     
-    
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tblSounds: UITableView!
     @IBOutlet weak var lblArtistName: UILabel!
     @IBOutlet weak var imgArtist: UIImageView!
     
@@ -28,46 +27,44 @@ class ArtistDetailViewController: UIViewController, UICollectionViewDelegate, UI
         imgArtist.image = artist?.photo
         lblArtistName.text = artist?.name()
         
-        setupCollectionView()
+        setupTableView()
         registerNibs()
         
         artistService.get(artist!.id) {(req, res, artist, err) in
             self.sounds = artist!.sounds
-            self.collectionView.reloadData()
+            self.tblSounds.reloadData()
         }
     }
     
-    func setupCollectionView() {
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
-        collectionView.alwaysBounceVertical = true
+    func setupTableView() {
+        tblSounds.dataSource = self
+        tblSounds.delegate = self
+        tblSounds.rowHeight = UITableViewAutomaticDimension
+        tblSounds.estimatedRowHeight = 80
+        tblSounds.alwaysBounceVertical = true
+        // tblSounds.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
     }
     
     func registerNibs() {
-        let artistNib = UINib(nibName: "SoundCell", bundle: nil)
-        collectionView.registerNib(artistNib, forCellWithReuseIdentifier: "soundCell")
-        
+        let soundNib = UINib(nibName: "SoundCell", bundle: nil)
+        tblSounds.registerNib(soundNib, forCellReuseIdentifier: "soundCell")
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sounds.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("soundCell", forIndexPath: indexPath) as! SoundCell
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tblSounds.dequeueReusableCellWithIdentifier("soundCell", forIndexPath: indexPath) as! SoundCell
         
         let sound = sounds[indexPath.item]
         cell.lblName.text = sound.name
         
         return cell
+        
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: 128, height: 128)
-    }
-    
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let selectedSound = sounds[indexPath.item]
         performSegueWithIdentifier("navigateToSoundFromArtist", sender: selectedSound)
     }
@@ -80,8 +77,9 @@ class ArtistDetailViewController: UIViewController, UICollectionViewDelegate, UI
     }
 }
 
-class SoundCell: UICollectionViewCell {
+class SoundCell: UITableViewCell {
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblDesc: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
