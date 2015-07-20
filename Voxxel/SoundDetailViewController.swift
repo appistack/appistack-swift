@@ -11,9 +11,16 @@ import UIKit
 
 class SoundDetailViewController: UIViewController {
     var soundService = SoundService()
+    var sound: Sound?
+    
+    @IBOutlet weak var lblSoundName: UILabel!
+    @IBOutlet weak var lblSoundDesc: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblSoundName.text = sound?.name
+        lblSoundDesc.text = sound?.desc
     }
     
 }
