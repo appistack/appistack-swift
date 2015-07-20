@@ -18,8 +18,10 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sound Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snI-mf-ef0">
                         <rect key="frame" x="16" y="8" width="306" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="1" height="1"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Description" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tH-e6-0wu">
                         <rect key="frame" x="16" y="42" width="306" height="29"/>
@@ -28,17 +30,22 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="6tH-e6-0wu" firstAttribute="centerX" secondItem="hSo-Rs-CQq" secondAttribute="centerX" id="3Z1-LR-wP2"/>
                     <constraint firstItem="snI-mf-ef0" firstAttribute="centerX" secondItem="hSo-Rs-CQq" secondAttribute="centerX" id="6Xd-po-ReD"/>
+                    <constraint firstItem="6tH-e6-0wu" firstAttribute="leading" secondItem="hSo-Rs-CQq" secondAttribute="leadingMargin" constant="5" id="6w4-dB-nBD"/>
                     <constraint firstItem="6tH-e6-0wu" firstAttribute="top" secondItem="snI-mf-ef0" secondAttribute="bottom" constant="5" id="8W4-ro-Kho"/>
                     <constraint firstItem="6tH-e6-0wu" firstAttribute="width" secondItem="hSo-Rs-CQq" secondAttribute="width" id="AKc-dz-leQ"/>
                     <constraint firstItem="snI-mf-ef0" firstAttribute="width" secondItem="hSo-Rs-CQq" secondAttribute="width" id="CyY-3w-ttV"/>
                     <constraint firstAttribute="topMargin" secondItem="snI-mf-ef0" secondAttribute="top" constant="5" id="K2l-xh-d53"/>
+                    <constraint firstItem="snI-mf-ef0" firstAttribute="leading" secondItem="hSo-Rs-CQq" secondAttribute="leadingMargin" constant="5" id="N25-Rp-cy1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="snI-mf-ef0" secondAttribute="trailing" constant="5" id="WWx-gQ-aBI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6tH-e6-0wu" secondAttribute="trailing" constant="5" id="hKp-bq-hfY"/>
                     <constraint firstAttribute="bottomMargin" secondItem="6tH-e6-0wu" secondAttribute="bottom" constant="5" id="olv-QE-RFF"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="lblDesc" destination="6tH-e6-0wu" id="4N7-EP-RF0"/>
                 <outlet property="lblName" destination="snI-mf-ef0" id="wn3-Pp-kqU"/>
