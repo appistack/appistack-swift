@@ -19,8 +19,6 @@ class ArtistDetailViewController: UIViewController, UICollectionViewDelegate, UI
     @IBOutlet weak var lblArtistName: UILabel!
     @IBOutlet weak var imgArtist: UIImageView!
     
-    @IBOutlet weak var lblSoundCount: UILabel!
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -30,14 +28,20 @@ class ArtistDetailViewController: UIViewController, UICollectionViewDelegate, UI
         imgArtist.image = artist?.photo
         lblArtistName.text = artist?.name()
         
+        setupCollectionView()
+        registerNibs()
+        
+        artistService.get(artist!.id) {(req, res, artist, err) in
+            self.sounds = artist!.sounds
+            self.collectionView.reloadData()
+        }
+    }
+    
+    func setupCollectionView() {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         collectionView.alwaysBounceVertical = true
-        
-        sounds = artist?.sounds ?? []
-        lblSoundCount.text = "\(sounds.count) Sounds"
-        registerNibs()
     }
     
     func registerNibs() {
@@ -57,6 +61,10 @@ class ArtistDetailViewController: UIViewController, UICollectionViewDelegate, UI
         cell.lblName.text = sound.name
         
         return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSize(width: 128, height: 128)
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
