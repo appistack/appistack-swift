@@ -88,9 +88,8 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "navigateFromArtistsToDetail" {
-            // TODO: set artist in segue or in the didSelectItem?
             let controller = segue.destinationViewController as! ArtistDetailViewController
-            controller.artist = selectedArtist
+            controller.artist = sender as? Artist
         }
     }
 }
