@@ -21,6 +21,8 @@
 		43D5C5681B5C7DB90043979F /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C5671B5C7DB90043979F /* SoundService.swift */; };
 		43D5C56B1B5C89E40043979F /* BasicSoundPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C56A1B5C89E40043979F /* BasicSoundPlayerController.swift */; };
 		43D5C56D1B5D78FA0043979F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C56C1B5D78FA0043979F /* UserService.swift */; };
+		43D5C5701B5D7ED70043979F /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C56F1B5D7ED70043979F /* SoundCell.swift */; };
+		43D5C5721B5D7EDE0043979F /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C5711B5D7EDE0043979F /* ArtistCell.swift */; };
 		43DB76BA1B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */; };
 		43DB76BC1B5259F600FD3C2C /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */; };
 		43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6A2441B4A608000B093BD /* NavViewController.swift */; };
@@ -72,6 +74,8 @@
 		43D5C5671B5C7DB90043979F /* SoundService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
 		43D5C56A1B5C89E40043979F /* BasicSoundPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSoundPlayerController.swift; sourceTree = "<group>"; };
 		43D5C56C1B5D78FA0043979F /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		43D5C56F1B5D7ED70043979F /* SoundCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
+		43D5C5711B5D7EDE0043979F /* ArtistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
 		43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
 		43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		43E6A2441B4A608000B093BD /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +190,15 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		43D5C56E1B5D7EC70043979F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				43D5C56F1B5D7ED70043979F /* SoundCell.swift */,
+				43D5C5711B5D7EDE0043979F /* ArtistCell.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		6EC2968E207749E8E17C9425 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +243,7 @@
 		C7F9AEE74931C1435001F225 /* Voxxel */ = {
 			isa = PBXGroup;
 			children = (
+				43D5C56E1B5D7EC70043979F /* UI */,
 				43D5C5691B5C801D0043979F /* Util */,
 				431AA00C1B2FA91400D52CC7 /* Api */,
 				43D5C5661B5C7DA80043979F /* Models */,
@@ -414,7 +428,9 @@
 			files = (
 				C7FEEB36656F4E3F09161E24 /* AppDelegate.swift in Sources */,
 				C7FEA8B48D140BB55E2FBF7F /* HomeViewController.swift in Sources */,
+				43D5C5721B5D7EDE0043979F /* ArtistCell.swift in Sources */,
 				43D5C5641B5C75E40043979F /* SoundDetailViewController.swift in Sources */,
+				43D5C5701B5D7ED70043979F /* SoundCell.swift in Sources */,
 				43FBC02B1B2DED4500B0094C /* SignupViewController.swift in Sources */,
 				43B323BA1B524BA900BF6E2B /* SettingsViewController.swift in Sources */,
 				43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */,
