@@ -11,6 +11,8 @@ import Foundation
 import SwiftyJSON
 
 class Sound: NSObject, ResponseObjectSerializable {
+    let assetsUrl = Config.conf.opts["assets_url"]!
+    
     let id: Int
     let artistId: Int
     let name: String
@@ -37,6 +39,10 @@ class Sound: NSObject, ResponseObjectSerializable {
         self.init(json: json)
     }
     
+    func audiofileUrl() -> NSURL! {
+        return NSURL(string: "\(assetsUrl)\(audiofile)")!
+    }
+    
     // Used by NSMutableOrderedSet to maintain the order
     override func isEqual(object: AnyObject!) -> Bool {
         return (object as! Sound).id == self.id
@@ -47,5 +53,4 @@ class Sound: NSObject, ResponseObjectSerializable {
         return (self as Sound).id
     }
 
-    
 }

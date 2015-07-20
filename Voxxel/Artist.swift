@@ -10,7 +10,6 @@ import Foundation
 import SwiftyJSON
 
 final class Artist: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable, Photoable {
-    let apiUrl = Config.conf.opts["api_base_url"]!
     let assetsUrl = Config.conf.opts["assets_url"]!
     
     let id: Int
