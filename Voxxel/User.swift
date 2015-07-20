@@ -1,7 +1,7 @@
 import Foundation
 import SwiftyJSON
 
-class User: NSObject, ResponseObjectSerializable, Photoable {
+final class User: NSObject, ResponseObjectSerializable, ResponseCollectionSerializable, Photoable {
     let id: Int
     let email: String
     let username: String
@@ -19,6 +19,16 @@ class User: NSObject, ResponseObjectSerializable, Photoable {
     //verified
     //artistId
     //roles
+    
+    static func collection(response response: NSHTTPURLResponse, json: JSON) -> [User] {
+        var users = [User]()
+        
+        for (_, user) in json {
+            users.append(User(json: user))
+        }
+        
+        return users
+    }
     
     init(id: Int, email: String, username: String, uid: String, provider: String) {
         self.id = id
