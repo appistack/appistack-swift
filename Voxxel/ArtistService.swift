@@ -9,11 +9,12 @@
 import Foundation
 import Alamofire
 
+//TODO: refactor completionHandler to handle errors in this service
+//TODO: clean up error handling for API Requests
+
 class ArtistService {
     let apiUrl = Config.conf.opts["api_base_url"]! + "/api/v1"
-    
-    //TODO: refactor using Router enum pattern?
-    //TODO: refactor completionHandler to handle errors in this service and accept the model(s) as params
+
     func get(id:Int, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Artist?, NSError?) -> Void) {
         VoxxelApi.manager.request(.GET, apiUrl + "/artists/\( id ).json")
             .responseObject(completionHandler)
