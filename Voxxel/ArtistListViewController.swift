@@ -93,13 +93,3 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
         }
     }
 }
-
-//TODO: move to separate file later
-class ArtistCell: UICollectionViewCell {
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var lblName: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-}
