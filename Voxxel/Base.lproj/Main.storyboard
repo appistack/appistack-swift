@@ -172,25 +172,50 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CA-bE-pZQ">
+                                <rect key="frame" x="20" y="556" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Open Player">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickOpenPlayer:" destination="XoC-UL-HpY" eventType="touchUpInside" id="oYq-Vl-ZP9"/>
+                                    <action selector="didPressSignup:" destination="je1-zi-78c" eventType="touchUpInside" id="kSH-L8-Xd1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BiF-qb-Lz4" firstAttribute="centerX" secondItem="Zdg-5m-7Hm" secondAttribute="centerX" id="A07-s6-qXv"/>
+                            <constraint firstItem="9CA-bE-pZQ" firstAttribute="width" secondItem="Zdg-5m-7Hm" secondAttribute="width" id="CP1-4g-c7O"/>
                             <constraint firstItem="2Ob-Jt-wmd" firstAttribute="centerX" secondItem="Zdg-5m-7Hm" secondAttribute="centerX" id="QDl-OF-1lt"/>
                             <constraint firstItem="2Ob-Jt-wmd" firstAttribute="width" secondItem="Zdg-5m-7Hm" secondAttribute="width" id="QwE-Ug-kWq"/>
+                            <constraint firstItem="9CA-bE-pZQ" firstAttribute="centerX" secondItem="Zdg-5m-7Hm" secondAttribute="centerX" id="Rlu-zs-gJi"/>
                             <constraint firstItem="BiF-qb-Lz4" firstAttribute="top" secondItem="ytL-nK-XtL" secondAttribute="bottom" constant="20" id="XIC-d3-Coq"/>
                             <constraint firstItem="2Ob-Jt-wmd" firstAttribute="top" secondItem="BiF-qb-Lz4" secondAttribute="bottom" constant="10" id="hDD-Rg-tuO"/>
                             <constraint firstItem="BiF-qb-Lz4" firstAttribute="width" secondItem="Zdg-5m-7Hm" secondAttribute="width" id="kp0-qO-wma"/>
+                            <constraint firstItem="sa0-oX-4ZS" firstAttribute="top" secondItem="9CA-bE-pZQ" secondAttribute="bottom" constant="20" id="xeF-IK-0eU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lblSoundDesc" destination="2Ob-Jt-wmd" id="1Q9-EO-nto"/>
                         <outlet property="lblSoundName" destination="BiF-qb-Lz4" id="MHi-Bq-bUF"/>
+                        <segue destination="IE5-4o-s6J" kind="show" identifier="playSoundInBasicPlayer" id="Jxq-pF-dt6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6o-RB-yXt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1398" y="3324"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="JZw-3g-6zO">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="IE5-4o-s6J" customClass="BasicSoundPlayerController" customModule="Voxxel" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJq-SM-Ckd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="4026"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
