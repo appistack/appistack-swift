@@ -59,6 +59,7 @@ class ArtistDetailViewController: UIViewController, UITableViewDelegate, UITable
         
         let sound = sounds[indexPath.item]
         cell.lblName.text = sound.name
+        cell.lblDesc.text = sound.desc
         
         return cell
         
