@@ -66,11 +66,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="TLX-Me-hqW" firstAttribute="height" secondItem="s0s-Ne-vJy" secondAttribute="height" id="1AE-0j-MAm"/>
+                            <constraint firstItem="TLX-Me-hqW" firstAttribute="centerY" secondItem="s0s-Ne-vJy" secondAttribute="centerY" id="Abv-TZ-OUJ"/>
                             <constraint firstItem="TLX-Me-hqW" firstAttribute="leading" secondItem="s0s-Ne-vJy" secondAttribute="leadingMargin" id="BSI-PN-whi"/>
+                            <constraint firstItem="TLX-Me-hqW" firstAttribute="width" secondItem="s0s-Ne-vJy" secondAttribute="width" id="EZZ-f2-18B"/>
                             <constraint firstItem="TLX-Me-hqW" firstAttribute="top" secondItem="rNW-3p-y58" secondAttribute="bottom" id="J4g-Hy-Fwo"/>
+                            <constraint firstItem="TLX-Me-hqW" firstAttribute="width" secondItem="s0s-Ne-vJy" secondAttribute="width" id="Vbn-5F-eZl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TLX-Me-hqW" secondAttribute="trailing" id="aUa-97-2en"/>
                             <constraint firstItem="dhy-Es-dnA" firstAttribute="top" secondItem="TLX-Me-hqW" secondAttribute="bottom" id="jCv-Ic-5Oy"/>
+                            <constraint firstItem="TLX-Me-hqW" firstAttribute="centerX" secondItem="s0s-Ne-vJy" secondAttribute="centerX" id="kJX-Aa-NhM"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BSI-PN-whi"/>
+                                <exclude reference="J4g-Hy-Fwo"/>
+                                <exclude reference="Vbn-5F-eZl"/>
+                                <exclude reference="aUa-97-2en"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="maj-7z-Yn4"/>
                     <connections>
