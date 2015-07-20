@@ -655,7 +655,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="Xy2-rV-mrK"/>
+                    <navigationItem key="navigationItem" title="Settings" id="Xy2-rV-mrK">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="GMC-Oz-a8I">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eiy-Xk-epf">
+                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="didPressSave:" destination="aYC-sB-Ghr" eventType="touchUpInside" id="mJc-ea-mnz"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kHV-wE-yH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
