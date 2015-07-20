@@ -20,6 +20,7 @@
 		43D5C5641B5C75E40043979F /* SoundDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C5631B5C75E40043979F /* SoundDetailViewController.swift */; };
 		43D5C5681B5C7DB90043979F /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C5671B5C7DB90043979F /* SoundService.swift */; };
 		43D5C56B1B5C89E40043979F /* BasicSoundPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C56A1B5C89E40043979F /* BasicSoundPlayerController.swift */; };
+		43D5C56D1B5D78FA0043979F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C56C1B5D78FA0043979F /* UserService.swift */; };
 		43DB76BA1B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */; };
 		43DB76BC1B5259F600FD3C2C /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */; };
 		43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6A2441B4A608000B093BD /* NavViewController.swift */; };
@@ -70,6 +71,7 @@
 		43D5C5631B5C75E40043979F /* SoundDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundDetailViewController.swift; sourceTree = "<group>"; };
 		43D5C5671B5C7DB90043979F /* SoundService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
 		43D5C56A1B5C89E40043979F /* BasicSoundPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSoundPlayerController.swift; sourceTree = "<group>"; };
+		43D5C56C1B5D78FA0043979F /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
 		43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		43E6A2441B4A608000B093BD /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				43FF93281B38D62900246A70 /* ArtistService.swift */,
 				43FF932A1B3A648B00246A70 /* ApiHelper.swift */,
 				43D5C5671B5C7DB90043979F /* SoundService.swift */,
+				43D5C56C1B5D78FA0043979F /* UserService.swift */,
 			);
 			name = Api;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				43FBC02B1B2DED4500B0094C /* SignupViewController.swift in Sources */,
 				43B323BA1B524BA900BF6E2B /* SettingsViewController.swift in Sources */,
 				43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */,
+				43D5C56D1B5D78FA0043979F /* UserService.swift in Sources */,
 				431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */,
 				43D5C5681B5C7DB90043979F /* SoundService.swift in Sources */,
 				43FF932B1B3A648B00246A70 /* ApiHelper.swift in Sources */,
