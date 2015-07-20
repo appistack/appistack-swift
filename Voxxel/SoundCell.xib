@@ -7,28 +7,39 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="soundCell" id="5kb-Bc-iqD" customClass="SoundCell" customModule="Voxxel" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="328" height="286"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="328" height="286"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="soundCell" rowHeight="84" id="Dft-OM-Kn2" customClass="SoundCell" customModule="Voxxel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dft-OM-Kn2" id="hSo-Rs-CQq">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="83.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snI-mf-ef0">
-                        <rect key="frame" x="14" y="14" width="112" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sound Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snI-mf-ef0">
+                        <rect key="frame" x="16" y="8" width="306" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Description" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tH-e6-0wu">
+                        <rect key="frame" x="16" y="42" width="306" height="29"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-            </view>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-            <size key="customSize" width="328" height="286"/>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="6tH-e6-0wu" firstAttribute="centerX" secondItem="hSo-Rs-CQq" secondAttribute="centerX" id="3Z1-LR-wP2"/>
+                    <constraint firstItem="snI-mf-ef0" firstAttribute="centerX" secondItem="hSo-Rs-CQq" secondAttribute="centerX" id="6Xd-po-ReD"/>
+                    <constraint firstItem="6tH-e6-0wu" firstAttribute="width" secondItem="hSo-Rs-CQq" secondAttribute="width" id="AKc-dz-leQ"/>
+                    <constraint firstItem="snI-mf-ef0" firstAttribute="width" secondItem="hSo-Rs-CQq" secondAttribute="width" id="CyY-3w-ttV"/>
+                </constraints>
+            </tableViewCellContentView>
             <connections>
-                <outlet property="lblName" destination="snI-mf-ef0" id="PwT-qg-QRH"/>
+                <outlet property="lblDesc" destination="6tH-e6-0wu" id="4N7-EP-RF0"/>
+                <outlet property="lblName" destination="snI-mf-ef0" id="wn3-Pp-kqU"/>
             </connections>
-            <point key="canvasLocation" x="495" y="422"/>
-        </collectionViewCell>
+            <point key="canvasLocation" x="496" y="692"/>
+        </tableViewCell>
     </objects>
 </document>
