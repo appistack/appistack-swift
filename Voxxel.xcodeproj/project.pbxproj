@@ -17,6 +17,8 @@
 		43B323BC1B524FCA00BF6E2B /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B323BB1B524FCA00BF6E2B /* ArtistListViewController.swift */; };
 		43C5474C1B3AF6370044F749 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5474B1B3AF6370044F749 /* UIHelper.swift */; };
 		43D5C5621B5C2ABD0043979F /* SoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D5C5611B5C2ABD0043979F /* SoundCell.xib */; };
+		43D5C5641B5C75E40043979F /* SoundDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C5631B5C75E40043979F /* SoundDetailViewController.swift */; };
+		43D5C5681B5C7DB90043979F /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C5671B5C7DB90043979F /* SoundService.swift */; };
 		43DB76BA1B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */; };
 		43DB76BC1B5259F600FD3C2C /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */; };
 		43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6A2441B4A608000B093BD /* NavViewController.swift */; };
@@ -64,6 +66,8 @@
 		43B323BB1B524FCA00BF6E2B /* ArtistListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
 		43C5474B1B3AF6370044F749 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		43D5C5611B5C2ABD0043979F /* SoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundCell.xib; sourceTree = "<group>"; };
+		43D5C5631B5C75E40043979F /* SoundDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundDetailViewController.swift; sourceTree = "<group>"; };
+		43D5C5671B5C7DB90043979F /* SoundService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
 		43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
 		43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		43E6A2441B4A608000B093BD /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
@@ -133,11 +137,47 @@
 				431AA00D1B2FA94700D52CC7 /* AuthService.swift */,
 				43FF93281B38D62900246A70 /* ArtistService.swift */,
 				43FF932A1B3A648B00246A70 /* ApiHelper.swift */,
+				43D5C5671B5C7DB90043979F /* SoundService.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		43D5C5651B5C75FD0043979F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4393B8771B56B945008C29D7 /* ArtistDetailViewController.swift */,
+				43B323BB1B524FCA00BF6E2B /* ArtistListViewController.swift */,
+				C7FF6F5A425142898BDF04A0 /* HomeViewController.swift */,
+				C7FC8CD49C6A25C71D24A37E /* LoginViewController.swift */,
+				43E6A2441B4A608000B093BD /* NavViewController.swift */,
+				43B323B51B50CA0500BF6E2B /* ProfileViewController.swift */,
+				43B323B91B524BA900BF6E2B /* SettingsViewController.swift */,
+				43FBC02A1B2DED4500B0094C /* SignupViewController.swift */,
+				43D5C5631B5C75E40043979F /* SoundDetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		43D5C5661B5C7DA80043979F /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				43FF932C1B3A705900246A70 /* User.swift */,
 				43FF932E1B3A75C600246A70 /* Artist.swift */,
 				43FF93301B3A783300246A70 /* Sound.swift */,
 			);
-			name = Api;
+			name = Models;
+			sourceTree = "<group>";
+		};
+		43D5C5691B5C801D0043979F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C7F4DC952B1CA01AC02CD56A /* AuthManager.swift */,
+				43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */,
+				43FBF2271B312CD300E97C79 /* Config.swift */,
+				43C5474B1B3AF6370044F749 /* UIHelper.swift */,
+				43B323B71B50CBCB00BF6E2B /* Util.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		6EC2968E207749E8E17C9425 /* Pods */ = {
@@ -184,28 +224,18 @@
 		C7F9AEE74931C1435001F225 /* Voxxel */ = {
 			isa = PBXGroup;
 			children = (
+				43D5C5691B5C801D0043979F /* Util */,
 				431AA00C1B2FA91400D52CC7 /* Api */,
+				43D5C5661B5C7DA80043979F /* Models */,
+				43D5C5651B5C75FD0043979F /* Controllers */,
 				C7F8722D7237EBD0AFACD615 /* Supporting Files */,
+				C7FD591EA60B4AA9EED49104 /* AppDelegate.swift */,
+				43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */,
 				C7FFB27ECFE21F8B6288AB2A /* Images.xcassets */,
 				C7FC5FED1C2FB0D9C0533A00 /* LaunchScreen.xib */,
-				C7FD591EA60B4AA9EED49104 /* AppDelegate.swift */,
 				C7FEC1F5F66422A22B6931CA /* Main.storyboard */,
-				C7FF6F5A425142898BDF04A0 /* HomeViewController.swift */,
-				C7F4DC952B1CA01AC02CD56A /* AuthManager.swift */,
-				43E97AEF1B294F96004CC7ED /* Voxxel-Bridging-Header.h */,
-				C7FC8CD49C6A25C71D24A37E /* LoginViewController.swift */,
-				43FBC02A1B2DED4500B0094C /* SignupViewController.swift */,
-				43FBF2271B312CD300E97C79 /* Config.swift */,
-				43C5474B1B3AF6370044F749 /* UIHelper.swift */,
-				43E6A2441B4A608000B093BD /* NavViewController.swift */,
-				43B323B51B50CA0500BF6E2B /* ProfileViewController.swift */,
-				43B323B71B50CBCB00BF6E2B /* Util.swift */,
-				43B323B91B524BA900BF6E2B /* SettingsViewController.swift */,
-				43B323BB1B524FCA00BF6E2B /* ArtistListViewController.swift */,
-				43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */,
-				43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */,
-				4393B8771B56B945008C29D7 /* ArtistDetailViewController.swift */,
 				43D5C5611B5C2ABD0043979F /* SoundCell.xib */,
+				43E97AEF1B294F96004CC7ED /* Voxxel-Bridging-Header.h */,
 			);
 			path = Voxxel;
 			sourceTree = "<group>";
@@ -378,10 +408,12 @@
 			files = (
 				C7FEEB36656F4E3F09161E24 /* AppDelegate.swift in Sources */,
 				C7FEA8B48D140BB55E2FBF7F /* HomeViewController.swift in Sources */,
+				43D5C5641B5C75E40043979F /* SoundDetailViewController.swift in Sources */,
 				43FBC02B1B2DED4500B0094C /* SignupViewController.swift in Sources */,
 				43B323BA1B524BA900BF6E2B /* SettingsViewController.swift in Sources */,
 				43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */,
 				431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */,
+				43D5C5681B5C7DB90043979F /* SoundService.swift in Sources */,
 				43FF932B1B3A648B00246A70 /* ApiHelper.swift in Sources */,
 				43B323BC1B524FCA00BF6E2B /* ArtistListViewController.swift in Sources */,
 				43B323B81B50CBCB00BF6E2B /* Util.swift in Sources */,
