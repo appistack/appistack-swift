@@ -103,7 +103,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SjV-zz-Bfp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SjV-zz-Bfp">
                                 <rect key="frame" x="20" y="350" width="560" height="230"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -111,6 +111,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jMD-E5-gGV" firstAttribute="centerX" secondItem="gtT-mJ-PTz" secondAttribute="centerX" id="ANG-Lf-jmW"/>
+                            <constraint firstItem="SjV-zz-Bfp" firstAttribute="top" secondItem="8fB-Ha-eGz" secondAttribute="bottom" constant="10" id="Omg-zT-cEZ"/>
+                            <constraint firstItem="bG9-22-I72" firstAttribute="top" secondItem="SjV-zz-Bfp" secondAttribute="bottom" constant="5" id="ReD-Va-W01"/>
                             <constraint firstItem="jMD-E5-gGV" firstAttribute="top" secondItem="kNX-DG-WcT" secondAttribute="bottom" constant="10" id="TbJ-kT-75e"/>
                             <constraint firstItem="SjV-zz-Bfp" firstAttribute="width" secondItem="gtT-mJ-PTz" secondAttribute="width" id="UVV-bv-mIr"/>
                             <constraint firstItem="SjV-zz-Bfp" firstAttribute="centerX" secondItem="gtT-mJ-PTz" secondAttribute="centerX" id="b9O-px-wgx"/>
