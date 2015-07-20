@@ -19,6 +19,7 @@
 		43D5C5621B5C2ABD0043979F /* SoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D5C5611B5C2ABD0043979F /* SoundCell.xib */; };
 		43D5C5641B5C75E40043979F /* SoundDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C5631B5C75E40043979F /* SoundDetailViewController.swift */; };
 		43D5C5681B5C7DB90043979F /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C5671B5C7DB90043979F /* SoundService.swift */; };
+		43D5C56B1B5C89E40043979F /* BasicSoundPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5C56A1B5C89E40043979F /* BasicSoundPlayerController.swift */; };
 		43DB76BA1B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */; };
 		43DB76BC1B5259F600FD3C2C /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */; };
 		43E6A2451B4A608000B093BD /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6A2441B4A608000B093BD /* NavViewController.swift */; };
@@ -68,6 +69,7 @@
 		43D5C5611B5C2ABD0043979F /* SoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundCell.xib; sourceTree = "<group>"; };
 		43D5C5631B5C75E40043979F /* SoundDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundDetailViewController.swift; sourceTree = "<group>"; };
 		43D5C5671B5C7DB90043979F /* SoundService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
+		43D5C56A1B5C89E40043979F /* BasicSoundPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSoundPlayerController.swift; sourceTree = "<group>"; };
 		43DB76B91B5252B400FD3C2C /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
 		43DB76BB1B5259F600FD3C2C /* ArtistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
 		43E6A2441B4A608000B093BD /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				43B323B91B524BA900BF6E2B /* SettingsViewController.swift */,
 				43FBC02A1B2DED4500B0094C /* SignupViewController.swift */,
 				43D5C5631B5C75E40043979F /* SoundDetailViewController.swift */,
+				43D5C56A1B5C89E40043979F /* BasicSoundPlayerController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				43E97AF01B294F96004CC7ED /* Voxxel-Bridging-Header.h in Sources */,
 				43C5474C1B3AF6370044F749 /* UIHelper.swift in Sources */,
 				43B323B61B50CA0500BF6E2B /* ProfileViewController.swift in Sources */,
+				43D5C56B1B5C89E40043979F /* BasicSoundPlayerController.swift in Sources */,
 				C7F2D5F4A846B072F5C9029C /* AccessTokenModel.swift in Sources */,
 				43FF93311B3A783300246A70 /* Sound.swift in Sources */,
 				4393B8781B56B945008C29D7 /* ArtistDetailViewController.swift in Sources */,
