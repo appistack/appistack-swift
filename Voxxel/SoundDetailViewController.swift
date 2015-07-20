@@ -23,4 +23,15 @@ class SoundDetailViewController: UIViewController {
         lblSoundDesc.text = sound?.desc
     }
     
+    @IBAction func didClickOpenPlayer(sender: AnyObject) {
+        performSegueWithIdentifier("playSoundInBasicPlayer", sender: sound)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "playSoundInBasicPlayer" {
+            let controller = segue.destinationViewController as! BasicSoundPlayerController
+            controller.sound = sender as? Sound
+        }
+    }
+    
 }
