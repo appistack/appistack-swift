@@ -682,13 +682,13 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBa-16-Gh7">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBa-16-Gh7">
                                                     <rect key="frame" x="346" y="9" width="88" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPj-R2-eqE">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPj-R2-eqE">
                                                     <rect key="frame" x="8" y="11" width="295" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -701,10 +701,18 @@
                                                 <constraint firstItem="ecB-x8-hvp" firstAttribute="top" secondItem="Tpf-nR-APF" secondAttribute="topMargin" constant="2" id="AMZ-7Q-CRM"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="kPj-R2-eqE" secondAttribute="leading" id="Nt5-ph-yyy"/>
                                                 <constraint firstItem="WBa-16-Gh7" firstAttribute="leading" secondItem="kPj-R2-eqE" secondAttribute="trailing" id="PTH-Ie-8WR"/>
+                                                <constraint firstItem="WBa-16-Gh7" firstAttribute="centerY" secondItem="Tpf-nR-APF" secondAttribute="centerY" id="T19-MX-hKY"/>
                                                 <constraint firstItem="kPj-R2-eqE" firstAttribute="width" secondItem="Tpf-nR-APF" secondAttribute="width" multiplier="0.3" id="e4b-1d-FoB"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ecB-x8-hvp" secondAttribute="trailing" id="fw8-35-XG1"/>
+                                                <constraint firstItem="kPj-R2-eqE" firstAttribute="centerY" secondItem="Tpf-nR-APF" secondAttribute="centerY" id="gMW-53-I3g"/>
                                                 <constraint firstItem="ecB-x8-hvp" firstAttribute="centerY" secondItem="Tpf-nR-APF" secondAttribute="centerY" id="kRB-Sk-7hj"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="4oa-kh-khP"/>
+                                                    <exclude reference="AMZ-7Q-CRM"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="V6B-nd-N4J">
@@ -714,7 +722,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTE-3t-FTW">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTE-3t-FTW">
                                                     <rect key="frame" x="442" y="6" width="150" height="27.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="2sb-eS-gdH"/>
@@ -722,13 +730,13 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nickname" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoY-Dm-Rkv">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nickname" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoY-Dm-Rkv">
                                                     <rect key="frame" x="341" y="8" width="93" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylf-ck-kIs">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylf-ck-kIs">
                                                     <rect key="frame" x="8" y="9" width="312" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -737,14 +745,22 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="topMargin" secondItem="WTE-3t-FTW" secondAttribute="top" constant="2" id="2cF-xX-lao"/>
+                                                <constraint firstItem="Ylf-ck-kIs" firstAttribute="centerY" secondItem="PC3-Gb-gSW" secondAttribute="centerY" id="Bbk-1f-Qh4"/>
                                                 <constraint firstItem="JoY-Dm-Rkv" firstAttribute="leading" secondItem="Ylf-ck-kIs" secondAttribute="trailing" id="CzC-kn-D9g"/>
                                                 <constraint firstItem="WTE-3t-FTW" firstAttribute="leading" secondItem="JoY-Dm-Rkv" secondAttribute="trailing" constant="10" id="Fjw-2G-0qV"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="Ylf-ck-kIs" secondAttribute="leading" id="Hws-eO-BS4"/>
                                                 <constraint firstItem="WTE-3t-FTW" firstAttribute="centerY" secondItem="PC3-Gb-gSW" secondAttribute="centerY" id="WX0-Lj-C6L"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="WTE-3t-FTW" secondAttribute="trailing" id="kRT-Ms-qPU"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="WTE-3t-FTW" secondAttribute="bottom" constant="2" id="kdv-Rh-r1u"/>
+                                                <constraint firstItem="JoY-Dm-Rkv" firstAttribute="centerY" secondItem="PC3-Gb-gSW" secondAttribute="centerY" id="oEx-cf-5aQ"/>
                                                 <constraint firstItem="Ylf-ck-kIs" firstAttribute="width" secondItem="PC3-Gb-gSW" secondAttribute="width" multiplier="0.3" id="qvm-SU-4ng"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="2cF-xX-lao"/>
+                                                    <exclude reference="kdv-Rh-r1u"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="X2Y-9P-u9J">
