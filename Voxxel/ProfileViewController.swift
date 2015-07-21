@@ -12,6 +12,7 @@ import UIKit
 class ProfileViewController: UIViewController {
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var lblUsername: UILabel!
+    @IBOutlet weak var lblName: UILabel!
     
     let authManager = AuthManager.manager
     
@@ -22,6 +23,8 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lblUsername.text = authManager.user!.username
+        lblName.text = authManager.user!.name
+        
         if authManager.user!.photo == nil {
             authManager.user!.loadPhoto(authManager.user!.getImageURL()) { (user, err) in
                 if err == nil {
