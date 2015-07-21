@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -589,7 +590,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="aYC-sB-Ghr" kind="relationship" relationship="rootViewController" id="Ca5-UR-8Yv"/>
+                        <segue destination="YYf-B6-cYA" kind="relationship" relationship="rootViewController" id="UuL-u4-LH3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNk-ba-SK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -609,10 +610,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fL4-e7-2Ud">
-                                <rect key="frame" x="156" y="128" width="288" height="167"/>
+                                <rect key="frame" x="156" y="195" width="288" height="167"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6G-Ya-4f2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="@Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6G-Ya-4f2">
                                 <rect key="frame" x="185" y="81" width="231" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scf-Ov-Moi">
+                                <rect key="frame" x="185" y="125" width="231" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -621,20 +628,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="c6G-Ya-4f2" firstAttribute="centerX" secondItem="y6X-sI-ppu" secondAttribute="centerX" id="1WF-nh-dlm"/>
+                            <constraint firstItem="scf-Ov-Moi" firstAttribute="top" secondItem="c6G-Ya-4f2" secondAttribute="bottom" constant="20" id="5zw-yt-vdu"/>
+                            <constraint firstItem="fL4-e7-2Ud" firstAttribute="top" secondItem="scf-Ov-Moi" secondAttribute="bottom" constant="20" id="877-EO-cwh"/>
                             <constraint firstItem="fL4-e7-2Ud" firstAttribute="centerX" secondItem="y6X-sI-ppu" secondAttribute="centerX" id="ADe-bp-mUs"/>
                             <constraint firstItem="c6G-Ya-4f2" firstAttribute="top" secondItem="fL4-e7-2Ud" secondAttribute="bottom" constant="20" id="Ahu-Ga-Jd1"/>
                             <constraint firstItem="c6G-Ya-4f2" firstAttribute="top" secondItem="vln-Gf-87N" secondAttribute="bottom" constant="20" id="Iqj-qK-llH"/>
+                            <constraint firstItem="c6G-Ya-4f2" firstAttribute="width" secondItem="y6X-sI-ppu" secondAttribute="width" id="Jbi-Dd-Kx6"/>
                             <constraint firstItem="fL4-e7-2Ud" firstAttribute="top" secondItem="c6G-Ya-4f2" secondAttribute="bottom" constant="20" id="Ooo-uQ-pOL"/>
+                            <constraint firstItem="scf-Ov-Moi" firstAttribute="centerX" secondItem="y6X-sI-ppu" secondAttribute="centerX" id="XjS-kA-VrT"/>
+                            <constraint firstItem="scf-Ov-Moi" firstAttribute="width" secondItem="y6X-sI-ppu" secondAttribute="width" id="tnk-ak-24m"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="Ahu-Ga-Jd1"/>
+                                <exclude reference="Ooo-uQ-pOL"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="OZE-PX-8Ti"/>
                     <connections>
                         <outlet property="imgProfile" destination="fL4-e7-2Ud" id="lyP-k3-0R4"/>
+                        <outlet property="lblName" destination="scf-Ov-Moi" id="pct-zE-N8h"/>
                         <outlet property="lblUsername" destination="c6G-Ya-4f2" id="dd2-9h-vsb"/>
                     </connections>
                 </viewController>
