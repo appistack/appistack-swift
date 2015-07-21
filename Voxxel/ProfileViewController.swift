@@ -34,7 +34,5 @@ class ProfileViewController: UIViewController {
         } else {
             self.imgProfile.image = authManager.user!.photo
         }
-        
-        //        imgProfile.hnk_setImageFromURL(authManager.user!.getImageURL())
     }
 }
