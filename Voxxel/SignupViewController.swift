@@ -22,7 +22,7 @@ class SignupViewController: UIViewController, FormValidatable {
     @IBOutlet weak var lblSignupPassword: UILabel!
     @IBOutlet weak var lblSignupConfirm: UILabel!
     
-    let authService = AuthService.init()
+    let authService = AuthService()
     let authManager = AuthManager.manager
     let validator = Validator()
 
