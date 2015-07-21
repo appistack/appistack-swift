@@ -69,7 +69,7 @@ class SettingsViewController: UITableViewController, FormValidatable {
         let nameRegex = "[a-zA-Z\\s]{2,}"
         let nameRule = RegexRule(regex: nameRegex, message: "Must include at least two letters")
         
-        let nicknameRegex = "\\w{2,}"
+        let nicknameRegex = "(^$|[\\w\\s]{2,})"
         let nicknameRule = RegexRule(regex: nicknameRegex, message: "Requires two letters, symbols or digits")
         //TODO: allow for empty nickname
         //TODO: change nickname to length requirement
