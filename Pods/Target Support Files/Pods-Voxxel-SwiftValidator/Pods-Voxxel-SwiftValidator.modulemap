@@ -1,6 +1,0 @@
-framework module SwiftValidator {
-  umbrella header "Pods-Voxxel-SwiftValidator-umbrella.h"
-
-  export *
-  module * { export * }
-}
