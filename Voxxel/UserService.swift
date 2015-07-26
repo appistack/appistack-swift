@@ -28,6 +28,7 @@ class UserService {
         //API should respond with 303 and redirect to GET for user.  
         //  302 causes redirect loop as Alamofire uses same HTTP verb
         VoxxelApi.manager.request(.PATCH, apiUrl + "/users/\( id ).json", parameters: params)
+            .validate()
             .responseObject(completionHandler)
     }
 
