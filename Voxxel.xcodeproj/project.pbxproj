@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		183E106C673B3145022B1C62 /* Pods_Voxxel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		431AA00E1B2FA94700D52CC7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431AA00D1B2FA94700D52CC7 /* AuthService.swift */; };
 		435E23661B4CEC8100B137FC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435E23651B4CEC8100B137FC /* SwiftyJSON.framework */; };
 		4393B8781B56B945008C29D7 /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4393B8771B56B945008C29D7 /* ArtistDetailViewController.swift */; };
@@ -47,6 +46,7 @@
 		C7FEA8B48D140BB55E2FBF7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF6F5A425142898BDF04A0 /* HomeViewController.swift */; };
 		C7FEEB36656F4E3F09161E24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD591EA60B4AA9EED49104 /* AppDelegate.swift */; };
 		C7FFB87E6BB653E9BD308AF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C7FA09A5D177650456FF4806 /* README.md */; };
+		D0F776E3DD50D9AA1251488C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBF971E6F3FE891BE6BCE66 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EAEC1CCFF8719BAB2A181DF0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBF971E6F3FE891BE6BCE66 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -61,8 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04E1E7B94E030AD9EDF7D076 /* Pods.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.development.xcconfig; path = "Pods/Target Support Files/Pods/Pods.development.xcconfig"; sourceTree = "<group>"; };
 		0CBF971E6F3FE891BE6BCE66 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxxel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431AA00D1B2FA94700D52CC7 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		435E23651B4CEC8100B137FC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/Pods-Voxxel/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		4393B8771B56B945008C29D7 /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 		43FF932C1B3A705900246A70 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		43FF932E1B3A75C600246A70 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		43FF93301B3A783300246A70 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
-		9E0565A60ADBE83E04E51E5E /* Pods-Voxxel.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxxel.production.xcconfig"; path = "Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel.production.xcconfig"; sourceTree = "<group>"; };
-		C19112CED7D9D4FC93362B84 /* Pods-Voxxel.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxxel.development.xcconfig"; path = "Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel.development.xcconfig"; sourceTree = "<group>"; };
+		46142F922F44034E2D40BC1C /* Pods.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.staging.xcconfig; path = "Pods/Target Support Files/Pods/Pods.staging.xcconfig"; sourceTree = "<group>"; };
+		4C49DDB002973DE7310636C1 /* Pods.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.production.xcconfig; path = "Pods/Target Support Files/Pods/Pods.production.xcconfig"; sourceTree = "<group>"; };
 		C7F02D2D1857C9757EC91F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C7F04D48D8D484008B84E4EE /* AccessTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenModel.swift; sourceTree = "<group>"; };
 		C7F0DDB0D7D0E892DDE70CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -108,7 +108,6 @@
 		C7FE2C7984B78BFF1ACFB25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7FF6F5A425142898BDF04A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C7FFB27ECFE21F8B6288AB2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FB2F9A91B23FDB3F08C13C22 /* Pods-Voxxel.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxxel.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Voxxel/Pods-Voxxel.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F776E3DD50D9AA1251488C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				435E23661B4CEC8100B137FC /* SwiftyJSON.framework in Frameworks */,
-				183E106C673B3145022B1C62 /* Pods_Voxxel.framework in Frameworks */,
 				EAEC1CCFF8719BAB2A181DF0 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				435E23651B4CEC8100B137FC /* SwiftyJSON.framework */,
-				24164DEBFD3F0F31AE84D169 /* Pods_Voxxel.framework */,
 				0CBF971E6F3FE891BE6BCE66 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -203,16 +201,6 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
-		6EC2968E207749E8E17C9425 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C19112CED7D9D4FC93362B84 /* Pods-Voxxel.development.xcconfig */,
-				FB2F9A91B23FDB3F08C13C22 /* Pods-Voxxel.staging.xcconfig */,
-				9E0565A60ADBE83E04E51E5E /* Pods-Voxxel.production.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		C7F22E33B5664ADE4327BEAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,8 +216,8 @@
 				C7F9AEE74931C1435001F225 /* Voxxel */,
 				C7FD53732A082C059691E765 /* VoxxelTests */,
 				C7FA09A5D177650456FF4806 /* README.md */,
-				6EC2968E207749E8E17C9425 /* Pods */,
 				3908E1A4542664A51D19FFF7 /* Frameworks */,
+				ECBBF60370C6D4C8532CC6B9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -282,6 +270,16 @@
 			path = VoxxelTests;
 			sourceTree = "<group>";
 		};
+		ECBBF60370C6D4C8532CC6B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04E1E7B94E030AD9EDF7D076 /* Pods.development.xcconfig */,
+				46142F922F44034E2D40BC1C /* Pods.staging.xcconfig */,
+				4C49DDB002973DE7310636C1 /* Pods.production.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,12 +287,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7FC6D133A32DC9C365B1AB0 /* Build configuration list for PBXNativeTarget "Voxxel" */;
 			buildPhases = (
-				9AF3CAD4657033FA0A4B1666 /* Check Pods Manifest.lock */,
 				C7FDF7B18C236ABF01AF0F9D /* Sources */,
 				C7F9A526DD3E8B8D7CAE5749 /* Frameworks */,
 				C7FDF68C7EB95ABA3EF3824E /* Resources */,
-				2943E3735D8D3E9C8F4FD386 /* Embed Pods Frameworks */,
-				C527EA52524DBD9AF37CDD6F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -376,54 +371,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2943E3735D8D3E9C8F4FD386 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9AF3CAD4657033FA0A4B1666 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C527EA52524DBD9AF37CDD6F /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7FDF7B18C236ABF01AF0F9D /* Sources */ = {
@@ -542,7 +489,7 @@
 		};
 		43E97AE71B29410C004CC7ED /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E0565A60ADBE83E04E51E5E /* Pods-Voxxel.production.xcconfig */;
+			baseConfigurationReference = 4C49DDB002973DE7310636C1 /* Pods.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ATS_DISABLED = 0;
@@ -557,6 +504,7 @@
 		};
 		43E97AE81B29410C004CC7ED /* Production */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C49DDB002973DE7310636C1 /* Pods.production.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Voxxel.app/Voxxel";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -572,7 +520,7 @@
 		};
 		C7F06E730FB425DB24BD92B1 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB2F9A91B23FDB3F08C13C22 /* Pods-Voxxel.staging.xcconfig */;
+			baseConfigurationReference = 46142F922F44034E2D40BC1C /* Pods.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ATS_DISABLED = 0;
@@ -587,7 +535,7 @@
 		};
 		C7F141540638A821B0868A8C /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C19112CED7D9D4FC93362B84 /* Pods-Voxxel.development.xcconfig */;
+			baseConfigurationReference = 04E1E7B94E030AD9EDF7D076 /* Pods.development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ATS_DISABLED = 1;
@@ -602,6 +550,7 @@
 		};
 		C7F377D2E634A1DC98E6C3CA /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E1E7B94E030AD9EDF7D076 /* Pods.development.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Voxxel.app/Voxxel";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -665,6 +614,7 @@
 		};
 		C7FC0B973F559C146A9619B6 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46142F922F44034E2D40BC1C /* Pods.staging.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Voxxel.app/Voxxel";
 				FRAMEWORK_SEARCH_PATHS = (
