@@ -16,12 +16,12 @@ class ArtistService {
     let apiUrl = Config.conf.opts["api_base_url"]! + "/api/v1"
 
     func get(id:Int, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Artist?, NSError?) -> Void) {
-        VoxxelApi.manager.request(.GET, apiUrl + "/artists/\( id ).json")
+        VoxxelApi.manager.request(.GET, apiUrl + "/artists/\( id )")
             .responseObject(completionHandler)
     }
 
     func list(params: [String: AnyObject]? = nil, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, [Artist]?, NSError?) -> Void) {
-        VoxxelApi.manager.request(.GET, apiUrl + "/artists.json")
+        VoxxelApi.manager.request(.GET, apiUrl + "/artists")
             .responseCollection(completionHandler)
     }
 

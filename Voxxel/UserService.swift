@@ -15,19 +15,19 @@ class UserService {
     let apiUrl = Config.conf.opts["api_base_url"]! + "/api/v1"
     
     func get(id:Int, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, User?, NSError?) -> Void) {
-        VoxxelApi.manager.request(.GET, apiUrl + "/users/\( id ).json")
+        VoxxelApi.manager.request(.GET, apiUrl + "/users/\( id )")
             .responseObject(completionHandler)
     }
     
     func list(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, [User]?, NSError?) -> Void) {
-        VoxxelApi.manager.request(.GET, apiUrl + "/users.json")
+        VoxxelApi.manager.request(.GET, apiUrl + "/users")
             .responseCollection(completionHandler)
     }
     
     func update(id:Int, params: [String: AnyObject], completionHandler: (NSURLRequest?, NSHTTPURLResponse?, User?, NSError?) -> Void) {
         //API should respond with 303 and redirect to GET for user.  
         //  302 causes redirect loop as Alamofire uses same HTTP verb
-        VoxxelApi.manager.request(.PATCH, apiUrl + "/users/\( id ).json", parameters: params)
+        VoxxelApi.manager.request(.PATCH, apiUrl + "/users/\( id )", parameters: params)
             .validate()
             .responseObject(completionHandler)
     }
