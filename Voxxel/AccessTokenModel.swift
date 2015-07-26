@@ -25,7 +25,8 @@ class AccessTokenModel : NSObject {
     
     func getAuthHeaders() -> [NSObject: AnyObject] {
         let authHeaders: [NSObject: AnyObject] = [
-            "Accept": "application/json;version=1",
+            "Content-Type": "application/json;charset=UTF-8",
+            "Accept": "application/json,text/plain;version=1",
             "access-token": self.token!,
             "token-type": self.tokenType!,
             "client": self.client!,

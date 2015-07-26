@@ -60,8 +60,12 @@ class VoxxelApi: NSObject {
     
     static func defaultManager() -> Alamofire.Manager {
         let defaultHeaders = Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders ?? [:]
+        var headers = defaultHeaders
+        headers["Content-Type"] = "application/json;charset=UTF-8"
+        headers["Accept"] = "application/json,text/plain;version=1"
+        
         let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-        configuration.HTTPAdditionalHeaders = defaultHeaders
+        configuration.HTTPAdditionalHeaders = headers
         
         return Alamofire.Manager(configuration: configuration)
     }
