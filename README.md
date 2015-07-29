@@ -1,4 +1,7 @@
 
+Requires Swift 2.0
+- Alamofire swift-2.0 branch requires XCode7 beta4 to build
+
 ### Guides
 - [Auth with AFNetworking](http://nsscreencast.com/episodes/41-authentication-with-afnetworking)
 - [Lighter View Controllers](http://www.objc.io/issues/1-view-controllers/lighter-view-controllers)
