@@ -11,6 +11,7 @@ final class User: NSObject, ResponseObjectSerializable, ResponseCollectionSerial
     var name: String?
     var nickname: String?
     var image: String?
+    var gravatarUrl: String?
     
     var photo: UIImage?
     
@@ -48,6 +49,7 @@ final class User: NSObject, ResponseObjectSerializable, ResponseCollectionSerial
         self.name = json["name"].string
         self.nickname = json["nickname"].string
         self.image = json["image"].string
+        self.gravatarUrl = json["gravatar_url"].string
     }
     
     required convenience init(response: NSHTTPURLResponse, json: JSON) {
@@ -69,7 +71,7 @@ final class User: NSObject, ResponseObjectSerializable, ResponseCollectionSerial
             let assetsUrl = Config.conf.opts["assets_url"]
             return NSURL(string: "\(assetsUrl)/\(image!)")!
         } else {
-            return NSURL(string: "http://www.gravatar.com/avatar/\(Util.MD5(email))?s=256")!
+            return NSURL(string: "\(gravatarUrl!)&s=256")!
         }
     }
 
