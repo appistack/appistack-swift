@@ -50,11 +50,13 @@ class SettingsViewController: UITableViewController, FormValidatable {
         
         validator.validate() { (errors) in
             if errors.isEmpty {
-                self.userService.update(userId, params: ["user": userParams]) { (req, res, user, err) in
+                self.userService.update(userId, params: ["user": userParams]) { (req, res, data, err) in
                     if (err == nil) {
-                        self.authManager.user = user
-                        self.displayUserUpdatedNotification("Profile Updated", completionBlock: {})
-                        //TODO: navigate to user profile.  However, "Show Detail" segue does not update the navigation history
+                        self.userService.get(userId) { (req, res, user, err) in
+                            self.authManager.user = user
+                            self.displayUserUpdatedNotification("Profile Updated", completionBlock: {})
+                            //TODO: navigate to user profile.  However, "Show Detail" segue does not update the navigation history
+                        }
                     } else {
                         self.displayUserUpdatedNotification("Profile Update Failed", completionBlock: {})
                     }

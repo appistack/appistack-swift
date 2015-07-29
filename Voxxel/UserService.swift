@@ -24,13 +24,11 @@ class UserService {
             .responseCollection(completionHandler)
     }
     
-    func update(id:Int, params: [String: AnyObject], completionHandler: (NSURLRequest?, NSHTTPURLResponse?, User?, NSError?) -> Void) {
+    func update(id:Int, params: [String: AnyObject], completionHandler: (NSURLRequest?, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
         //API should respond with 303 and redirect to GET for user.  
         //  302 causes redirect loop as Alamofire uses same HTTP verb
         VoxxelApi.manager.request(.PATCH, apiUrl + "/users/\( id )", parameters: params)
             .validate()
-            .responseObject(completionHandler)
+            .response(completionHandler)
     }
-
 }
-
