@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>password_change_success_url</key>
-	<string>http://voxxel.dev:8000/password/change</string>
+	<string>http://appistack.dev:8000/password/change</string>
 	<key>signup_confirm_success_url</key>
-	<string>http://voxxel.dev:8000</string>
+	<string>http://appistack.dev:8000</string>
 	<key>assets_url</key>
-	<string>http://voxxel.dev:8000</string>
+	<string>http://appistack.dev:8000</string>
 	<key>api_base_url</key>
-	<string>http://api.voxxel.dev:3000</string>
+	<string>http://api.appistack.dev:3000</string>
 </dict>
 </plist>
