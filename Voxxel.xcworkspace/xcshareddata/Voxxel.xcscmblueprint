@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9FCF0ABC5304E00657801A5CF4C15696D49395B4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9FCF0ABC5304E00657801A5CF4C15696D49395B4" : 0,
+    "486662E93996AD062B68E6660DDA0057904C7FDE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9F42F228-EB1F-4649-8A2F-A03D55008B76",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9FCF0ABC5304E00657801A5CF4C15696D49395B4" : "swift\/",
+    "486662E93996AD062B68E6660DDA0057904C7FDE" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Voxxel",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Voxxel.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:appistack\/appistack",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "486662E93996AD062B68E6660DDA0057904C7FDE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:appistack\/appistack-swift",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9FCF0ABC5304E00657801A5CF4C15696D49395B4"
+    }
+  ]
+}
