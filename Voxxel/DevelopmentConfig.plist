@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>password_change_success_url</key>
+	<string>http://voxxel.dev:8000/password/change</string>
 	<key>signup_confirm_success_url</key>
-	<string>http://vox.xel.io</string>
+	<string>http://voxxel.dev:8000</string>
 	<key>assets_url</key>
-	<string>http://vox.xel.io</string>
+	<string>http://voxxel.dev:8000</string>
 	<key>api_base_url</key>
 	<string>http://api.voxxel.dev:3000</string>
 </dict>
