@@ -32,28 +32,14 @@
 		<false/>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>127.0.0.1</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-			<key>vox.xel.io</key>
+			<key>appistack.com</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<false/>
 				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
 			</dict>
-			<key>192.168.1.80</key>
-			<dict>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-			</dict>
-			<key>voxxel.dev</key>
+			<key>appistack.dev</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>
