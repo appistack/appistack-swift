@@ -1,19 +1,40 @@
+## Appistack Swift
 
-Requires Swift 2.0
-- Alamofire swift-2.0 branch requires XCode7 beta4 to build
+An Appistack iOS 8 template, written in Swift 2.0.  
 
-### Guides
-- [Auth with AFNetworking](http://nsscreencast.com/episodes/41-authentication-with-afnetworking)
-- [Lighter View Controllers](http://www.objc.io/issues/1-view-controllers/lighter-view-controllers)
-- [Working with AFNetworking 2](http://programmingthomas.com/blog/2013/9/17/working-with-afnetworking-2)
-- [Appcode Tutorial](https://www.jetbrains.com/objc/documentation)
+## Configuring For Multiple Environments
 
-### Swift
+#### 1) Configure DNS for your API
 
-- [User Auth w/ iOS, Rails & Swift](http://www.raywenderlich.com/85528/user-accounts-ios-ruby-rails-swift)
-- [JSON and Swift](http://www.raywenderlich.com/82706/working-with-json-in-swift-tutorial)
-- [Storyboards & Swift](http://www.raywenderlich.com/81880/storyboards-tutorial-swift-part-2)
-- [OOP w/ Swift](http://www.raywenderlich.com/81952/intro-object-oriented-design-swift-part-1)
+In staging & production, you can connect to your API running in Heroku.  In development, you'll need to add an 
+entry to `/etc/hosts` for your API.  The Appistack iOS template is configured to connect to `api.appistack.dev` 
+in development.
 
-### Pods
-- [QuickDialog](https://github.com/escoz/QuickDialog)
+#### 2) Configure NSExceptionDomains for your API
+
+If you're API is served on HTTPS, you can skip this step.
+
+If you're serving your API with HTTP, add a new key to `Info.plist` under `NSExceptionDomains`.  Use your API's 
+root domain name, e.g. `appistack.dev`.  Set the type to Dictionary.  Add two keys: `NSIncludesSubdomains` 
+and `NSTemporaryExceptionAllowsInsecureHTTPLoads`.  Set both to `YES`.
+
+#### 3) Configure the Plist for your Environment.
+
+Each environment has a `[environment]Config.plist` file, where environment-specific settings can be configured.
+
+`api_base_url` - The API base URL, including the host and port number.
+
+`assets_url` - The base URL for your assets.  If you're assets are stored in multiple locations, you may need 
+additional configuration keys. 
+
+`signup_confirm_success_url` - The URL passed to DeviseTokenAuth when a new user is created.  When the user clicks the link 
+in their confirmation email, they will be redireced here after the API confirms their token.
+
+`password_reset_success_url` - The URL passed to DeviseTokenAuth when a user requests a password change.  When the user clicks the 
+link in their password change email, they will be redireced here after the API confirms their token.
+
+## Running the App
+
+Open XCode.  Hit CMD-R and hopefully it builds ;]
+
+The Alamofire swift-2.0 branch requires XCode7 beta4 to build, so you may need to download that.
