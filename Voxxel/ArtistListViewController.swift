@@ -67,7 +67,8 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
         //Throws gnarly malloc errors in a new thread
         cell.imgView.hnk_setImageFromURL(artist.headshotUrl(), success: { (img) in
             //i just want to trigger the cell to resize once the image is downloaded
-            self.collectionView.reloadItemsAtIndexPaths([indexPath])
+            cell.imgView.image = img
+            UIView.animateWithDuration(0.3, animations: { self.collectionView.collectionViewLayout.invalidateLayout() })
         })
         
         //the code below works
@@ -89,8 +90,12 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let artist = artists[indexPath.item]
-        return artist.photo?.size ?? CGSize(width: 256, height: 256)
+        if let cell = collectionView.cellForItemAtIndexPath(indexPath) as? ArtistCell {
+            if let size = cell.imgView?.image?.size {
+                return size
+            }
+        }
+        return CGSize(width: 256, height: 256)
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
