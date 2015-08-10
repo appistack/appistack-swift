@@ -24,15 +24,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         lblUsername.text = authManager.user!.username
         lblName.text = authManager.user!.name
-        
-        if authManager.user!.photo == nil {
-            authManager.user!.loadPhoto(authManager.user!.getImageURL()) { (user, err) in
-                if err == nil {
-                    self.imgProfile.image = user.photo
-                }
-            }
-        } else {
-            self.imgProfile.image = authManager.user!.photo
-        }
+
+        self.imgProfile.hnk_setImageFromURL(authManager.user!.getImageURL())
     }
 }

@@ -58,27 +58,24 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
         
         cell.backgroundColor = UIColor.whiteColor()
         cell.lblName.text = artist.name()
-        
-        if artist.photo != nil {
-            cell.imgView.image = artist.photo
-            return cell
-        }
-        
-        artist.loadPhoto(artist.headshotUrl()) { (art, err) in
-            if (err != nil) {
-                return
-            }
 
-            cell.imgView.image = artist.photo
-            self.collectionView.reloadItemsAtIndexPaths([indexPath])
-        }
+        cell.imgView.hnk_setImageFromURL(artist.headshotUrl(), success: { (img) in
+            cell.imgView.image = img
+            UIView.animateWithDuration(0.3, animations: {
+                self.collectionView.collectionViewLayout.invalidateLayout()
+            })
+        })
         
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let artist = artists[indexPath.item]
-        return artist.photo?.size ?? CGSize(width: 256, height: 256)
+        if let cell = collectionView.cellForItemAtIndexPath(indexPath) as? ArtistCell {
+            if let size = cell.imgView?.image?.size {
+                return size
+            }
+        }
+        return CGSize(width: 256, height: 256)
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {

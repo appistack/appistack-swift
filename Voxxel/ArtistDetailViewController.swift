@@ -24,7 +24,7 @@ class ArtistDetailViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imgArtist.image = artist?.photo
+        imgArtist.hnk_setImageFromURL(artist!.headshotUrl())
         lblArtistName.text = artist?.name()
         
         setupTableView()
@@ -62,7 +62,6 @@ class ArtistDetailViewController: UIViewController, UITableViewDelegate, UITable
         cell.lblDesc.text = sound.desc
         
         return cell
-        
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
