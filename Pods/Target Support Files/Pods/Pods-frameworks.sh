@@ -54,6 +54,7 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Development" ]]; then
   install_framework 'Pods/Alamofire.framework'
   install_framework 'Pods/CRToast.framework'
+  install_framework 'Pods/Haneke.framework'
   install_framework 'Pods/SSKeychain.framework'
   install_framework 'Pods/SwiftValidator.framework'
   install_framework 'Pods/SwiftyJSON.framework'
@@ -61,6 +62,7 @@ fi
 if [[ "$CONFIGURATION" == "Staging" ]]; then
   install_framework 'Pods/Alamofire.framework'
   install_framework 'Pods/CRToast.framework'
+  install_framework 'Pods/Haneke.framework'
   install_framework 'Pods/SSKeychain.framework'
   install_framework 'Pods/SwiftValidator.framework'
   install_framework 'Pods/SwiftyJSON.framework'
@@ -68,6 +70,7 @@ fi
 if [[ "$CONFIGURATION" == "Production" ]]; then
   install_framework 'Pods/Alamofire.framework'
   install_framework 'Pods/CRToast.framework'
+  install_framework 'Pods/Haneke.framework'
   install_framework 'Pods/SSKeychain.framework'
   install_framework 'Pods/SwiftValidator.framework'
   install_framework 'Pods/SwiftyJSON.framework'
