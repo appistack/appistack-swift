@@ -24,15 +24,22 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         lblUsername.text = authManager.user!.username
         lblName.text = authManager.user!.name
+
+        //both calls work here -- with and with callback
+//        self.imgProfile.hnk_setImageFromURL(authManager.user!.getImageURL())
         
-        if authManager.user!.photo == nil {
-            authManager.user!.loadPhoto(authManager.user!.getImageURL()) { (user, err) in
-                if err == nil {
-                    self.imgProfile.image = user.photo
-                }
-            }
-        } else {
-            self.imgProfile.image = authManager.user!.photo
-        }
+        self.imgProfile.hnk_setImageFromURL(authManager.user!.getImageURL(), success: { (img) in
+            print("in callback")
+        })
+        
+//        if authManager.user!.photo == nil {
+//            authManager.user!.loadPhoto(authManager.user!.getImageURL()) { (user, err) in
+//                if err == nil {
+//                    self.imgProfile.image = user.photo
+//                }
+//            }
+//        } else {
+//            self.imgProfile.image = authManager.user!.photo
+//        }
     }
 }
