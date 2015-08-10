@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Haneke
 
 //TODO: genericize for tags after implementing tags in the API?
 class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout {
@@ -59,19 +60,30 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
         cell.backgroundColor = UIColor.whiteColor()
         cell.lblName.text = artist.name()
         
-        if artist.photo != nil {
-            cell.imgView.image = artist.photo
-            return cell
-        }
         
-        artist.loadPhoto(artist.headshotUrl()) { (art, err) in
-            if (err != nil) {
-                return
-            }
-
-            cell.imgView.image = artist.photo
+        //haneke does not break without a callback
+        //cell.imgView.hnk_setImageFromURL(artist.headshotUrl())
+        
+        //Throws gnarly malloc errors in a new thread
+        cell.imgView.hnk_setImageFromURL(artist.headshotUrl(), success: { (img) in
+            //i just want to trigger the cell to resize once the image is downloaded
             self.collectionView.reloadItemsAtIndexPaths([indexPath])
-        }
+        })
+        
+        //the code below works
+//        if artist.photo != nil {
+//            cell.imgView.image = artist.photo
+//            return cell
+//        }
+//        
+//        artist.loadPhoto(artist.headshotUrl()) { (art, err) in
+//            if (err != nil) {
+//                return
+//            }
+//
+//            cell.imgView.image = artist.photo
+//            self.collectionView.reloadItemsAtIndexPaths([indexPath])
+//        }
         
         return cell
     }
