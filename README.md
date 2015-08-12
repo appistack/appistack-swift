@@ -37,4 +37,4 @@ link in their password change email, they will be redireced here after the API c
 
 Open XCode.  Hit CMD-R and hopefully it builds ;]
 
-The Alamofire swift-2.0 branch requires XCode7 beta4 to build, so you may need to download that.
+Alamofire 2.0.0-beta.1 requires XCode7 beta5 to build, so you may need to download that.
