@@ -13,31 +13,25 @@ import SwiftyJSON
 class AuthService {
     let apiUrl = Config.conf.opts["api_base_url"]!
     
-    func validateToken(onSuccess: (NSHTTPURLResponse?, AnyObject?) -> Void,
-        onError: (NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
+    func validateToken(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Result<AnyObject>) -> Void) {
 
         VoxxelApi.manager.request(.GET, apiUrl + "/auth/validate_token")
             .validate()
             .responseJSON() { (req, res, result) in
-                //TODO: clear token if invalid (and redirect user to login?)
-                //TODO: also clear headers from
-                //TODO: set user returned by token to json.valueForKeyPath("data")
                 switch result {
                 case .Success(let value):
                     let data = value.valueForKeyPath("data")
                     let user = User(response: res!, json: JSON(data!))
                     AuthManager.manager.user = user
-                    onSuccess(res, user)
-                case .Failure(let data, let err):
+                    completionHandler(req, res, .Success(user))
+                case .Failure:
                     AuthManager.manager.clearAccessToken()
-                    onError(res, data, err)
+                    completionHandler(req,res,result)
                 }
             }
     }
     
-    func login(params: [String: AnyObject],
-        onSuccess: (NSHTTPURLResponse?, AnyObject?) -> Void,
-        onError: (NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
+    func login(params: [String: AnyObject], completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Result<AnyObject>) -> Void) {
 
         VoxxelApi.manager.request(.POST, apiUrl + "/auth/sign_in", parameters: params)
             .validate()
@@ -49,32 +43,29 @@ class AuthService {
                     let accessToken = AccessTokenModel.parseFromHeaders(res!)
                     AuthManager.manager.setAccessToken(accessToken)
                     AuthManager.manager.user = user
-                    onSuccess(res, user)
-                case .Failure(let data, let err):
-                    onError(res, data, err)
+                    completionHandler(req, res, .Success(user))
+                case .Failure:
+                    completionHandler(req, res, result)
                 }
             }
     }
     
-    func logout(onSuccess: (NSHTTPURLResponse?, AnyObject?) -> Void,
-        onError: (NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
+    func logout(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Result<AnyObject>) -> Void) {
         
         VoxxelApi.manager.request(.DELETE, apiUrl + "/auth/sign_out")
             .validate()
             .responseJSON() { (req, res, result) in
                 switch result {
-                case .Success(let value):
+                case .Success:
                     AuthManager.manager.clearAccessToken()
-                    onSuccess(res, value)
-                case .Failure(let data, let err):
-                    onError(res, data, err)
+                case .Failure:
+                    break;
                 }
+                completionHandler(req, res, result)
             }
     }
     
-    func signup(params: [String: AnyObject],
-        onSuccess: (NSHTTPURLResponse?, AnyObject?) -> Void,
-        onError: (NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
+    func signup(params: [String: AnyObject], completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Result<AnyObject>) -> Void) {
 
         VoxxelApi.manager.request(.POST, apiUrl + "/auth", parameters: params)
             .validate()
@@ -84,9 +75,9 @@ class AuthService {
                     AuthManager.manager.clearAccessToken()
                     let data = value.valueForKeyPath("data")
                     let user = User(response: res!, json: JSON(data!))
-                    onSuccess(res, user)
-                case .Failure(let data, let err):
-                    onError(res, data, err)
+                    completionHandler(req, res, .Success(user))
+                case .Failure:
+                    completionHandler(req, res, result)
                 }
             }
     }
