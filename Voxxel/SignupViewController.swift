@@ -80,16 +80,6 @@ class SignupViewController: UIViewController, FormValidatable {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    //ui navigation controller UINavigationControllerDelegate
-    // http://makeapppie.com/tag/uinavigationcontroller-in-swift/
-    // http://www.raywenderlich.com/86521/how-to-make-a-view-controller-transition-animation-like-in-the-ping-app
-    // https://stackoverflow.com/questions/28475661/how-to-send-an-uiviewcontroller-that-conforms-uiimagepickercontrollerdelegate-u
-    //        if let stack = self.navigationController?.viewControllers {
-    //            let loginVc = stack[stack.count-2] as! LoginViewController
-    //            loginVc.displayConfirmEmail = true
-    //            self.navigationController!.popToViewController(loginVc, animated: true)
-    //        }
-    
     func displayConfirmEmailToast(completionBlock: (() -> Void)) {
         let toastOptions: [NSObject: AnyObject] = [
             kCRToastTextKey: "Great Success!",
