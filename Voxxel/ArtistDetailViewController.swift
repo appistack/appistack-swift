@@ -30,8 +30,16 @@ class ArtistDetailViewController: UIViewController, UITableViewDelegate, UITable
         setupTableView()
         registerNibs()
         
-        artistService.get(artist!.id) {(req, res, artist, err) in
-            self.sounds = artist!.sounds
+        artistService.get(artist!.id) {(req, res, result) in
+            switch result {
+            case .Success(let value):
+                self.artist = value
+                self.sounds = value.sounds
+            case .Failure:
+                self.artist = nil
+                self.sounds = []
+            }
+            
             self.tblSounds.reloadData()
         }
     }

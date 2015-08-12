@@ -27,8 +27,13 @@ class ArtistListViewController: UIViewController, UICollectionViewDelegate, UICo
         setupCollectionView()
         registerNibs()
         
-        artistService.list() {(req, res, artists, err) in
-            self.artists = artists!
+        artistService.list() {(req, res, result) in
+            switch result {
+            case .Success(let value):
+                self.artists = value
+            case .Failure(let data, _):
+                self.artists = []
+            }
             self.collectionView.reloadData()
         }
     }
