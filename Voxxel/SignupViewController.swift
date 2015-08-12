@@ -63,15 +63,17 @@ class SignupViewController: UIViewController, FormValidatable {
         
         validator.validate() { (errors) in
             if errors.isEmpty {
-                self.authService.signup(params,
-                    onSuccess: { (req, user) in
+                self.authService.signup(params) { (req, res, result) in
+                    switch result {
+                    case .Success:
                         self.displayConfirmEmailToast() { () in
                             self.dismissViewControllerAnimated(true, completion: nil)
                         }
-                    }, onError: { (req, json, err) in
+                    case .Failure(_, let err):
                         print("signup failed")
                         print(err)
-                })
+                    }
+                }
             }
         }
     }

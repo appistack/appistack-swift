@@ -31,23 +31,28 @@ class NavViewController: UITableViewController {
                 VoxxelApi.setAuthHeaders(authManager.getAccessToken())
                 if authManager.user == nil {
                     //get user data for current session
-                    authService.validateToken({(res, user) in
-                        
-                        }, onError: {(res, json, err) in
-                            self.authManager.clearAccessToken()
+                    authService.validateToken() { (req, res, result) in
+                        switch result {
+                        case .Success:
+                            break
+                        case .Failure:
                             self.navigateToLogin()
-                    })
+                        }
+                    }
                 }
             }
         }
     }
     
     func logout() {
-        authService.logout({ (res, json) in
-            self.navigateToLogin()
-            }, onError: { (res, json, err) in
+        authService.logout() { (req, res, result) in
+            switch result {
+            case .Success:
+                self.navigateToLogin()
+            case .Failure:
                 print("error logging out")
-        })
+            }
+        }
     }
     
     func navigateToLogin() {
