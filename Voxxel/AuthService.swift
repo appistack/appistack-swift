@@ -18,20 +18,21 @@ class AuthService {
 
         VoxxelApi.manager.request(.GET, apiUrl + "/auth/validate_token")
             .validate()
-            .responseJSON() { (req, res, json, err) in
+            .responseJSON() { (req, res, result) in
                 //TODO: clear token if invalid (and redirect user to login?)
                 //TODO: also clear headers from
                 //TODO: set user returned by token to json.valueForKeyPath("data")
-                if err == nil && json != nil {
-                    let data = json!.valueForKeyPath("data")
+                switch result {
+                case .Success(let value):
+                    let data = value.valueForKeyPath("data")
                     let user = User(response: res!, json: JSON(data!))
                     AuthManager.manager.user = user
                     onSuccess(res, user)
-                } else {
+                case .Failure(let data, let err):
                     AuthManager.manager.clearAccessToken()
-                    onError(res, json, err)
+                    onError(res, data, err)
                 }
-        }
+            }
     }
     
     func login(params: [String: AnyObject],
@@ -40,16 +41,17 @@ class AuthService {
 
         VoxxelApi.manager.request(.POST, apiUrl + "/auth/sign_in", parameters: params)
             .validate()
-            .responseJSON() { (req, res, json, err) in
-                if err == nil && json != nil {
-                    let data = json!.valueForKeyPath("data")
+            .responseJSON() { (req, res, result) in
+                switch result {
+                case .Success(let value):
+                    let data = value.valueForKeyPath("data")
                     let user = User(response: res!, json: JSON(data!))
                     let accessToken = AccessTokenModel.parseFromHeaders(res!)
                     AuthManager.manager.setAccessToken(accessToken)
                     AuthManager.manager.user = user
                     onSuccess(res, user)
-                } else {
-                    onError(res, json, err)
+                case .Failure(let data, let err):
+                    onError(res, data, err)
                 }
             }
     }
@@ -59,12 +61,13 @@ class AuthService {
         
         VoxxelApi.manager.request(.DELETE, apiUrl + "/auth/sign_out")
             .validate()
-            .responseJSON() { (req, res, json, err) in
-                if err == nil {
+            .responseJSON() { (req, res, result) in
+                switch result {
+                case .Success(let value):
                     AuthManager.manager.clearAccessToken()
-                    onSuccess(res, json)
-                } else {
-                    onError(res, json, err)
+                    onSuccess(res, value)
+                case .Failure(let data, let err):
+                    onError(res, data, err)
                 }
             }
     }
@@ -75,13 +78,15 @@ class AuthService {
 
         VoxxelApi.manager.request(.POST, apiUrl + "/auth", parameters: params)
             .validate()
-            .responseJSON() { (req, res, json, err) in
-                if err == nil && json != nil {
-                    let data = json!.valueForKeyPath("data")
+            .responseJSON() { (req, res, result) in
+                switch result {
+                case .Success(let value):
+                    AuthManager.manager.clearAccessToken()
+                    let data = value.valueForKeyPath("data")
                     let user = User(response: res!, json: JSON(data!))
                     onSuccess(res, user)
-                } else {
-                    onError(res, json, err)
+                case .Failure(let data, let err):
+                    onError(res, data, err)
                 }
             }
     }
