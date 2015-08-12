@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 //TODO: refactor completionHandler to handle errors in this service
 //TODO: clean up error handling for API Requests
@@ -14,21 +15,21 @@ import Foundation
 class UserService {
     let apiUrl = Config.conf.opts["api_base_url"]! + "/api/v1"
     
-    func get(id:Int, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, User?, NSError?) -> Void) {
+    func get(id:Int, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Result<User>) -> Void) {
         VoxxelApi.manager.request(.GET, apiUrl + "/users/\( id )")
             .responseObject(completionHandler)
     }
     
-    func list(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, [User]?, NSError?) -> Void) {
+    func list(completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Result<[User]>) -> Void) {
         VoxxelApi.manager.request(.GET, apiUrl + "/users")
             .responseCollection(completionHandler)
     }
     
-    func update(id:Int, params: [String: AnyObject], completionHandler: (NSURLRequest?, NSHTTPURLResponse?, AnyObject?, NSError?) -> Void) {
-        //API should respond with 303 and redirect to GET for user.  
+    func update(id:Int, params: [String: AnyObject], completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Result<String>) -> Void) {
+        //API should respond with 303 and redirect to GET for user.
         //  302 causes redirect loop as Alamofire uses same HTTP verb
         VoxxelApi.manager.request(.PATCH, apiUrl + "/users/\( id )", parameters: params)
             .validate()
-            .response(completionHandler)
+            .responseString(completionHandler: completionHandler)
     }
 }

@@ -15,12 +15,12 @@ import Alamofire
 class ArtistService {
     let apiUrl = Config.conf.opts["api_base_url"]! + "/api/v1"
 
-    func get(id:Int, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Artist?, NSError?) -> Void) {
+    func get(id:Int, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Result<Artist>) -> Void) {
         VoxxelApi.manager.request(.GET, apiUrl + "/artists/\( id )")
             .responseObject(completionHandler)
     }
 
-    func list(params: [String: AnyObject]? = nil, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, [Artist]?, NSError?) -> Void) {
+    func list(params: [String: AnyObject]? = nil, completionHandler: (NSURLRequest?, NSHTTPURLResponse?, Result<[Artist]>) -> Void) {
         VoxxelApi.manager.request(.GET, apiUrl + "/artists")
             .responseCollection(completionHandler)
     }
